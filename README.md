@@ -22,4 +22,12 @@ A plataforma também tem como objetivo evitar o desperdício de alimentos. As em
 
 
 
+## Referência
+
+ - [OngsBrasil](https://www.ongsbrasil.com.br/)
+ - [MealConnect](https://mealconnect.org/)
+
+
+
+
 
