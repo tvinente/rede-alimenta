@@ -16,7 +16,7 @@ A plataforma também tem como objetivo evitar o desperdício de alimentos. As em
 
 - Breno Chrispim ([@DChrispim](https://github.com/DChrispim))
 - Ciane Pereira ([@ciane-pereira](https://github.com/ciane-pereira))
-- Carlos Giorgio ([xxxxxx](https://github.com/xxxxx))
+- Carlos Giorgio ([@calgio](https://github.com/calgio))
 - Pedro Amaral ([@pedroamaralrs29](https://github.com/pedroamaralrs29))
 - Talyta Vinente ([@tvinente](https://github.com/tvinente))
 
