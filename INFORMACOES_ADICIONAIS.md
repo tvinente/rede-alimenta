@@ -33,4 +33,4 @@ A ONU possui como meta zerar a fome até 2030(objetivo estabelecido em 2015), po
 
 *[fonte: G1](https://g1.globo.com/politica/noticia/2023/08/31/mapa-da-fome-sinaliza-que-paises-estao-longe-da-meta-para-zerar-indicador-ate-2030-entenda.ghtml)*
 
-Uma das fontes de inspiração desse projeto não só veio dos objetivos da ONU, como também da análise de dados similares aos descrito acima. Garantir o acesso a alimentos nutritivos para todos e lcançar a meta requer esforços significativos e essa é a nossa pequena contribuição.
+Uma das fontes de inspiração deste projeto foi a análise de dados similares aos que foram descritos acima, além dos objetivos da ONU. Para garantir o acesso a alimentos nutritivos para todos e alcançar a meta, são necessários esforços significativos e esta é a nossa pequena contribuição.
