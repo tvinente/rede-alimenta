@@ -8,31 +8,141 @@
         Rodapé com informações de contato;
 -->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Página formulário de ONG</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castro de Voluntário</title>
 </head>
 <body>
-   <header>
-       <nav>
-           <ul>
-               <li><a href="./index.html">Página inicial</a></li>
-               <li><a href="./proj_info.html">Como o projeto funciona</a></li>
-               <li><a href="./login_signup.html">Login/Inscreva-se</a></li>
-               <li><a href="form_company.html">Página formulário de empresa</a></li>
-               <li><a href="./form_ong.html">Página formulário de ONG</a></li>
-               <li><a href="main_company.html">Página principal de empresa</a></li>
-               <li><a href="main_ong.html">Página principal de ONG</a></li>
-           </ul>
-       </nav>
-   </header>
-   <main>
-    <h1>Página formulário de ONG</h1>
-   </main>
-   <footer>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sed?</p>
-    </footer>
+    <form action="/cadastro-de-empresa" method="post">
+        <h1>Cadastro de Grupos Voluntários e ONG's</h1>
+        <h3>Uso exclusivo para Grupos Voluntários e ONG's</h3>
+        <h2>Dados da Grupos Voluntários e ONG's</h2>
+        <fieldset>
+            <div>
+                <label for="nome-grupo-ong">Nome do Grupo/Organização:</label>
+                <input type="text" id="nome-grupo-ong" />
+            </div>
+            <br>
+            <div>
+                <label for="site">site:</label>
+                <input type="text" id="site" />
+            </div>
+            <br>
+            <div>
+                <label for="area-atuacao">Área de Atuação:</label>
+                <input type="text" id="area-atuacao" />
+            </div>
+            <br>
+            <div>
+                <label for="tempo-atuacao">Tempo de Atuação:</label>
+                <input type="text" id="tempo-atuacao" />
+            </div>
+            <br>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" />
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" />
+            </div>
+            <br>
+            <div>
+                <label for="pessoas-assistidas">Quantas Pessoas são Assistidas Atualmente?</label>
+                <input type="text" id="nome-grupo-ong" />
+            </div>
+            <br>
+            <div>
+                <label for="melhores-dias">Melhores Dias para Coletar:</label><br>
+                <input type="checkbox" id="segunda" name="melhores-dias" value="segunda">
+                <label for="segunda">Segunda-feira</label><br>
+                <input type="checkbox" id="terca" name="melhores-dias" value="terca">
+                <label for="terca">Terça-feira</label><br>
+                <input type="checkbox" id="quarta" name="melhores-dias" value="quarta">
+                <label for="quarta">Quarta-feira</label><br>
+                <input type="checkbox" id="quinta" name="melhores-dias" value="quinta">
+                <label for="quinta">Quinta-feira</label><br>
+                <input type="checkbox" id="sexta" name="melhores-dias" value="sexta">
+                <label for="sexta">Sexta-feira</label><br>
+                <input type="checkbox" id="sábado" name="melhores-dias" value="sábado">
+                <label for="sábado">Sábado</label><br>
+                <input type="checkbox" id="domingo" name="melhores-dias" value="domingo">
+                <label for="domingo">Domingo</label>
+            </div>
+            <br>
+            <div>
+                <label for="melhores-horarios">Melhores horários para Coletar:</label><br>
+                <input type="checkbox" id="08h-10h" name="melhores-horarios" value="8h-10h">
+                <label for="8h-10h">08:00-10:00</label><br>
+                <input type="checkbox" id="10h-12h" name="melhores-horarios" value="10h-12h">
+                <label for="10h-12h">10:00-12:00</label><br>
+                <input type="checkbox" id="12h-14h" name="melhores-horarios" value="12h-14h">
+                <label for="12h-14h">12:00-14:00</label><br>
+                <input type="checkbox" id="14h-16h" name="melhores-horarios" value="14h-16h">
+                <label for="14h-16h">14:00-16:00</label><br>
+                <input type="checkbox" id="16h-18h" name="melhores-horarios" value="16h-18h">
+                <label for="16h-18h">16:00-18:00</label><br>
+                <input type="checkbox" id="18h-20h" name="melhores-horarios" value="18h-20h">
+                <label for="18h-20h">18:00-20:00</label><br>
+                <input type="checkbox" id="20h-22h" name="melhores-horarios" value="20h-22h">
+                <label for="20h-22h">20:00-22:00</label><br>
+                <input type="checkbox" id="22h-00h" name="melhores-horarios" value="22h-00h">
+                <label for="22h-00h">22:00-00:00</label><br>
+                <input type="checkbox" id="00h-02h" name="melhores-horarios" value="00h-02h">
+                <label for="00h-02h">00:00-02:00</label><br>
+                <input type="checkbox" id="02h-04h" name="melhores-horarios" value="00h-04h">
+                <label for="00h-04h">02:00-04:00</label><br>
+                <input type="checkbox" id="04h-06h" name="melhores-horarios" value="04h-06h">
+                <label for="04h-06h">04:00-06:00</label><br>
+                <input type="checkbox" id="06h-08h" name="melhores-horarios" value="06h-08h">
+                <label for="06h-08h">06:00-08:00</label><br>
+                <br>
+            <div>
+                <label for="melhores-horarios">Principais Bairros para Coletar:</label><br>
+                <textarea id="historia-grupo" name="historia-grupo" rows="8" cols="40"></textarea>
+            </div>
+            <br>          
+            <div>
+                <label for="historia-grupo">Breve História do Grupo:</label><br>
+                <textarea id="historia-grupo" name="historia-grupo" rows="6" cols="50"></textarea>
+            </div>
+                            
+        </fieldset>
+        <br>
+        <h2>Informações para Ação Social</h2>
+        <fieldset>
+            <div>
+                <label for="nome-responsavel">Nome Responsável:</label>
+                <input type="text" id="nome-responsavel" />
+            </div>
+            <br>
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" />
+            </div>
+            <br>
+            <div>
+                <label for="telefone-responsavel">Telefone:</label>
+                <input type="text" id="telefone-responsavel" />
+            </div>
+            <br>
+            <div>
+                <label for="email-responsavel">E-mail:</label>
+                <input type="email" id="email-responsavel" />
+            </div>
+            <br>
+        </fieldset>
+        </div>
+        <div class="button">
+            <button type="submit">Voltar</button>
+        </div>
+        <br>
+        <div class="button">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
 </body>
 </html>
