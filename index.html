@@ -1,44 +1,212 @@
 <!-- 
     Nome do projeto: RedeAlimenta
-    Integrantes: Breno Chrispim (@DChrispim), Ciane Pereira (@ciane-pereira), Carlos Giorgio (@calgio), Pedro Amaral (@pedroamaralrs29), Talyta Vinente (@tvinente)
-    Descrição da página: Essa é a homepage (página principal). Ela deve conter:
-        Mensagem inicial (motivação, objetivos e quem somos);
-        Dados estatísticos do mapa da fome;
-        Dados estatísticos gerais relacionados ao tema do projeto: valor da cesta básica, desemprego, etc;
-        Resumo de como funciona;
-        Dados estatísticos sobre o projeto;
-        Lista de Grupos/ONG’s participantes: informar grupos que eles assistem;
-        Lista de Empresas participantes: informar por quais empresas são assistidos;
-        Ranking: Top 3 empresas, Top 3 Voluntários (decidir intervalo de tempo);
-        Disclaimer: Dizer que não estamos ligados a nenhum governo ou empresa;
-        Rodapé com informações de contato;
--->
+    Integrantes: Breno Chrispim (@DChrispim), Ciane Pereira (@ciane-pereira), Carlos Giorgio (@calgio), Pedro Amaral (@pedroamaralrs29), Talyta Vinente (@tvinente)-->
  <!DOCTYPE html>
  <html lang="pt-BR">
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página inicial</title>
+    <title>RedeAlimenta | Vamos alimentar as pessoas</title>
  </head>
  <body>
     <header>
-        <nav>
+        <div class="header">
+            <div id="logo">            
+                <img class="logo_img" src="#logo" alt="Logo RedeAlimenta">           
+        </div>
+        <h1 class="titulo">RedeAlimenta</h1>
+        </div>        
+        <nav class="menu">
             <ul>
-                <li><a href="./index.html">Página inicial</a></li>
+                <li><a href="./index.html">Página Inicial</a></li>                
+                <li><a href="./proj_info.html">Quem Somos</a></li>
                 <li><a href="./proj_info.html">Como o projeto funciona</a></li>
-                <li><a href="./login_signup.html">Login/Inscreva-se</a></li>
-                <li><a href="form_company.html">Página formulário de empresa</a></li>
-                <li><a href="./form_ong.html">Página formulário de ONG</a></li>
-                <li><a href="main_company.html">Página principal de empresa</a></li>
-                <li><a href="main_ong.html">Página principal de ONG</a></li>
+                <li><a href="./login_signup.html">Entrar</a>
+                    <ul>
+                    <li><a href="form_company.html">Empresa</a></li>
+                    <li><a href="./form_ong.html">ONG</a></li>
+                    </ul>
+                </li>                              
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Página inicial</h1>
+        <!--(motivação, objetivos-->
+        <div class="motiva">
+            <img src="" alt="imagem de vários legumes" id="legumes_img">
+            <!--descrição do problema e chamar as empresas para doar-->
+            <h2>Vamos Colaborar</h2>
+            <p>Cadastre seu estabelecimento e doe, seja uma colaborador para reduzir a fome e ajude voluntários distribuir refeições, fazendo parte dessa conexão.
+            As doações  geraram pontos para a sua  empresa, e gera um selo de empresa que colabora com a erradicação da fome na sociedade.
+            </p>
+        </div>
+        <!--ideia carrosel com slides com dados estatísticos sobre fome -->
+        <div class="slider">
+
+            <div class="slides">
+                <!--radio buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2"> 
+                <input type="radio" name="radio-btn" id="radio3"> 
+                <input type="radio" name="radio-btn" id="radio4">             
+      
+              <!--slides imagens-->
+             <div class="slide first">
+              <h2>"No Brasil<strong class="dado_fome"> 21 milhões</strong> de pessoas <strong>não tem o que comer</strong> todos os dias</h2>
+              <img src="" alt="imagem de pessoas carentes">       
+             </div>
+             <div class="slide">
+              <h2>No <strong class="dado_fome">Norte 25%</strong> das famílias convivem com a fome e no <strong class="dado_fome">Nordeste são 20%</strong> das famílias</h2>          
+              <img src="" alt="">
+             </div>
+             <div class="slide">
+              <h2>Desperdiça-se cerca de <strong class="dado_fome">55 milhões de toneladas</strong> de alimentos</h2>
+              <img src="" alt="">
+             </div>
+             <div class="slide">
+              <h2>Entre 10 famílias <strong class="dado_fome"> 6 famílias <strong>não tem acesso</strong>  a alimentação plena</h2>
+              <img src="" alt="">
+             </div>
+             <!-- final slide imagens-->
+      
+              <!--navigation auto-->
+              <div class="navigation-auto">
+                  <div class="auto-btn1"></div>
+                  <div class="auto-btn2"></div>
+                  <div class="auto-btn3"></div>
+                  <div class="auto-btn4"></div>
+              </div>
+            </div>
+             <!--final div slides-->
+      
+             <!--criando botões(label) para(referente) o input radio -->
+             <div class="manual-navigation">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+                  
+              </div>                            
+        </div>               
+    </div>
+
+    <!--cards com dados estastísticos genero, cor, mais vulneráveis, custo cesta básica... -->
+    <div class="cards">
+        <div class="informacao">
+            <div class="showCase card-1">
+                <div class="card-img"><img src="" alt=""></div>
+                <h2>A fome de gênero</h2>
+                <p class="genero"></p>                
+            </div>
+            <div class="showCase card-2">
+                <div class="card-img"><img src="" alt=""></div>
+                <h2>A fome tem cor</h2>
+                <p class="genero"></p> 
+            </div>
+            <div class="showCase card-3">
+                <div class="card-img"><img src="" alt=""></div>
+                <h2>Crianças são mais vulneráveis à fome</h2>
+                <p class="genero"></p> 
+            </div>
+            <div class="showCase card-4">
+                <div class="card-img"><img src="" alt=""></div>
+                <h2>Alto custo da cesta básica</h2>
+                <p class="genero"></p> 
+            </div>
+        </div>
+    </div>
+
+        <!--quem somos-->
+        <div class="quem_somos">
+            <h2>Quem Somos</h2>
+            <p>Somos pessoas voluntárias que  alimentam pessoas em situação de vulnerabilidade. E tivemos a  ideia de unir empresas que  descartariam seus produtos por não ser comercial, mas adequado ao consumo com instituições que já atuam no preparo e distribuição de alimentos prontos.
+            Trabalhamos de forma independente e voluntária, sem nenhum vínculo com partido político, governo ou empresa.
+            </p>
+            <a href="./proj_info.html" id="ler_mais">Leia mais...</a>
+            <img src="" alt="" id="prato_img">
+        </div>
+        <br>      
+
+        <!--ranking das empresas-->
+        <div class="conexao">
+            <h2>Nós fazemos a conexão entre</h2>
+            <div class="empresa_doar">
+                <p>empresas que podem doar</p>
+            </div>
+            <div class="ong_ajuda">
+                <p>Ong's quem ajuda</p>
+            </div>
+        </div>
+        <div class="numero_doacao">
+            <h2>Esses são os nossos números de arrecadação</h2>
+        </div>
+        <div>
+            <h1>Empresas Campeãs na Doação de Alimentos</h1>
+        <div class="ranking">          
+            <table class="table" summary="Tabela com o ranking de empresas que mais doaram alimentos" border="1" cellspacing="5" cellpadding="10" >
+                <caption id="ranking_descricao">Vantagem da empresa por ser uma doadora de alimentos...
+                </caption>
+                <thead>
+                    <tr><th colspan="2">Ranking</th>                
+                    </tr>
+                    <tr>
+                        <th title="empresa">Classificação</th>
+                        <th>Empresa</th>                                
+                    </tr>
+                </thead>           
+                <tbody>
+                    <tr>
+                        <td>1ª Lugar</td>
+                        <td>Nome da empresa</td>
+                    </tr>
+                    <tr>
+                        <td>2ª Lugar</td>
+                        <td>Nome da empresa</td>
+                    </tr> 
+                    <tr>
+                        <td>3ª Lugar</td>
+                        <td>Nome da empresa</td>
+                    </tr> 
+                    <tr>
+                        <td>4ª Lugar</td>
+                        <td>Nome da empresa</td>
+                    </tr> 
+                    <tr>
+                        <td>5ª Lugar</td>
+                        <td>Nome da empresa</td>
+                    </tr>                        
+                </tbody>
+                <tfoot>                        
+                </tfoot>        
+            </table>
+        </div>             
+        </div>       
+        
+        <!--FaQ-->
+        <div class="faq">            
+            <a href="./proj_info.html"><h3>Perguntas frequentes</h3></a> 
+        </div>
     </main>
+
+     <!--footer da página-->
     <footer>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sed?</p>
+        <div class="redes-sociais"><br>
+            <p>Redes Sociais</p>
+            <ul>               
+                <li><a href="#"><img src="" alt="logo instagram"></a></li>                                 
+            </ul>
+        </div>
+        <hr>       
+        <div class="footer-info">
+            <p>
+                RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG
+            </p>
+
+            <p>
+                Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados
+            </p>
+        </div>
     </footer>
  </body>
  </html>
