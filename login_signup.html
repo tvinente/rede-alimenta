@@ -13,24 +13,51 @@
    <title>Login/Inscreva-se</title>
 </head>
 <body>
-   <header>
-       <nav>
-           <ul>
-               <li><a href="./index.html">Página inicial</a></li>
-               <li><a href="./proj_info.html">Como o projeto funciona</a></li>
-               <li><a href="./login_signup.html">Login/Inscreva-se</a></li>
-               <li><a href="form_company.html">Página formulário de empresa</a></li>
-               <li><a href="./form_ong.html">Página formulário de ONG</a></li>
-               <li><a href="main_company.html">Página principal de empresa</a></li>
-               <li><a href="main_ong.html">Página principal de ONG</a></li>
-           </ul>
-       </nav>
-   </header>
+    <header>
+        <div class="header">
+            <div id="logo">
+                <!--falta incluir imagem logo-->            
+                <img class="logo_img" src="#logo" alt="Logo RedeAlimenta">           
+        </div>
+        <h1 class="titulo">RedeAlimenta</h1>
+        </div>        
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Página Inicial</a></li>                
+                <li><a href="./proj_info.html">Quem Somos</a></li>
+                <li><a href="./proj_info.html">Como o projeto funciona</a></li>
+                <!--falta inserir logo pequena-->
+                <li><a class="botton_login" href="./login_signup.html">Entrar</a>
+                    <ul>
+                    <li><a href="form_company.html">Empresa</a></li>
+                    <li><a href="./form_ong.html">ONG</a></li>
+                    </ul>
+                </li>                              
+            </ul>
+        </nav>
+    </header>
+
    <main>
     <h1>Login/Inscreva-se</h1>
    </main>
+
    <footer>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sed?</p>
+    <div class="redes-sociais"><br>
+        <p>Redes Sociais</p>
+        <ul>               
+            <li><a href="#"><img src="assets/img/instagramIcon.svg" alt="logo instagram"></a></li>                                 
+        </ul>
+    </div>
+    <hr>       
+    <div class="footer-info">
+        <p>
+            RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG
+        </p>
+
+        <p>
+            Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados
+        </p>
+    </div>
     </footer>
 </body>
 </html>
