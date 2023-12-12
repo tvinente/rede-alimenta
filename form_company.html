@@ -7,31 +7,175 @@
         Rodapé com informações de contato;
 -->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Página formulário de empresa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Cadastro de Empresa</title>
 </head>
+
 <body>
-   <header>
-       <nav>
-           <ul>
-               <li><a href="./index.html">Página inicial</a></li>
-               <li><a href="./proj_info.html">Como o projeto funciona</a></li>
-               <li><a href="./login_signup.html">Login/Inscreva-se</a></li>
-               <li><a href="form_company.html">Página formulário de empresa</a></li>
-               <li><a href="./form_ong.html">Página formulário de ONG</a></li>
-               <li><a href="main_company.html">Página principal de empresa</a></li>
-               <li><a href="main_ong.html">Página principal de ONG</a></li>
-           </ul>
-       </nav>
-   </header>
-   <main>
-    <h1>Página formulário de empresa</h1>
-   </main>
-   <footer>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, sed?</p>
-    </footer>
+
+    <!-- Cabecalho utilizado em todas as paginas com a logo e nome do projeto -->
+    <header class="sample-header">
+        <div id="logo">
+            <img src="img/Logo.png" />
+        </div>
+         <!--<div id="projeto-descricao">
+            <div id="projeto-cabecalho-um">Projeto</div>
+            <div id="projeto-cabecalho-dois">RedeAlimenta</div>
+            <div id="projeto-cabecalho-tres">Ligando quem faz com quem pode</div>
+        </div> -->
+    </header>
+
+
+    <div class="container">        
+
+        <div class="container-head">
+            <h1 class="container-head-title">Cadastro</h1>
+            <h3 class="container-head-subtitle">Vamos conectar você a quem precisa de ajuda!</h3>
+        </div>
+
+        <div class="flex-outer">
+            <form action="/cadastro-de-empresa" method="post">
+
+                <div id="secao-empresa">
+                    <div class="titulo-cadastro-um">Dados da Empresa</div>
+                    <div id="campos-empresa">
+                        
+                        <div class="flex-inner">
+                            <input type="text" id="razao-social" name="razaoSocialEmpresa" placeholder="Razão Social/Nome Fantasia" class="w40" />
+                            <input type="text" id="cnpj"  name="cnpjEmpresa" placeholder="CNPJ" class="w40"/>
+                        </div>
+                        <div class="flex-inner">
+                            <input type="text" id="telefone" name="telefoneEmpresa" placeholder="Telefone" class="w40"/>
+                            <input type="email" id="emailempresa" name="emailEmpresa" placeholder="E-mail Institucional" class="w40"/>
+                        </div>
+                        <div class="flex-inner">
+                            <input type="text" id="site" name="siteEmpresa" placeholder="Website" class="w40"/>
+                            <input type="text" id="ramo-atividade" name="ramoAtividadeEmpresa" placeholder="Ramo de Atividade" class="w40"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="secao-acao-social">
+                    <div class="titulo-cadastro-dois">Dados da Ações Social/Responsável pelo cadastro</div>
+                    <div id="campos-acao-social">
+                        <div class="flex-inner">
+                            <input type="text" id="cpf-responsavel"  name="cpfResponsavel" placeholder="CPF do Responsável" class="w40"/>
+                            <input type="text" id="nome-responsavel" name="nomeResponsavel" placeholder="Nome do Responsável" class="w40"/>
+                        </div>
+                        <div class="flex-inner">
+                            <input type="text" id="telefone-responsavel" name="telefoneResponsavel" placeholder="Telefone do Responsável" class="w40"/>
+                            <input type="email" id="email-responsavel" name="emailResponsavel" placeholder="E-mail do Responsável" class="w40" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="secao-coleta">
+                    <div class="titulo-cadastro-um">Dados de Coleta</div>
+                    <div id="campos-coleta">
+                        <div class="flex-inner">
+                            <input type="text" id="cep-coleta" name="cepColeta" placeholder="CEP" class="w30">
+                            <input type="text" id="cidade-coleta" name="cidadeColeta" placeholder="Cidade" class="w30"/>
+                            <select id="uf-coleta" name="ufColeta" class="w18">
+                                <option value="">UF</option>
+                            </select>
+                        </div>
+                        <div class="flex-inner">
+                            <input type="text" id="endereco-coleta" name="enderecoColeta" placeholder="Endereço" class="w40"/>
+                            <input type="text" id="numero-coleta" name="numeroColeta" placeholder="Número" class="w40"/>
+                        </div>
+                        <div  class="flex-inner">
+                            <input type="text" id="bairro-coleta" name="bairroColeta" placeholder="Bairro" class="w40"/>
+                            <input type="text" id="complemento-coleta" name="complementoColeta" placeholder="Complemento" class="w40"/>
+                        </div>
+                    </div>
+                    <div class="flex-inner">
+                        <select id="melhor-dia-coleta" name="melhorDiaColeta" class="w40">
+                            <option value="">Melhor dia para coleta</option>
+                            <option value="segunda-feira">Segunda-feira</option>
+                            <option value="terça-feira">Terça-feira</option>
+                            <option value="quarta-feira">Quarta-feira</option>
+                            <option value="quinta-feira">Quinta-feira</option>
+                            <option value="sexta-feira">Sexta-feira</option>
+                            <option value="sabado">Sábado</option>
+                            <option value="domingo">Domingo</option>
+                        </select>
+                            
+                    
+                        <select id="melhor-horario-coleta" name="melhorHorarioColeta" class="w40">
+                            <option value="">Melhor horário para coleta</option>
+                            <option value="08:00-10:00">08:00-10:00</option>
+                            <option value="10:00-12:00">10:00-12:00</option>
+                            <option value="12:00-14:00">12:00-14:00</option>
+                            <option value="14:00-16:00">14:00-16:00</option>
+                            <option value="16:00-18:00">16:00-18:00</option>
+                            <option value="18:00-20:00">18:00-20:00</option>
+                            <option value="20:00-22:00">20:00-22:00</option>
+                            <option value="22:00-00:00">22:00-00:00</option>
+                            <option value="00:00-02:00">22:00-00:00</option>
+                            <option value="02:00-04:00">02:00-04:00</option>
+                            <option value="04:00-06:00">04:00-06:00</option>
+                            <option value="06:00-08:00">06:00-08:00</option>                    
+                        </select>
+                    </div>
+                    <div class="flex-inner">
+                        <div class="informacao-extra w80">
+                            Você pode incluir essa informação agilizar as postagens podendo escolher o melhor dia/horário ou incluir 
+                            um diferente quando for necessário. Lembre-se que você pode mudar isso depois ok?
+                        </div>
+                    </div>
+
+                    <div id="secao-informacoes">
+                        <div class="titulo-cadastro-dois">Informações</div>
+                        <div class="flex-inner">
+                            <div class="informacao-extra w80">
+                                As informações preenchidas nesse formulário serão usadas para simplificar o processo de encontrar 
+                                ONGs/Grupos de assistência humanitária perto da sua região. Para isso, o endereço listado na seção 
+                                Ação Social, assim como o nome do responsável e informações de contato, será divulgado para as ONGs/Grupos 
+                                inscritos. Não serão divulgados informações como CPF sem necessidade ou interesse público. Informações 
+                                estatísticas (tais como número de contribuições, frequência destas, entre outras) serão coletadas e 
+                                utilizadas de modo consciente visando averiguar a eficiente do projeto em questão podendo também ser usada 
+                                na sua divulgação. A identificação da Empresa, assim como os seus atos junto ao RedeAlimenta, poderão ser 
+                                usados pela mesma para fins de divulgação sem ônus para a Empresa em questão. A RedeAlimenta se reserva o 
+                                direito de excluir qualquer conta ou encerrar o serviço unilateralmente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="acao" class="button-container">
+                        <div>
+                            <button type="submit" class="primario">Confirmar</button>
+                        </div>
+                        <div>
+                            <button type="submit"  class="primario">Voltar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div> <!-- fim div container -->
+
+    <!-- footer -->
+    <footer>
+        <div id="networks">
+            <!-- <div class="footer-title">Nossas outras redes</div> -->
+            <img src="img/Instagram Icon.png" class="img-networks">
+        </div>
+
+        <div id="about-us">
+            <div class="footer-title">Sobre o RedeAlimenta</div>
+            <di id="about-us-detail">
+                É uma plataforma para conectar empresas dispostas a doar alimentos que seriam desperdiçados por não terem mais valor comercial, 
+                mas que continuam aptos para o consumo, com instituições dispostas a coletar, preparar e distribuir de refeições prontas.
+            </div>
+        </div>
+    </footer>  <!-- fim footer -->
+   
 </body>
+
 </html>
