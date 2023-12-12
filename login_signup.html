@@ -7,57 +7,99 @@
 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Login/Inscreva-se</title>
-</head>
-<body>
-    <header>
-        <div class="header">
-            <div id="logo">
-                <!--falta incluir imagem logo-->            
-                <img class="logo_img" src="#logo" alt="Logo RedeAlimenta">           
-        </div>
-        <h1 class="titulo">RedeAlimenta</h1>
-        </div>        
-        <nav class="menu">
-            <ul>
-                <li><a href="./index.html">Página Inicial</a></li>                
-                <li><a href="./proj_info.html">Quem Somos</a></li>
-                <li><a href="./proj_info.html">Como o projeto funciona</a></li>
-                <!--falta inserir logo pequena-->
-                <li><a class="botton_login" href="./login_signup.html">Entrar</a>
-                    <ul>
-                    <li><a href="form_company.html">Empresa</a></li>
-                    <li><a href="./form_ong.html">ONG</a></li>
-                    </ul>
-                </li>                              
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/logo_pequena.png" type="image/x-icon">
+        <title>RedeAlimenta | Ligando quem faz com quem pode</title>
+     </head>
+    
+     <body>    
+        <header>
+            <div class="header">
+                <div id="logo">            
+                    <img class="logo_img" src="assets/img/Logo.png" alt="Logo RedeAlimenta">           
+            </div>
+            <h1 class="titulo">RedeAlimenta</h1>
+            </div>        
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Página Inicial</a></li>                
+                    <li><a href="./proj_info.html">Quem Somos</a></li>
+                    <li><a href="./proj_info.html">Como o projeto funciona</a></li>
+                    <li><a class="botton_login" href="./login_signup.html">Entrar</a>
+                        <ul>
+                        <li><a href="form_company.html">Empresa</a></li>
+                        <li><a href="./form_ong.html">ONG</a></li>
+                        </ul>
+                    </li>                              
+                </ul>
+            </nav>
+        </header>
+        <hr>
 
    <main>
-    <h1>Login/Inscreva-se</h1>
+    <section>
+        <div class="login_rede">
+            <h2>Entre na sua conta e use a Rede!</h2>
+            <form action="" class="login_dados">
+                <div>
+                    <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="password">Senha</label>
+                <input type="password" name="password" id="password">
+            </div> 
+            <button type="button" id="btn_login">Login</button>
+            <button type="button" id="btn_password">Esqueci a senha</button>
+            <div>
+                <img src="assets/img/prato_com_comida.jpeg" alt="imagem prato com comida" width="300"> 
+            </div>
+                         
+            </form>
+        </div>
+    </section>
+    <div class="login_cadastro_novo">
+        <h2>Primeira vez aqui? Cadastre-se!</h2>
+        <p>Informe as suas credenciais e se você representa uma Empresa (quem pode doar) ou uma ONG(quem sabe ajudar)</p>
+        <form action="" class="login_dados_novo">
+            <div>
+                <label for="email">E-mail</label>
+            <input type="email" name="email" id="email_novo">
+            </div>
+            <div>
+                <label for="password">Senha</label>
+            <input type="password" name="password" id="password_new">
+        </div> 
+        <button type="button" id="btn_login_new">Empresa</button>
+        <button type="button" id="btn_password_new">ONG</button>
+       <div>
+        <img src="assets/img/arroz_linguiça.jpg" alt="imagem prato com arroz e carne" width="300">
+       </div>             
+        </form>
+    </div>
+</section>    
    </main>
 
-   <footer>
-    <div class="redes-sociais"><br>
-        <p>Redes Sociais</p>
-        <ul>               
-            <li><a href="#"><img src="assets/img/instagramIcon.svg" alt="logo instagram"></a></li>                                 
-        </ul>
-    </div>
-    <hr>       
-    <div class="footer-info">
-        <p>
-            RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG
-        </p>
+    <!--footer da página-->
+    <footer>
+        <div class="redes-sociais"><br>
+            <p>Redes Sociais</p>
+            <ul>               
+                <li><a href="#"><img src="assets/img/instagramIcon.svg" height="25" alt="logo instagram"></a></li>                                 
+            </ul>
+        </div>
+        <hr>       
+        <div class="footer-info">
+            <p>
+                RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG
+            </p>
 
-        <p>
-            Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados
-        </p>
-    </div>
+            <p>
+                Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados
+            </p>
+        </div>
     </footer>
 </body>
 </html>
