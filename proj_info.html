@@ -17,17 +17,85 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/proj_info.css">
     <script src="./assets/js/colapsaveis.js"></script>
+<style>
+    .text_botao {
+        color: #E7B675; 
+        font-size: 24px; 
+        font-family: Kadwa; 
+        font-weight: 700;
+    }
 
+    .navHeader {
+        width: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .style2 {
+        padding-right: 15px; 
+        top: 0px; 
+        justify-content: flex-end; 
+        align-items: center; 
+        gap: 60px; 
+        display: inline-flex;
+    }
+
+    .estiloBotao {
+        text-align: center; 
+        word-wrap: break-word;
+    }
+
+    .bordaBotao {
+        width: 98px;
+        padding: ;
+        padding-left: 9px; 
+        padding-right: 9px; 
+        padding-top: 10px; 
+        padding-bottom: 10px;
+        border-radius: 3px; 
+        border: 2px #E7B675 solid;
+        justify-content: center; 
+        align-items: center; 
+        display:flex;
+    }
+
+    .style8 {
+        word-wrap: break-word;
+    }
+
+    #new_logo {
+        height: 84px;
+        margin: 10px;
+
+    }
+
+    nav a {
+        color:unset;
+        text-decoration: unset;
+    }
+
+    nav a:hover {
+        color: #e68609;
+    }
+</style>
 </head>
 <body onload="elementosColapsaveis()">
     <header>
-        <div class="header">
-            <div id="logo">
-                <img class="logo_img" src="assets/img/Logo.png" alt="Logo RedeAlimenta">
+        <div class="navHeader">
+            <div>
+                <img id="new_logo" class="logo_img" src="assets/img/Logo.png" alt="Logo RedeAlimenta">
+            </div>
+            <nav class="style2">
+                <div class="text_botao estiloBotao"><a href="./index.html">Página inicial</a></div>
+                <div class="text_botao estiloBotao"><a href="./proj_info.html">Como o projeto funciona</a></div>
+                <div class="style7">
+                    <div class="text_botao estiloBotao bordaBotao"><a href="./login_signup.html">Entrar</a></div>
+                </div>
+            </nav>
         </div>
-        <h1 class="titulo">RedeAlimenta</h1>
-        </div>
-        <nav class="menu">
+        <!-- <div><h1 class="titulo">RedeAlimenta</h1></div> -->
+        <!-- <nav class="menu">
             <ul>
                 <li><a href="./index.html">Página Inicial</a></li>
                 <li><a href="./proj_info.html">Quem Somos</a></li>
@@ -39,7 +107,7 @@
                     </ul>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
         <!-- 

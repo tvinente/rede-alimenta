@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: center; 
     align-items: flex-start; 
-    display: inline-flex
+    display: inline-flex;
 }
 
 /* Estilo da parte interna da caixa colapsavel que funciona como um botão para abrir e fechar a caixa de texto */
