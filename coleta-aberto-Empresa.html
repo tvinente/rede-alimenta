@@ -1,0 +1,114 @@
+<!-- 
+    Nome do projeto: RedeAlimenta
+    Integrantes: Breno Chrispim (@DChrispim), Ciane Pereira (@ciane-pereira), Carlos Giorgio (@calgio), Pedro Amaral (@pedroamaralrs29), Talyta Vinente (@tvinente)
+    Descrição da página: Essa é a página onde o usuário empresa vai preencher o formulario com os seus dados. Ela vai conter duas seções, uma para cadastro da empresa e outra para cadastro da ação social dessa empresa. A página deve conter:
+        Cadastro da empresa: Razão social/Nome fantasia, CNPJ, telefone, e-mail, site, área de atuação, endereço completo;
+        Cadastro da ação social da empresa: Nome do responsável, telefone, categoria de alimento a ser doado, Melhores dias/horário para coleta, endereço completo;
+        Rodapé com informações de contato;
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Coletas em Aberto</title>
+</head>
+
+<body>
+
+    <!-- Cabecalho utilizado em todas as paginas com a logo e nome do projeto -->
+    <header class="sample-header">
+        <div id="logo">
+            <img src="img/Logo.png" />
+        </div>
+         <!--<div id="projeto-descricao">
+            <div id="projeto-cabecalho-um">Projeto</div>
+            <div id="projeto-cabecalho-dois">RedeAlimenta</div>
+            <div id="projeto-cabecalho-tres">Ligando quem faz com quem pode</div>
+        </div> -->
+    </header>
+
+
+    <div class="container">        
+
+        <div class="container-head">
+            <h1 class="container-head-title">RedeAlimenta</h1>
+            <h3 class="container-head-subtitle">Pronto para ajudar a rede?</h3>
+        </div>
+        <div class="flex-inner">
+                <div id="acao" class="button-container">
+                    <div>
+                        <button type="submit"  class="primario">Coletas em Aberto</button>
+                    </div>
+                    <div>
+                        <button type="submit"  class="primario">Histórico</button>
+                    </div>
+                    <div>
+                        <button type="submit"  class="primario">Editar Informações</button>
+                    </div>
+                    <div>
+                        <button type="submit"  class="primario">Sair</button>
+                    </div>
+                </div>
+        </div>
+        <div class="flex-outer">
+            <form action="/coletas-abertas" method="post">
+                <div id="secao-coleta">
+                    <div class="titulo-cadastro-um">Lista de Doações em Aberto</div>   
+                    <div id="campos-coleta">
+                        <div class="flex-inner">
+                            <div class="informacao-extra w30">
+                                    * Bata Asterix (2 kg)
+                                    * Leite (2 Litros)
+                                    * Cebola Branca (1,4 Kg)
+                            </div>
+                            <input type="text" id="hora-coleta" name="hora-coleta" placeholder="Hora Coleta" class="w10">
+                            <input type="text" id="data-coleta" name="data-coleta" placeholder="Data Coleta" class="w10"/>
+                            <input type="email" id="descricao" name="descricao" placeholder="Como esses produtos vão ser usados?" class="w45"/>
+                            <div>
+                                <button type="submit" class="primario">Cancelar</button>
+                            </div>                       
+                        </div>
+
+                        <div id="campos-coleta">
+                            <div class="flex-inner">
+                                <div class="informacao-extra w30">
+                                        * Bata Asterix (2 kg)
+                                        * Leite (2 Litros)
+                                        * Cebola Branca (1,4 Kg) 
+                                </div>
+                                <input type="text" id="hora-coleta" name="hora-coleta" placeholder="Hora Coleta" class="w10">
+                                <input type="text" id="data-coleta" name="data-coleta" placeholder="Data Coleta" class="w10"/>
+                                <input type="email" id="descricao" name="descricao" placeholder="Como esses produtos vão ser usados?" class="w45"/>
+                                <div>
+                                    <button type="submit" class="primario">Cancelar</button>
+                                </div>                       
+                            </div>
+
+                    </div>                       
+                </div>
+            </form>
+        </div>
+    </div> <!-- fim div container -->
+
+    <!-- footer -->
+    <footer>
+        <div id="networks">
+            <!-- <div class="footer-title">Nossas outras redes</div> -->
+            <img src="img/Instagram Icon.png" class="img-networks">
+        </div>
+
+        <div id="about-us">
+            <div class="footer-title">Sobre o RedeAlimenta</div>
+            <di id="about-us-detail">
+                É uma plataforma para conectar empresas dispostas a doar alimentos que seriam desperdiçados por não terem mais valor comercial, 
+                mas que continuam aptos para o consumo, com instituições dispostas a coletar, preparar e distribuir de refeições prontas.
+            </div>
+        </div>
+    </footer>  <!-- fim footer -->
+   
+</body>
+
+</html>
