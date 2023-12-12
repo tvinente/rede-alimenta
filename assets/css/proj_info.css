@@ -1,0 +1,70 @@
+/* Aquivo css com os estilos da página "Como o projeto funciona" (proj_info.html) */
+
+/* Estilos de texto para as caixas colapsaveis */
+.h3 {
+    color: black; 
+    font-size: 24px; 
+    font-family: Kadwa; 
+    font-weight: 400; 
+}
+
+.text {
+    color: black; 
+    font-size: 16px; 
+    font-family: Kadwa; 
+    font-weight: 400; 
+}
+
+/* Espaçamento entre as caixas de texto colapsaveis. Evitar colocar para zero pois a linha interna se sobrepõe dando a impressão que ela é diferente das outras da borda */
+.divisor_entre_caixas {
+    height: 16px;
+}
+
+/* Estilo da parte externa da caixa colapsavel. Adiciona a linha na parte de cima e de baixo com o tamanho da tela toda. */
+.caixa_externa {
+    width: 100%;
+    height: 100%;
+    border-top: 1px rgba(81.86, 128.87, 228.44, 0.94) solid;
+    border-bottom: 1px rgba(81.86, 128.87, 228.44, 0.94) solid;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    display: inline-flex
+}
+
+/* Estilo da parte interna da caixa colapsavel que funciona como um botão para abrir e fechar a caixa de texto */
+.colapsaveis {
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+}
+
+/* Adiciona uma animação que muda a cor de fundo quando o mouse por cima ou o botão é clicado*/
+.ativo, .colapsaveis:hover {
+    background-color: #eee;
+}
+
+/* Estilo da caixa de texto interna. Defini elementos da animação */
+.conteudo {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: black;
+}
+
+/*  */
+.colapsaveis:depois {
+    content: url(/assets/img/selectarrow.svg);
+    transform: rotate(270deg);
+    float: right;
+    align-content: center;
+}
+
+/*  */
+.ativo:depois {
+    transform: rotate(0deg);
+}
