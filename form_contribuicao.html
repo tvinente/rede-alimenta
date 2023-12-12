@@ -19,7 +19,7 @@
         <h2> Pronto para ajudar a rede? </h2>
         <nav>
             <ul>
-                <li>Fazer postagem</li>
+                <li><a href="form_contribuicao.html"></a>Fazer postagem</li>
                 <li>Coletas em aberto</li>
                 <li>Histórico</li>
                 <li>Editar informações</li>
@@ -28,7 +28,8 @@
         </nav>
     </header>
     <main>
-      <section>
+     <section>
+     <div class="lista-doacoes">
      <h1>Lista de doações</h1>
      <form> 
      <input type="text" placeholder="Produto">
@@ -45,6 +46,8 @@
         <li> Carne <span>6,0</span> <span>kg</span>
         <li> Óleo de soja <span>10,0</span> <span>l</span>
      </ul>
+    </div>
+    <div class="dados-coleta">
     <h1>Dados da coleta</h1>
     <select name="horario_coleta" id="horario_coleta">
         <option>08:00 - 09:00</option>
@@ -72,18 +75,32 @@
         <option>Sábado</option>
         <option>Domingo</option>
     </select>
+    </div>
+    <div class="informacoes">
     <h1>Informações</h1>
     <p> As informações preenchidas nesse formlário serão postadas para todas as ONG's cadastradas na sua região dentro da RedeAlimenta. Fique atendto as mensagens da RedeAlimenta avisando o aceite e qual ONG irá fazer a coleta no dia informado</p>
+    </div>
     <button id="botao_postagem">FAZER POSTAGEM</button>
     </form>
     </section>  
     </main>
     <footer>
-         <h4>Nossas outras redes</h4>
-         <h4>Sobre o RedeAlimenta</h4>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-     </footer>
+        <div class="redes-sociais"><br>
+            <p>Redes Sociais</p>
+            <ul>
+                <li><a href="#"><img src="assets/img/instagramIcon.svg" height="25" alt="logo instagram"></a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer-info">
+            <p>
+                RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG
+            </p>
+
+            <p>
+                Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
  </body>
 </html>
