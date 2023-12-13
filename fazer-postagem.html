@@ -73,6 +73,7 @@
                 <div id="secao-coleta">
                     <div class="titulo-cadastro-um">Lista de Doações</div>
                     <div id="campos-coleta">
+                        <!-- Divisão para adicionar item à lista de doações -->
                         <div class="flex-inner">
                             <input type="text" id="produto" name="produto" placeholder="Produto" class="w30">
                             <input type="text" id="quantidade" name="quantidade" placeholder="Quantidade" class="w18"/>
@@ -83,11 +84,33 @@
                             </select>
                             <button type="button">+</button>
                         </div>
+                        <!-- Itens da lista de doações com botão para remover o item-->
+                        <div class="flex-inner">
+                            <input type="text" id="produto_batata" name="produto_batata" value="Batata Asterix" class="w30" disabled>
+                            <input type="text" id="quantidade_batata" name="quantidade_batata" value="3" class="w18" disabled/>
+                            <input type="text" id="quantidade_batata" name="quantidade_batata" value="Kg" class="w10" disabled/>
+                            <button type="button">-</button>
+                        </div>
                     </div>
                     <div class="titulo-cadastro-um">Dados de Coleta</div>
                     <div id="campos-coleta">
                         <div class="flex-inner">
-                            <input type="text" id="horario-coleta" name="horario-coleta" placeholder="Horário de Coleta" class="w18">
+                            <!-- <input type="text" id="horario-coleta" name="horario-coleta" placeholder="Horário de Coleta" class="w18"> -->
+                            <select id="horario-coleta" name="horarioColeta" class="w40">
+                                <option value="">Horário para coleta</option>
+                                <option value="08:00-10:00">08:00-10:00</option>
+                                <option value="10:00-12:00">10:00-12:00</option>
+                                <option value="12:00-14:00">12:00-14:00</option>
+                                <option value="14:00-16:00">14:00-16:00</option>
+                                <option value="16:00-18:00">16:00-18:00</option>
+                                <option value="18:00-20:00">18:00-20:00</option>
+                                <option value="20:00-22:00">20:00-22:00</option>
+                                <option value="22:00-00:00">22:00-00:00</option>
+                                <option value="00:00-02:00">22:00-00:00</option>
+                                <option value="02:00-04:00">02:00-04:00</option>
+                                <option value="04:00-06:00">04:00-06:00</option>
+                                <option value="06:00-08:00">06:00-08:00</option>                    
+                            </select>
                             <select id="uf-coleta" name="ufColeta" class="w10">
                                 <option value="">Dia Semana</option>
                                 <option value="Domingo">Domingo</option>
@@ -116,11 +139,11 @@
                     <div class="flex-inner">
                         <div id="acao" class="button-container">
                             <div>
-                                <button type="submit" class="primario">Fazer Postagem</button>
+                                <button type="button" class="primario">Fazer Postagem</button>
                             </div>
-                            <div>
-                                <button type="submit"  class="primario">Voltar</button>
-                            </div>
+                            <!-- <div>
+                                <button type="button"  class="primario">Voltar</button>
+                            </div> -->
                         </div>
                     </div>
                 </div>
