@@ -86,6 +86,16 @@ header #projeto-descricao {
     justify-content: center;
 }
 
+.container form {
+    border: #ccc solid 1px;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+.container form .first-section {
+    margin-top: -12px;
+}
+
 .w10 {
     width: 10%;
 }
@@ -113,6 +123,11 @@ header #projeto-descricao {
 .w80 {
     width: 80%;
 }
+
+.w81 {
+    width: 81.5%;
+}
+
 
 
 input[type=text] {
@@ -151,7 +166,7 @@ button.primario {
 
 .button-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .titulo-cadastro-um {
@@ -193,33 +208,23 @@ footer {
   margin-top: 20px;
   padding: 8px 15px;
   background: #E7B675;
-  display : flex;
-  flex-direction : row;
+  display: grid;
+  justify-content: center;
 }
 
-
-footer .footer-title {
-    font-weight: 600;
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
 
-footer #networks {
-    width: 50%;
-    height: 7em;
-}
 
 footer .img-networks {
-    margin: 10px;
     width: 38px;
     height: 38px;
+    margin-left: 15%;
 }
-
-footer #about-us {
-    width: 50%;
-    height: 7em;
-}
-
 
 footer #about-us-detail {
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
 
