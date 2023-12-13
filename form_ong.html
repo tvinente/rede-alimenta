@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Cadastro de Voluntário</title>
 </head>
 
@@ -22,7 +22,7 @@
     <!-- Cabecalho utilizado em todas as paginas com a logo e nome do projeto -->
     <header class="sample-header">
         <div id="logo">
-            <img src="img/Logo.png" />
+            <img src="assets/img/Logo.png" />
         </div>
          <!--<div id="projeto-descricao">
             <div id="projeto-cabecalho-um">Projeto</div>
@@ -38,15 +38,15 @@
         </div> 
 
         <div class="flex-outer">
-            <form action="/cadastro-de-empresa" method="post">
+            <form action="/cadastro-de-ong" method="post">
 
-                <div id="secao-empresa">
+                <div id="secao-ong" class="first-section">
                     <div class="titulo-cadastro-um">Dados da ONG</div>
                     <div id="campos-ong">
 
                         <div class="flex-inner">
                             <input type="text" id="nome-grupo-ong" name="nomeGrupoOng" placeholder="Nome do Grupo/Organização" class="w40"/>
-                            <input type="text" id="cnpj-ong" name="cnpj-ong" placeholder="CNPJ" pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" class="w40"/>
+                            <input type="text" id="cnpj-ong" name="cnpj-ong" placeholder="CNPJ" class="w40"/>
                         </div>
                         <div class="flex-inner">
                             <input type="text" id="telefone-grupo-ong" name="telefoneOng" placeholder="Telefone" class="w40"/>
@@ -77,7 +77,7 @@
                     <div class="titulo-cadastro-um">Dados de Coleta</div>
                     <div id="campos-coleta">
                         <div class="flex-inner">
-                            <input type="text" id="cep-ong" name="cepColeta" placeholder="CEP" pattern="\d{5}-\d{3}" class="w30"/>
+                            <input type="text" id="cep-ong" name="cepColeta" placeholder="CEP" class="w30"/>
                             <input type="text" id="cidade-coleta" name="cidadeColeta" placeholder="Cidade" class="w30"/>
                             <select id="uf-coleta" name="ufColeta" class="w18">
                                 <option value="">UF</option>
@@ -137,7 +137,7 @@
                             <input type="text" id="pessoas-assistidas-ong" name="pessoasAssistidasOng" placeholder="Quantas Pessoas são Assistidas Atualmente?" class="w40"/>
                         </div>     
                         <div class="flex-inner">
-                            <input type="text" id="historia-ong" name="historiaOng" placeholder="Breve História do Grupo" class="w40"/>
+                            <input type="text" id="historia-ong" name="historiaOng" placeholder="Breve História do Grupo" class="w81"/>
                         </div>                    
                     </div> 
                 </div>  
@@ -174,16 +174,13 @@
     <!-- footer -->
     <footer>
         <div id="networks">
-            <!-- <div class="footer-title">Nossas outras redes</div> -->
-            <img src="img/Instagram Icon.png" class="img-networks">
+            <div class="redes-sociais"></div>
+            <a href="#"><img src="assets/img/Instagram Icon.png" class="img-networks"></a>
         </div>
-
         <div id="about-us">
-            <div class="footer-title">Sobre o RedeAlimenta</div>
-            <di id="about-us-detail">
-                É uma plataforma para conectar empresas dispostas a doar alimentos que seriam desperdiçados por não terem mais valor comercial, 
-                mas que continuam aptos para o consumo, com instituições dispostas a coletar, preparar e distribuir de refeições prontas.
-            </div>
+           <p>RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG</p>
+           <p>Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados</p>
+            
         </div>
     </footer>  <!-- fim footer -->
 
