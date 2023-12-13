@@ -23,8 +23,8 @@
 
     <!-- Cabecalho utilizado em todas as paginas com a logo e nome do projeto -->
     <header class="sample-header">
-        <div id="logo">
-            <img src="img/Logo.png" />
+        <div>
+            <img id="new_logo" class="logo_img" src="assets/img/Logo.png" alt="Logo RedeAlimenta">
         </div>
          <!--<div id="projeto-descricao">
             <div id="projeto-cabecalho-um">Projeto</div>
@@ -41,21 +41,32 @@
             <h3 class="container-head-subtitle">Pronto para ajudar a rede?</h3>
         </div>
         <div class="flex-inner">
-                <div id="acao" class="button-container">
-                    <div>
-                        <button type="submit"  class="primario">Coletas em Aberto</button>
-                    </div>
-                    <div>
-                        <button type="submit"  class="primario">Histórico</button>
-                    </div>
-                    <div>
-                        <button type="submit"  class="primario">Editar Informações</button>
-                    </div>
-                    <div>
-                        <button type="submit"  class="primario">Sair</button>
-                    </div>
+            <div id="acao" class="button-container">
+                <div>
+                    <a href="./fazer-postagem.html"><button type="button" class="primario">
+                        Fazer Postagem
+                    </button></a>
                 </div>
-        </div>
+                <div>
+                    <a href="./coleta-aberto-Empresa.html"><button type="button"  class="primario">
+                        Coletas em Aberto
+                    </button></a>
+                </div>
+                <div>
+                    <a href="./historico-Empresa.html"><button type="button"  class="primario">
+                        Histórico
+                    </button></a>
+                </div>
+                <div><a href="./form_company.html">
+                    <button type="button"  class="primario">Editar Informações</button></a>
+                </div>
+                <div><a href="./index.html">
+                    <button type="button"  class="primario">
+                        Sair
+                    </button></a>
+                </div>
+            </div>
+    </div>
         <div class="flex-outer">
             <form action="/coletas-abertas" method="post">
                 <div id="secao-coleta">
