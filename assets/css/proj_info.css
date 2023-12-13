@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: center; 
     align-items: flex-start; 
-    display: inline-flex
+    display: inline-flex;
 }
 
 /* Estilo da parte interna da caixa colapsavel que funciona como um botão para abrir e fechar a caixa de texto */
@@ -67,4 +67,57 @@
 /*  */
 .ativo:depois {
     transform: rotate(0deg);
+}
+
+.text_botao {
+    color: #E7B675; 
+    font-size: 24px; 
+    font-family: Kadwa; 
+    font-weight: 700;
+}
+
+.navHeader {
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuBotoesNav {
+    padding-right: 15px; 
+    top: 0px; 
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 60px; 
+    display: inline-flex;
+}
+
+.estiloBotao {
+    text-align: center; 
+    word-wrap: break-word;
+}
+
+.bordaBotao {
+    width: 98px;
+    padding: 4px 2px 4px 2px;
+    border-radius: 3px; 
+    border: 2px #E7B675 solid;
+    justify-content: center; 
+    align-items: center; 
+    display:flex;
+}
+
+#new_logo {
+    height: 84px;
+    margin: 10px;
+
+}
+
+nav a {
+    color:unset;
+    text-decoration: unset;
+}
+
+nav a:hover {
+    color: #e68609;
 }
