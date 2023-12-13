@@ -18,61 +18,36 @@
     <link rel="stylesheet" href="./assets/css/proj_info.css">
     <script src="./assets/js/colapsaveis.js"></script>
 <style>
-    .text_botao {
-        color: #E7B675; 
-        font-size: 24px; 
-        font-family: Kadwa; 
-        font-weight: 700;
-    }
-
-    .navHeader {
-        width: 100%; 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .menuBotoesNav {
-        padding-right: 15px; 
+    .style1 {
+        /* position: relative;  */
+        padding-left: 10%;
+        width: 838px; 
+        height: 122.57px; 
+        left: 320px; 
         top: 0px; 
-        justify-content: flex-end; 
-        align-items: center; 
-        gap: 60px; 
-        display: inline-flex;
-    }
-
-    .estiloBotao {
-        text-align: center; 
+        color: black; 
+        font-size: 96px; 
+        font-family: Kadwa; 
+        font-weight: 700; 
+        line-height: 123.15px; 
+        letter-spacing: 13.44px; 
         word-wrap: break-word;
     }
 
-    .bordaBotao {
-        width: 98px;
-        padding: 4px 2px 4px 2px;
-        border-radius: 3px; 
-        border: 2px #E7B675 solid;
-        justify-content: center; 
-        align-items: center; 
-        display:flex;
+    .style3 {
+        width: 100%; 
+        height: 180px; 
+        background: rgba(81.86, 128.87, 228.44, 0.94);
     }
 
-    .style8 {
+    .style4 {
+        padding: 50px 0px 0px 10px;
+        color: rgb(255, 255, 255); 
+        font-size: 40px; 
+        font-family: Kadwa; 
+        font-weight: 700; 
+        letter-spacing: 1.20px; 
         word-wrap: break-word;
-    }
-
-    #new_logo {
-        height: 84px;
-        margin: 10px;
-
-    }
-
-    nav a {
-        color:unset;
-        text-decoration: unset;
-    }
-
-    nav a:hover {
-        color: #e68609;
     }
 </style>
 </head>
@@ -92,17 +67,15 @@
         </div>
     </header>
     <div>
-        <div style="position: relative; width: 838px; height: 122.57px; left: 320px; top: 0px; color: black; font-size: 96px; font-family: Kadwa; font-weight: 700; line-height: 123.15px; letter-spacing: 13.44px; word-wrap: break-word">RedeAlimenta</div>
-        <div style="width: 100%; height: 100%; position: relative">
-            <div style="display: block; width: 100%; height: 179px; left: 0px; top: 116.06px; background: rgba(81.86, 128.87, 228.44, 0.94)"></div>
-            <div style="left: 0; width: 714px; height: 79.72px; left: 358px; top: 164.42px; color: rgb(124, 122, 122); font-size: 40px; font-family: Kadwa; font-weight: 700; letter-spacing: 1.20px; word-wrap: break-word">Como nós funcionamos?</div>
-            </div>
+        <div class="style1">RedeAlimenta</div>
+        <div class="style3"><div class="style4">Como nós funcionamos?</div></div>
         </div>
     <main>
         <!-- 
             Perguntas e respostas sobre o projeto
             Aqui deve ser utilizado o estilo onde o nome aparece sempre com um indicativo para abrir a caixa. Essa caixa vai expandir e mostrar a resposta da pergunta. Ver layout para mais informações.
         -->
+        <div style="height: 15px;"></div>
         <div class="caixa_externa">
             <button type="button" class="h3 colapsaveis">O que é o projeto RedeAlimenta?</button>
             <div class="text conteudo">
