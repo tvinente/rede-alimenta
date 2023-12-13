@@ -1,4 +1,8 @@
-# RedeAlimenta
+<h1 align="left">
+  <img src="assets/img/Logo.png" alt="Logo" width="100">
+</h1>
+
+# RedeAlimenta 
 
 ## Projeto Integrador - Proz + AWS + Talento Cloud
 
@@ -32,3 +36,4 @@ A plataforma também tem como objetivo evitar o desperdício de alimentos. As em
 
  - [OngsBrasil](https://www.ongsbrasil.com.br/)
  - [MealConnect](https://mealconnect.org/)
+ - [Figma Layout](https://www.figma.com/file/tjnsWtRzLBKqWnSI4AUZhP/Projeto-RedeAlimenta?type=design&node-id=63%3A604&mode=design&t=QAf7HFHYj68IK0la-1)
