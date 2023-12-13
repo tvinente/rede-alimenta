@@ -14,42 +14,9 @@
     <link rel="shortcut icon" href="assets/img/logo_pequena.png" type="image/x-icon">
     <title>Como o projeto funciona</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/proj_info.css">
-    <script src="./assets/js/colapsaveis.js"></script>
-<style>
-    .style1 {
-        /* position: relative;  */
-        padding-left: 10%;
-        width: 838px; 
-        height: 122.57px; 
-        left: 320px; 
-        top: 0px; 
-        color: black; 
-        font-size: 96px; 
-        font-family: Kadwa; 
-        font-weight: 700; 
-        line-height: 123.15px; 
-        letter-spacing: 13.44px; 
-        word-wrap: break-word;
-    }
-
-    .style3 {
-        width: 100%; 
-        height: 180px; 
-        background: rgba(81.86, 128.87, 228.44, 0.94);
-    }
-
-    .style4 {
-        padding: 50px 0px 0px 10px;
-        color: rgb(255, 255, 255); 
-        font-size: 40px; 
-        font-family: Kadwa; 
-        font-weight: 700; 
-        letter-spacing: 1.20px; 
-        word-wrap: break-word;
-    }
-</style>
+    <script src="./assets/js/colapsaveis.js"></script> -->
 </head>
 <body onload="elementosColapsaveis()">
     <header>
@@ -60,17 +27,17 @@
             <nav class="menuBotoesNav">
                 <div class="text_botao estiloBotao"><a href="./index.html">Página inicial</a></div>
                 <div class="text_botao estiloBotao"><a href="./proj_info.html">Como o projeto funciona</a></div>
-                <div class="style7">
-                    <div class="text_botao estiloBotao bordaBotao"><a href="./login_signup.html">Entrar</a></div>
-                </div>
+                <div class="text_botao estiloBotao bordaBotao"><a href="./login_signup.html">Entrar</a></div>
             </nav>
         </div>
     </header>
-    <div>
-        <div class="style1">RedeAlimenta</div>
-        <div class="style3"><div class="style4">Como nós funcionamos?</div></div>
-        </div>
     <main>
+        <div>
+            <div id="header-RedeAlimenta">RedeAlimenta</div>
+            <div id="header-banner">
+                <div id="header-banner-texto">Como nós funcionamos?</div>
+            </div>
+        </div>
         <!-- 
             Perguntas e respostas sobre o projeto
             Aqui deve ser utilizado o estilo onde o nome aparece sempre com um indicativo para abrir a caixa. Essa caixa vai expandir e mostrar a resposta da pergunta. Ver layout para mais informações.
@@ -121,22 +88,13 @@
    </main>
    <!-- Seção footer da página, deve ser igual em todas as páginas. -->
    <footer>
-    <div class="redes-sociais"><br>
-        <p>Redes Sociais</p>
-        <ul>
-            <li><a href="#"><img src="assets/img/instagramIcon.svg" height="25" alt="logo instagram"></a></li>
-        </ul>
-    </div>
-    <hr>
-    <div class="footer-info">
-        <p>
-            RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG
-        </p>
-
-        <p>
-            Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados
-        </p>
-    </div>
-</footer>
+        <div class="redes-sociais"><br>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/iconInstagramFigma.svg" height="60" alt="logo instagram"></a>
+        </div>
+        <div class="footer-info">
+            <p>RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG</p>
+            <p>Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>

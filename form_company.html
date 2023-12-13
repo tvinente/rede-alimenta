@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
     <title>Cadastro de Empresa</title>
 </head>
 
@@ -82,6 +82,33 @@
                             <input type="text" id="cidade-coleta" name="cidadeColeta" placeholder="Cidade" class="w30"/>
                             <select id="uf-coleta" name="ufColeta" class="w18">
                                 <option value="">UF</option>
+                                <option value="">AC</option>
+                                <option value="">AL</option>
+                                <option value="">AP</option>
+                                <option value="">AM</option>
+                                <option value="">BA</option>
+                                <option value="">CE</option>
+                                <option value="">ES</option>
+                                <option value="">GO</option>
+                                <option value="">MA</option>
+                                <option value="">MT</option>
+                                <option value="">MS</option>
+                                <option value="">MG</option>
+                                <option value="">PA</option>
+                                <option value="">PB</option>
+                                <option value="">PR</option>
+                                <option value="">PE</option>
+                                <option value="">PI</option>
+                                <option value="">RJ</option>
+                                <option value="">RN</option>
+                                <option value="">RS</option>
+                                <option value="">RO</option>
+                                <option value="">RR</option>
+                                <option value="">SC</option>
+                                <option value="">SP</option>
+                                <option value="">SE</option>
+                                <option value="">TO</option>
+                                <option value="">DF</option>
                             </select>
                         </div>
                         <div class="flex-inner">
@@ -148,10 +175,15 @@
 
                     <div id="acao" class="button-container">
                         <div>
-                            <button type="submit" class="primario">Confirmar</button>
+                            <a href="./fazer-postagem.html">
+                            <button type="button" class="primario">
+                                Confirmar
+                            </button></a>
                         </div>
                         <div>
-                            <button type="submit"  class="primario">Voltar</button>
+                            <button type="button"  class="primario" onclick="history.back()">
+                                Voltar
+                            </button>
                         </div>
                     </div>
 
@@ -160,18 +192,15 @@
         </div>
     </div> <!-- fim div container -->
 
-    <!-- footer -->
     <footer>
-        <div id="networks">
-            <div class="redes-sociais"></div>
-            <a href="#"><img src="assets/img/Instagram Icon.png" class="img-networks"></a>
+        <div class="redes-sociais"><br>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/iconInstagramFigma.svg" height="60" alt="logo instagram"></a>
         </div>
-        <div id="about-us">
-           <p>RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG</p>
-           <p>Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados</p>
-            
+        <div class="footer-info">
+            <p>RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG</p>
+            <p>Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados</p>
         </div>
-    </footer>  <!-- fim footer -->
+    </footer>
    
 </body>
 

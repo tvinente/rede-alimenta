@@ -14,19 +14,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Coletas em Aberto</title>
+
+    <!-- <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/proj_info.css"> -->
 </head>
 
 <body>
 
     <!-- Cabecalho utilizado em todas as paginas com a logo e nome do projeto -->
     <header class="sample-header">
-        <div id="logo">
-            <img src="img/Logo.png" />
+        <div>
+            <img id="new_logo" class="logo_img" src="assets/img/Logo.png" alt="Logo RedeAlimenta">
         </div>
-         <!--<div id="projeto-descricao">
-            <div id="projeto-cabecalho-um">Projeto</div>
-            <div id="projeto-cabecalho-dois">RedeAlimenta</div>
-            <div id="projeto-cabecalho-tres">Ligando quem faz com quem pode</div>
+        <!-- <div>
+            <div id="header-RedeAlimenta">RedeAlimenta</div>
+            <div id="header-banner">
+                <div id="header-banner-texto">Pronto para ajudar a rede?</div>
+            </div>
         </div> -->
     </header>
 
@@ -39,17 +43,25 @@
         </div>
         <div class="flex-inner">
                 <div id="acao" class="button-container">
-                    <div>
-                        <button type="submit"  class="primario">Coletas em Aberto</button>
+                    <div><a href="./coleta-aberto-ONG.html">
+                        <button type="submit"  class="primario">
+                            Coletas em Aberto
+                        </button></a>
                     </div>
-                    <div>
-                        <button type="submit"  class="primario">Histórico</button>
+                    <div><a href="./historico-ONG.html">
+                        <button type="submit"  class="primario">
+                            Histórico
+                        </button></a>
                     </div>
-                    <div>
-                        <button type="submit"  class="primario">Editar Informações</button>
+                    <div><a href="./form_ong.html">
+                        <button type="submit"  class="primario">
+                            Editar Informações
+                        </button></a>
                     </div>
-                    <div>
-                        <button type="submit"  class="primario">Sair</button>
+                    <div><a href="./index.html">
+                        <button type="submit"  class="primario">
+                            Sair
+                        </button></a>
                     </div>
                 </div>
         </div>
@@ -57,64 +69,63 @@
             <form action="/coletas-abertas" method="post">
                 <div id="secao-coleta">
                     <div class="titulo-cadastro-um">Lista de Doações em Aberto</div>
-                    <div class="flex-inner"><h1>Marque uma Coleta</h1></div>    
+                    <div style="border-top: solid; border-bottom: solid;" class="flex-inner"><h1>Marque uma Coleta</h1></div>    
                     <div id="campos-coleta">
                         <div class="flex-inner">
                             <div class="informacao-extra w30">
-                                Cognito In.
-                                Roberto Alexandre (99) 12345-6789
+                                Cognito In. <br>
+                                Roberto Alexandre (99) 12345-6789 <br>
                                 Rua ABC 331, CIdade A. DT
-                                    * Bata Asterix (2 kg)
-                                    * Leite (2 Litros)
-                                    * Cebola Branca (1,4 Kg)
+                                <ul>
+                                    <li>Bata Asterix (2 kg)</li>
+                                    <li>Leite (2 Litros)</li>
+                                    <li>Cebola Branca (1,4 Kg)</li>
+                                </ul>
                             </div>
-                            <input type="text" id="hora-coleta" name="hora-coleta" placeholder="Hora Coleta" class="w10">
-                            <input type="text" id="data-coleta" name="data-coleta" placeholder="Data Coleta" class="w10"/>
-                            <input type="email" id="descricao" name="descricao" placeholder="Como esses produtos vão ser usados?" class="w45"/>
+                            <input type="text" id="hora-coleta" name="hora-coleta" value="22:00h" class="w20" disabled>
+                            <input type="text" id="data-coleta" name="data-coleta" class="w20" value="Terça-feira" disabled/>
+                            <input type="text" id="descricao" name="descricao" placeholder="Como esses produtos vão ser usados?" class="w80"/>
                             <div>
-                                <button type="submit" class="primario">Marcar</button>
+                                <a href="./coleta-aberto2-ONG.html"><button type="button" class="primario">
+                                    Marcar
+                                </button></a>
                             </div>                       
                         </div>
 
                         <div id="campos-coleta">
                             <div class="flex-inner">
                                 <div class="informacao-extra w30">
-                                    MegaCorp
-                                    Roberto Alexandre (99) 12345-6789
+                                    MegaCorp <br>
+                                    Roberto Alexandre (99) 12345-6789 <br>
                                     Rua DEA 449, CIdade A. DT
-                                        * Bata Asterix (2 kg)
-                                        * Leite (2 Litros)
-                                        * Cebola Branca (1,4 Kg) 
+                                    <ul>
+                                        <li>Bata Asterix (2 kg)</li>
+                                        <li>Leite (2 Litros)</li>
+                                        <li>Cebola Branca (1,4 Kg)</li>
+                                    </ul>
                                 </div>
-                                <input type="text" id="hora-coleta" name="hora-coleta" placeholder="Hora Coleta" class="w10">
-                                <input type="text" id="data-coleta" name="data-coleta" placeholder="Data Coleta" class="w10"/>
-                                <input type="email" id="descricao" name="descricao" placeholder="Como esses produtos vão ser usados?" class="w45"/>
+                                <input type="text" id="hora-coleta" name="hora-coleta" value="08:00h" class="w20" disabled>
+                                <input type="text" id="data-coleta" name="data-coleta" class="w20" value="Segunda-feira" disabled/>
+                                <input type="text" id="descricao" name="descricao" placeholder="Como esses produtos vão ser usados?" class="w80"/>
                                 <div>
-                                    <button type="submit" class="primario">Marcar</button>
+                                    <button type="button" class="primario">Marcar</button>
                                 </div>                       
                             </div>
-
-                    </div>                       
+                        </div>                       
                 </div>
             </form>
         </div>
     </div> <!-- fim div container -->
 
-    <!-- footer -->
     <footer>
-        <div id="networks">
-            <!-- <div class="footer-title">Nossas outras redes</div> -->
-            <img src="img/Instagram Icon.png" class="img-networks">
+        <div class="redes-sociais"><br>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/iconInstagramFigma.svg" height="60" alt="logo instagram"></a>
         </div>
-
-        <div id="about-us">
-            <div class="footer-title">Sobre o RedeAlimenta</div>
-            <di id="about-us-detail">
-                É uma plataforma para conectar empresas dispostas a doar alimentos que seriam desperdiçados por não terem mais valor comercial, 
-                mas que continuam aptos para o consumo, com instituições dispostas a coletar, preparar e distribuir de refeições prontas.
-            </div>
+        <div class="footer-info">
+            <p>RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG</p>
+            <p>Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados</p>
         </div>
-    </footer>  <!-- fim footer -->
+    </footer>
    
 </body>
 
