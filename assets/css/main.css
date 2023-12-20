@@ -5,7 +5,8 @@
     --preto: rgba(0, 0, 0, 1);
     --azul: rgba(82, 129, 228, 0.94);
     --azulLight: rgba(82, 129, 228, 0.5);
-    --brancoLight: rgba(255, 255, 255, 0.58);
+    --branco: white;
+    --brancoLight: rgba(238, 238, 238, 1);
 }
 
 @font-face {
@@ -78,8 +79,8 @@ header #projeto-descricao {
     letter-spacing: 1.20px;
     padding: 0.5em;
     border-radius: 5px;
-    color: white;
-    background: rgba(81.86, 128.87, 228.44, 0.94);
+    color: (--branco);
+    background-color: var(--azul);
 }
 
 
@@ -97,7 +98,7 @@ header #projeto-descricao {
 }
 
 .container form {
-    border: #ccc solid 1px;
+    /* border: var(--brancoLight) solid 1px; */
     border-radius: 5px;
     padding-bottom: 15px;
 }
@@ -170,8 +171,8 @@ button.primario {
     margin: 0 5px;
     padding: 12px 20px;
     border-radius: 8px;
-    background: #E7B675;
-    color: white;
+    background: var(--amarelo);
+    color: var(--branco);
 }
 
 .button-container {
@@ -182,8 +183,8 @@ button.primario {
 .titulo-cadastro-um {
     padding: 0.5em;
     margin: 0.5em 0em;
-    background: #E7B675;
-    color: white;
+    background: var(--amarelo);
+    color: var(--branco);
     font-size: 1.5em;
     font-weight: 400;
     letter-spacing: 1.30px;
@@ -193,8 +194,8 @@ button.primario {
 .titulo-cadastro-dois {
     padding: 0.5em;
     margin: 0.5em 0em;
-    background: rgba(81.86, 128.87, 228.44, 0.94);
-    color: white;
+    background: var(--azul);
+    color: var(--branco);
     font-size: 1.5em;
     font-weight: 400;
     letter-spacing: 1.30px;
@@ -202,8 +203,8 @@ button.primario {
 }
 
 .informacao-extra {
-    background: rgba(81.86, 128.87, 228.44, 0.94);
-    color: white;
+    background: var(--azul);
+    color: var(--branco);
     font-size: 14px;
     font-weight: 400;
     text-align: justify;
@@ -217,7 +218,7 @@ button.primario {
 footer {
   margin-top: 20px;
   padding: 8px 15px;
-  background: #E7B675;
+  background: var(--amarelo);
   display: grid;
   justify-content: center;
 }
