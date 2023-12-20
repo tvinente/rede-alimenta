@@ -16,12 +16,12 @@
 }
 
 /* Espaçamento entre as caixas de texto colapsaveis. Evitar colocar para zero pois a linha interna se sobrepõe dando a impressão que ela é diferente das outras da borda */
-.divisor_entre_caixas {
+.divisor-entre-caixas {
     height: 16px;
 }
 
 /* Estilo da parte externa da caixa colapsavel. Adiciona a linha na parte de cima e de baixo com o tamanho da tela toda. */
-.caixa_externa {
+.caixa-externa {
     width: 100%;
     height: 100%;
     border-top: 1px rgba(81.86, 128.87, 228.44, 0.94) solid;
@@ -69,21 +69,21 @@
     transform: rotate(0deg);
 }
 
-.text_botao {
+.text-botao {
     color: #E7B675; 
     font-size: 24px; 
     font-family: Kadwa; 
     font-weight: 700;
 }
 
-.navHeader {
+.nav-header {
     width: 100%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.menuBotoesNav {
+.menu-botoes-nav {
     padding-right: 15px; 
     top: 0px; 
     justify-content: flex-end; 
@@ -92,12 +92,12 @@
     display: inline-flex;
 }
 
-.estiloBotao {
+.estilo-botao {
     text-align: center; 
     word-wrap: break-word;
 }
 
-.bordaBotao {
+.borda-botao {
     width: 98px;
     padding: 4px 2px 4px 2px;
     border-radius: 3px; 
@@ -107,7 +107,7 @@
     display:flex;
 }
 
-#new_logo {
+#new-logo {
     height: 84px;
     margin: 10px;
 
