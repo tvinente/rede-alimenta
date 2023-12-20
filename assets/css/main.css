@@ -229,9 +229,6 @@ button.primario {
     margin: 0.5em 0em;
     background: var(--azul);
     color: var(--branco);
-    font-size: 1.5em;
-    font-weight: 400;
-    letter-spacing: 1.30px;
     border-radius: 5px;
 }
 
