@@ -2,14 +2,14 @@
 
 /* Estilos de texto para as caixas colapsaveis */
 .h3 {
-    color: black; 
+    color: var(--preto); 
     font-size: 24px; 
     font-family: Kadwa; 
     font-weight: 400; 
 }
 
 .text {
-    color: black; 
+    color: var(--preto);
     font-size: 16px; 
     font-family: Kadwa; 
     font-weight: 400; 
@@ -24,8 +24,8 @@
 .caixa-externa {
     width: 100%;
     height: 100%;
-    border-top: 1px rgba(81.86, 128.87, 228.44, 0.94) solid;
-    border-bottom: 1px rgba(81.86, 128.87, 228.44, 0.94) solid;
+    border-top: 1px var(--azul) solid;
+    border-bottom: 1px var(--azul) solid;
     flex-direction: column;
     justify-content: center; 
     align-items: flex-start; 
@@ -34,7 +34,7 @@
 
 /* Estilo da parte interna da caixa colapsavel que funciona como um botão para abrir e fechar a caixa de texto */
 .colapsaveis {
-    background-color: #ffffff;
+    background-color: var(--branco);
     cursor: pointer;
     padding: 16px;
     width: 100%;
@@ -44,7 +44,7 @@
 
 /* Adiciona uma animação que muda a cor de fundo quando o mouse por cima ou o botão é clicado*/
 .ativo, .colapsaveis:hover {
-    background-color: #eee;
+    background-color: var(--brancoLight);
 }
 
 /* Estilo da caixa de texto interna. Defini elementos da animação */
@@ -53,7 +53,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    color: black;
+    color: var(--preto);
 }
 
 /*  */
@@ -70,7 +70,7 @@
 }
 
 .text-botao {
-    color: #E7B675; 
+    color: var(--amarelo); 
     font-size: 24px; 
     font-family: Kadwa; 
     font-weight: 700;
@@ -101,7 +101,7 @@
     width: 98px;
     padding: 4px 2px 4px 2px;
     border-radius: 3px; 
-    border: 2px #E7B675 solid;
+    border: 2px var(--amarelo) solid;
     justify-content: center; 
     align-items: center; 
     display:flex;
@@ -119,7 +119,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #e68609;
+    color: var(--amarelo);
 }
 
 #header-RedeAlimenta {
@@ -129,7 +129,7 @@ nav a:hover {
     height: 122.57px; 
     left: 320px; 
     top: 0px; 
-    color: black; 
+    color: var(--preto); 
     font-size: 96px; 
     font-family: Kadwa; 
     font-weight: 700; 
@@ -141,12 +141,12 @@ nav a:hover {
 #header-banner {
     width: 100%; 
     height: 180px; 
-    background: rgba(81.86, 128.87, 228.44, 0.94);
+    background: var(--azul);
 }
 
 #header-banner-texto {
     padding: 50px 0px 0px 10px;
-    color: rgb(255, 255, 255); 
+    color: var(--branco); 
     font-size: 40px; 
     font-family: Kadwa; 
     font-weight: 700; 
