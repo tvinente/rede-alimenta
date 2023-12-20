@@ -32,36 +32,36 @@ html *
     letter-spacing: 13.44px;
 }
 
-.h1 {
+h1 {
     color: var(--preto); 
-    font-size: 64px; 
+    font-size: 64px !important; 
     font-family: Kadwa-bold !important;
 }
 
-.h2 {
+h2 {
     color: var(--preto); 
-    font-size: 40px; 
+    font-size: 40px !important; 
     font-family: Kadwa-bold !important;
 }
 
-.h3 {
+h3 {
     color: var(--preto); 
-    font-size: 24px; 
+    font-size: 24px !important; 
 }
 .texto {
     color: var(--preto);
-    font-size: 16px; 
+    font-size: 16px !important; 
 }
 
-.a {
+a {
     color: var(--preto); 
-    font-size: 16px; 
+    font-size: 16px !important; 
     font-family: Kadwa-bold !important;
 }
 
 .texto-botao {
     color: var(--preto); 
-    font-size: 24px; 
+    font-size: 24px !important; 
     font-family: Kadwa-bold !important;
 }
 body {
