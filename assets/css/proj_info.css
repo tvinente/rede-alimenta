@@ -4,14 +4,12 @@
 .h3 {
     color: var(--preto); 
     font-size: 24px; 
-    font-family: Kadwa; 
     font-weight: 400; 
 }
 
 .text {
     color: var(--preto);
     font-size: 16px; 
-    font-family: Kadwa; 
     font-weight: 400; 
 }
 
@@ -72,7 +70,6 @@
 .text-botao {
     color: var(--amarelo); 
     font-size: 24px; 
-    font-family: Kadwa; 
     font-weight: 700;
 }
 
@@ -131,7 +128,6 @@ nav a:hover {
     top: 0px; 
     color: var(--preto); 
     font-size: 96px; 
-    font-family: Kadwa; 
     font-weight: 700; 
     line-height: 123.15px; 
     letter-spacing: 13.44px; 
@@ -148,7 +144,6 @@ nav a:hover {
     padding: 50px 0px 0px 10px;
     color: var(--branco); 
     font-size: 40px; 
-    font-family: Kadwa; 
     font-weight: 700; 
     letter-spacing: 1.20px; 
     word-wrap: break-word;

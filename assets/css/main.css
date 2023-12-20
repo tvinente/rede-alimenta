@@ -8,14 +8,63 @@
     --branco: white;
     --brancoLight: rgba(238, 238, 238, 1);
 }
-
+/* Definição das fontes */
 @font-face {
     font-family: Kadwa;
     src: url(../fonts/Kadwa/Kadwa-Regular.ttf);
 }
 
+@font-face {
+    font-family: Kadwa-bold;
+    src: url(../fonts/Kadwa/Kadwa-Bold.ttf);
+}
+/* Seletor universal para aplicar fonte */
+html *
+{
+   font-family: Kadwa !important;
+}
+/* Definição de tamanhos padrões de fonte */
+.header-text {
+    color: var(--preto);
+    font-family: Kadwa-bold !important;
+    font-size: 96px;
+    line-height: 128.284%; /* 123.153px */
+    letter-spacing: 13.44px;
+}
+
+.h1 {
+    color: var(--preto); 
+    font-size: 64px; 
+    font-family: Kadwa-bold !important;
+}
+
+.h2 {
+    color: var(--preto); 
+    font-size: 40px; 
+    font-family: Kadwa-bold !important;
+}
+
+.h3 {
+    color: var(--preto); 
+    font-size: 24px; 
+}
+.texto {
+    color: var(--preto);
+    font-size: 16px; 
+}
+
+.a {
+    color: var(--preto); 
+    font-size: 16px; 
+    font-family: Kadwa-bold !important;
+}
+
+.texto-botao {
+    color: var(--preto); 
+    font-size: 24px; 
+    font-family: Kadwa-bold !important;
+}
 body {
-    font-family: Kadwa;
     word-wrap: break-word;
     margin: 0;
 }
