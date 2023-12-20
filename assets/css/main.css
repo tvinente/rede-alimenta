@@ -235,8 +235,6 @@ button.primario {
 .informacao-extra {
     background: var(--azul);
     color: var(--branco);
-    font-size: 14px;
-    font-weight: 400;
     text-align: justify;
     padding: 0.8em;
     margin: 10px;
@@ -264,8 +262,3 @@ footer .img-networks {
     height: 38px;
     margin-left: 15%;
 }
-
-footer #about-us-detail {
-    font-size: 0.7em;
-}
-
