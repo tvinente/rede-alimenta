@@ -204,8 +204,6 @@ select {
 }
 
 button.primario {
-    font-size: 1em;
-    font-weight: 500;
     margin: 0 5px;
     padding: 12px 20px;
     border-radius: 8px;
