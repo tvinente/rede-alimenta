@@ -32,7 +32,8 @@ A plataforma também tem como objetivo evitar o desperdício de alimentos. As em
 - Revisor irá buscar inconsistências;
 - Em caso afirmativo, retornará com feedback solictando correção ou exclusão do commit;
 - Na ausência de inconsistências, aprova e realiza merge.
-
+- Branch será deleta após o merge
+  
 ## Referência
 
  - [OngsBrasil](https://www.ongsbrasil.com.br/)
