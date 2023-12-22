@@ -17,19 +17,48 @@
     <link rel="stylesheet" href="./assets/css/proj_info.css">
 </head>
 <body>
-    <header>
-        <h1> REDE ALIMENTA</h1>
-        <h2> Pronto para ajudar a rede? </h2>
-        <nav>
-            <ul>
-                <li><a href="form_contribuicao.html">Fazer postagem</a></li>
-                <li>Coletas em aberto</li>
-                <li> <a href="historico.html">Histórico</a></li>
-                <li>Editar informações</li>
-                <li>Sair</li>
-            </ul>
-        </nav>
+
+    <!-- Cabecalho utilizado em todas as paginas com a logo e nome do projeto -->
+    <header class="sample-header">
+        <div>
+            <img id="new-logo" class="logo-img" src="assets/img/Logo.png" alt="Logo RedeAlimenta">
+        </div>
     </header>
+
+    <div class="container">        
+
+        <div class="container-head">
+            <h1 class="header-text">RedeAlimenta</h1>
+            <h2 class="container-head-subtitle">Pronto para ajudar a rede?</h2>
+        </div>
+        <div class="flex-inner">
+            <div id="acao" class="button-container">
+                <div>
+                    <a href="./form_contribuicao.html"><button type="button" class="texto-botao primario">
+                        Fazer Postagem
+                    </button></a>
+                </div>
+                <div>
+                    <a href="./coleta-aberto-Empresa.html"><button type="button"  class="texto-botao primario">
+                        Coletas em Aberto
+                    </button></a>
+                </div>
+                <div>
+                    <a href="./historico-Empresa.html"><button type="button"  class="texto-botao primario">
+                        Histórico
+                    </button></a>
+                </div>
+                <div><a href="./form_company.html">
+                    <button type="button"  class="texto-botao primario">Editar Informações</button></a>
+                </div>
+                <div><a href="./index.html">
+                    <button type="button"  class="texto-botao primario">
+                        Sair
+                    </button></a>
+                </div>
+            </div>
+    </div>
+
     <main>
      <section>
      <div class="lista-doacoes">
