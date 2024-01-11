@@ -175,40 +175,6 @@ header #projeto-descricao {
     margin-top: -12px;
 }
 
-.w10 {
-    width: 10%;
-}
-
-.w18 {
-    width: 18.5%;
-}
-
-.w20 {
-    width: 20%;
-}
-
-.w30 {
-    width: 30%;
-}
-
-.w40 {
-    width: 40%;
-}
-
-.w45 {
-    width: 45%;
-}
-
-.w80 {
-    width: 80%;
-}
-
-.w81 {
-    width: 81.5%;
-}
-
-
-
 input[type=text] {
     padding: 8px 15px;
     margin: 10px;
