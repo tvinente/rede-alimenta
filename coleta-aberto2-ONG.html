@@ -23,90 +23,92 @@
                 <img src="assets/img/Logo.png" />
             </div>
         </header>
-        <div class="container">        
-            <div class="container-head">
-                <h1 class="header-text">RedeAlimenta</h1>
-                <h2 class="container-head-subtitle">Pronto para ajudar a rede?</h2>
-            </div>
-            <div class="flex-inner">
-                <div id="acao" class="button-container">
-                    <div>
-                        <a href="./coleta-aberto-ONG.html">
-                            <button type="submit"  class="texto-botao primario">Coletas em Aberto</button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="./historico-ONG.html">
-                            <button type="submit"  class="texto-botao primario">Histórico</button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="./form_ong.html">
-                            <button type="submit"  class="texto-botao primario">Editar Informações</button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="./index.html">
-                            <button type="submit"  class="texto-botao primario">Sair</button>
-                        </a>
+        <main>
+            <div class="container">        
+                <div class="container-head">
+                    <h1 class="header-text">RedeAlimenta</h1>
+                    <h2 class="container-head-subtitle">Pronto para ajudar a rede?</h2>
+                </div>
+                <div class="flex-inner">
+                    <div id="acao" class="button-container">
+                        <div>
+                            <a href="./coleta-aberto-ONG.html">
+                                <button type="submit"  class="texto-botao primario">Coletas em Aberto</button>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./historico-ONG.html">
+                                <button type="submit"  class="texto-botao primario">Histórico</button>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./form_ong.html">
+                                <button type="submit"  class="texto-botao primario">Editar Informações</button>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./index.html">
+                                <button type="submit"  class="texto-botao primario">Sair</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex-outer">
-                <form action="/coletas-abertas" method="post">
-                    <div id="secao-coleta">
-                        <h2 class="titulo-cadastro-um">Lista de Doações em Aberto</h2>    
-                        <div id="campos-coleta">
-                            <div style="border-top: solid; border-bottom: solid;" class="flex-inner">
-                                <div class="texto informacao-extra w30">
-                                    Cognito In. <br>
-                                    Roberto Alexandre (99) 12345-6789 <br>
-                                    Rua ABC 331, CIdade A. DT
-                                    <ul>
-                                        <li>Bata Asterix (2 kg)</li>
-                                        <li>Leite (2 Litros)</li>
-                                        <li>Cebola Branca (1,4 Kg)</li>
-                                    </ul>
-                                </div>
-                                <input type="text" id="hora-coleta" name="horaColeta" value="22:00h" class="w20" disabled>
-                                <input type="text" id="data-coleta" name="dataColeta" class="w20" value="Terça-feira" disabled/>
-                                <input type="text" id="descricao" name="descricao" value="Vamos alimentar 10 pessoas!" class="w80" disabled/> 
-                                <div class="flex-inner">
-                                    <div>
-                                        <a href="./coleta-aberto-ONG.html">
-                                            <button type="texto-botao button" class="primario">Cancelar</button>
-                                        </a>
-                                        <a href="./historico-ONG.html">
-                                            <button type="texto-botao button" class="primario">Confirmar Coleta </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="flex-outer">
+                    <form action="/coletas-abertas" method="post">
+                        <div id="secao-coleta">
+                            <h2 class="titulo-cadastro-um">Lista de Doações em Aberto</h2>    
                             <div id="campos-coleta">
-                                <div class="flex-inner">
+                                <div style="border-top: solid; border-bottom: solid;" class="flex-inner">
                                     <div class="texto informacao-extra w30">
-                                        MegaCorp <br>
+                                        Cognito In. <br>
                                         Roberto Alexandre (99) 12345-6789 <br>
-                                        Rua DEA 449, CIdade A. DT
+                                        Rua ABC 331, CIdade A. DT
                                         <ul>
                                             <li>Bata Asterix (2 kg)</li>
                                             <li>Leite (2 Litros)</li>
                                             <li>Cebola Branca (1,4 Kg)</li>
                                         </ul>
                                     </div>
-                                    <input type="text" id="hora-coleta" name="horaColeta" value="08:00h" class="w20" disabled>
-                                    <input type="text" id="data-coleta" name="dataColeta" class="w20" value="Segunda-feira" disabled/>
-                                    <input type="text" id="descricao" name="descricao" placeholder="Como esses produtos vão ser usados?" class="w80"/>
-                                    <div>
-                                        <button type="button" class="texto-botao primario">Marcar</button>
-                                    </div>                       
+                                    <input type="text" id="hora-coleta" name="horaColeta" value="22:00h" class="w20" disabled>
+                                    <input type="text" id="data-coleta" name="dataColeta" class="w20" value="Terça-feira" disabled/>
+                                    <input type="text" id="descricao" name="descricao" value="Vamos alimentar 10 pessoas!" class="w80" disabled/> 
+                                    <div class="flex-inner">
+                                        <div>
+                                            <a href="./coleta-aberto-ONG.html">
+                                                <button type="texto-botao button" class="primario">Cancelar</button>
+                                            </a>
+                                            <a href="./historico-ONG.html">
+                                                <button type="texto-botao button" class="primario">Confirmar Coleta </button>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>                       
+                                <div id="campos-coleta">
+                                    <div class="flex-inner">
+                                        <div class="texto informacao-extra w30">
+                                            MegaCorp <br>
+                                            Roberto Alexandre (99) 12345-6789 <br>
+                                            Rua DEA 449, CIdade A. DT
+                                            <ul>
+                                                <li>Bata Asterix (2 kg)</li>
+                                                <li>Leite (2 Litros)</li>
+                                                <li>Cebola Branca (1,4 Kg)</li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" id="hora-coleta" name="horaColeta" value="08:00h" class="w20" disabled>
+                                        <input type="text" id="data-coleta" name="dataColeta" class="w20" value="Segunda-feira" disabled/>
+                                        <input type="text" id="descricao" name="descricao" placeholder="Como esses produtos vão ser usados?" class="w80"/>
+                                        <div>
+                                            <button type="button" class="texto-botao primario">Marcar</button>
+                                        </div>                       
+                                    </div>
+                                </div>                       
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>
-        </div> <!-- fim div container -->
+                    </form>
+                </div>
+            </div> <!-- fim div container -->
+        </main>
         <footer>
             <div class="redes-sociais"><br>
                 <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/iconInstagramFigma.svg" height="60" alt="logo instagram"></a>
