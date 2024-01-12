@@ -1,20 +1,30 @@
-// Função que pega os elementos colapsáveis da página e cria reações a eventos quando o elemento é clicado
+// Função para adicionar eventos nos elementos da classe colapsáveis
 function elementosColapsaveis () {
 
-    // Definições das variaveis
-    var coll = document.getElementsByClassName("colapsaveis");
+    // Definições das variáveis
+    var arrayElementos = document.getElementsByClassName("colapsaveis");
     var i;
 
-    // Loop que sob todos os elementos colapsáveis
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+    // Loop sob todos os elementos da classe colapsáveis
+    for (i = 0; i < arrayElementos.length; i++) {
+
+        // Adição de evento click
+        arrayElementos[i].addEventListener("click", function() {
+
+            // Ativa o modo ativo do elemento
             this.classList.toggle("ativo");
+
+            // Pega o elemento filho (conteúdo a ser exibido)
             var content = this.nextElementSibling;
+
+            // Modifica maxHeight para mostrar o conteúdo
             if (content.style.maxHeight){
-            content.style.maxHeight = null;
+                // Fechar
+                content.style.maxHeight = null;
             } else {
-            content.style.maxHeight = content.scrollHeight + "px";
+                // Abrir
+                content.style.maxHeight = content.scrollHeight + "px";
             }
         });
-        }
+    }
 }
