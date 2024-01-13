@@ -140,11 +140,11 @@ header #projeto-descricao {
     margin: 0 auto;
 }
 
-.container-head {
+.container-principal {
     word-wrap: break-word
 }
 
-.container-head-subtitle {   
+.container-principal-subtitulo {   
     padding: 0.5em;
     border-radius: 5px;
     color: var(--branco) !important;
@@ -171,7 +171,7 @@ header #projeto-descricao {
     padding-bottom: 15px;
 }
 
-.container form .first-section {
+.container form .primeira-secao {
     margin-top: -12px;
 }
 
