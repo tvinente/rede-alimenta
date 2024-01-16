@@ -61,15 +61,20 @@
 }
 
 .nav-header {
-    width: 100%; 
+    width: 100vw; 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 7vw;
+}
+
+@media (max-width: 1200px) {
+    .nav-header {
+        padding: 0 1vw
+    }
 }
 
 .menu-botoes-nav {
-    padding-right: 15px; 
-    top: 0px; 
     justify-content: flex-end; 
     align-items: center; 
     gap: 60px; 
@@ -93,8 +98,7 @@
 
 #new-logo {
     height: 84px;
-    margin: 10px;
-
+    margin: 10px 0px;
 }
 
 nav a {
