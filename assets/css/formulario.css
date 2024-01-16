@@ -1,0 +1,82 @@
+/* Tags */
+body{
+    display: flex;
+}
+
+h2 {
+    padding-left: 20vw;
+    margin: 25px 0px 25px 0px;
+}
+
+@media (max-width: 1200px) {
+    h2 {
+        padding-left: 10px;
+        padding-left: 10px;
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+form p {
+    background: var(--azul);
+    color: var(--branco);
+    text-align: justify;
+    padding: 0.8em;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+form div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    /* margin: 0px 10px; */
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+form input {
+    flex-grow: 1;
+}
+
+form select {
+    flex-grow: 1;
+}
+
+/* Classes forms */
+.forms-container {
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.forms-section-container {
+    align-items: center;
+    color: var(--branco);
+}
+
+.forms-blue-bg {
+    background-color: var(--azul);
+}
+
+.forms-yellow-bg {
+    background: var(--amarelo);
+}
+
+/* Modify class to include padding */
+.header-text {
+    padding-left: 20vw;
+}
+
+@media (max-width: 1200px) {
+    .header-text {
+        padding-left: 10px;
+        padding-left: 10px;
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+/* tags */
+#forms-bg {
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:overlay;
+}

@@ -151,28 +151,11 @@ header #projeto-descricao {
     background-color: var(--azul);
 }
 
-
-
-/* form */
-/* .flex-outer {
-
-} */
-
 .flex-inner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-}
-
-.container form {
-    /* border: var(--brancoLight) solid 1px; */
-    border-radius: 5px;
-    padding-bottom: 15px;
-}
-
-.container form .first-section {
-    margin-top: -12px;
 }
 
 input[type=text] {

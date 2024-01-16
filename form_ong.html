@@ -8,202 +8,138 @@
         Rodapé com informações de contato;
 -->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR" id="forms-bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
     <title>Cadastro de Voluntário</title>
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/formulario.css">
 </head>
-
-<body>
-
-    <!-- Cabecalho utilizado em todas as paginas com a logo e nome do projeto -->
-    <header class="sample-header">
-        <div id="logo">
-            <img src="assets/img/Logo.png" />
+<body class="forms-container">
+    <div class="header-text forms-padding">Cadastro</div>
+    <h2 class="forms-section-container forms-padding forms-blue-bg">Vamos conectar você a quem pode de ajudar!</h2>
+    <!-- Inicio do formulário de cadastro -->
+    <form action="/cadastro-de-ong" method="post">
+        <h2 class="forms-section-container forms-padding forms-yellow-bg">Dados da ONG</h2>
+        <div>
+            <input type="text" id="nome-grupo-ong" name="nomeGrupoOng" placeholder="Nome do Grupo/Organização"/>
         </div>
-    </header>
-
-    <div class="container">   
-        <div class="container-head">
-            <h1>Cadastro</h1>
-            <h2 class="container-head-subtitle">Vamos conectar você a quem pode de ajudar!</h2>
-        </div> 
-
-        <div class="flex-outer">
-            <form action="/cadastro-de-ong" method="post">
-
-                <div id="secao-ong" class="first-section">
-                    <h2 class="titulo-cadastro-um">Dados da ONG</h2>
-                    <div id="campos-ong">
-
-                        <div class="flex-inner">
-                            <input type="text" id="nome-grupo-ong" name="nomeGrupoOng" placeholder="Nome do Grupo/Organização"/>
-                            <input type="text" id="cnpj-ong" name="cnpj-ong" placeholder="CNPJ"/>
-                        </div>
-                        <div class="flex-inner">
-                            <input type="text" id="telefone-grupo-ong" name="telefoneOng" placeholder="Telefone"/>
-                            <input type="email" id="email-grupo-ong" name="emailGrupoOng" placeholder="E-mail Institucional"/>
-                        </div>
-                        <div class="flex-inner">
-                            <input type="text" id="Website-grupo-ong" name="websiteGrupoOng" placeholder="Website"/>
-                            <input type="text" id="area-atuacao-grupo-ong" name="areaAtuacaoGrupoOng" placeholder="Área de Atividade"/>
-                        </div>
-                    </div>    
-                </div>
-                
-                <div id="secao-acao-social">
-                    <h2 class="titulo-cadastro-dois">Dados da Ações Social/Responsável pelo cadastro</h2>
-                    <div id="campos-acao-social">
-                        <div class="flex-inner">
-                            <input type="text" id="nome-responsavel-ong" name="nomeResponsavelOng" placeholder="Nome do Responsável"/>
-                            <input type="text" id="cpf-responsavel-ong" name="cpfResponsavelOng" placeholder="CPF do Responsável"/>                            
-                        </div>
-                        <div class="flex-inner">
-                            <input type="text" id="telefone-responsavel-ong" name="telefoneResponsavelOng" placeholder="Telefone do Responsável"/>
-                            <input type="email" id="email-responsavel-ong" name="emailResponsavelOng"  placeholder="E-mail Responsável"/>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="secao-coleta">
-                    <h2 class="titulo-cadastro-um">Dados de Coleta</h2>
-                    <div id="campos-coleta">
-                        <div class="flex-inner">
-                            <input type="text" id="cep-ong" name="cepColeta" placeholder="CEP"/>
-                            <input type="text" id="cidade-coleta" name="cidadeColeta" placeholder="Cidade"/>
-                            <select id="uf-coleta" name="ufColeta">
-                                <option value="">UF</option>
-                                <option value="">AC</option>
-                                <option value="">AL</option>
-                                <option value="">AP</option>
-                                <option value="">AM</option>
-                                <option value="">BA</option>
-                                <option value="">CE</option>
-                                <option value="">ES</option>
-                                <option value="">GO</option>
-                                <option value="">MA</option>
-                                <option value="">MT</option>
-                                <option value="">MS</option>
-                                <option value="">MG</option>
-                                <option value="">PA</option>
-                                <option value="">PB</option>
-                                <option value="">PR</option>
-                                <option value="">PE</option>
-                                <option value="">PI</option>
-                                <option value="">RJ</option>
-                                <option value="">RN</option>
-                                <option value="">RS</option>
-                                <option value="">RO</option>
-                                <option value="">RR</option>
-                                <option value="">SC</option>
-                                <option value="">SP</option>
-                                <option value="">SE</option>
-                                <option value="">TO</option>
-                                <option value="">DF</option>
-                            </select>
-                        </div>
-                        <div class="flex-inner">
-                            <input type="text" id="endereco-coleta-ong" name="enderecoColetaOng" placeholder="Endereço para Coleta"/>
-                            <input type="text" id="numero-coleta-ong" name="numeroColetaOng" placeholder="Número"/>
-                        </div>
-                        <div class="flex-inner">
-                            <input type="text" id="bairro-coleta-ong" name="bairroColetaOng" placeholder="Bairro"/>
-                            <input type="text" id="complemento-coleta-ong" name="complementoColetaOng" placeholder="Complemento"/>                            
-                        </div>
-                        <div class="flex-inner">
-                            <select id="melhor-dia-coletar" name="melhorDiaColetar">
-                                <option value="">Melhor dia para coletar</option>
-                                <option value="segunda-feira">Segunda-feira</option>
-                                <option value="terça-feira">Terça-feira</option>
-                                <option value="quarta-feira">Quarta-feira</option>
-                                <option value="quinta-feira">Quinta-feira</option>
-                                <option value="sexta-feira">Sexta-feira</option>
-                                <option value="sabado">Sábado</option>
-                                <option value="domingo">Domingo</option>
-                            </select>
-                            
-                            <select id="melhor-horario-coletar" name="melhorHorarioaColetar">
-                                <option value="">Melhor horário para coletar</option>
-                                <option value="08:00-10:00">08:00-10:00</option>
-                                <option value="10:00-12:00">10:00-12:00</option>
-                                <option value="12:00-14:00">12:00-14:00</option>
-                                <option value="14:00-16:00">14:00-16:00</option>
-                                <option value="16:00-18:00">16:00-18:00</option>
-                                <option value="18:00-20:00">18:00-20:00</option>
-                                <option value="20:00-22:00">20:00-22:00</option>
-                                <option value="22:00-00:00">22:00-00:00</option>
-                                <option value="00:00-02:00">22:00-00:00</option>
-                                <option value="02:00-04:00">02:00-04:00</option>
-                                <option value="04:00-06:00">04:00-06:00</option>
-                                <option value="06:00-08:00">06:00-08:00</option>                    
-                            </select>
-                        </div>
-                        <div class="flex-inner">
-                            <div class="texto informacao-extra">
-                                Você pode incluir essa informação para que as postagens de coleta próximos desse dia/horário
-                                apareçam no topo da sua lista de coletas em aberto.
-                            </div>
-                        </div>        
-                    </div>
-                    
-                </div>
-
-                <div id="secao-historico-ong">
-                    <h2 class="titulo-cadastro-dois">Histórico da ONG</h2>
-                    <div id="campos-historico-ong">
-                        <div class="flex-inner">
-                            <input type="text" id="tempo-atuacao-ong" name="tempoAtuacaoOng" placeholder="Tempo de Atuação"/>
-                            <input type="text" id="pessoas-assistidas-ong" name="pessoasAssistidasOng" placeholder="Quantas Pessoas são Assistidas Atualmente?"/>
-                        </div>     
-                        <div class="flex-inner">
-                            <input type="text" id="historia-ong" name="historiaOng" placeholder="Breve História do Grupo"/>
-                        </div>                    
-                    </div> 
-                </div>  
-                
-                <div id="secao-informacoes">
-                    <h2 class="titulo-cadastro-dois">Informações</h2>
-                    <div class="flex-inner">
-                        <div class="texto informacao-extra">
-                            As informações preenchidas nesse formulário serão usadas para simplificar o processo de encontrar 
-                            ONGs/Grupos de assistência humanitária perto da sua região. Para isso, o endereço listado na seção 
-                            Ação Social, assim como o nome do responsável e informações de contato, será divulgado para as ONGs/Grupos 
-                            inscritos. Não serão divulgados informações como CPF sem necessidade ou interesse público. Informações 
-                            estatísticas (tais como número de contribuições, frequência destas, entre outras) serão coletadas e 
-                            utilizadas de modo consciente visando averiguar a eficiente do projeto em questão podendo também ser usada 
-                            na sua divulgação. A identificação da Empresa, assim como os seus atos junto ao RedeAlimenta, poderão ser 
-                            usados pela mesma para fins de divulgação sem ônus para a Empresa em questão. A RedeAlimenta se reserva o 
-                            direito de excluir qualquer conta ou encerrar o serviço unilateralmente.
-                        </div>
-                    </div>
-                </div>
-
-                <div id="acao" class="button-container">
-                    <div>
-                        <a href="./coleta-aberto-ONG.html">
-                        <button type="button" class="texto-botao primario">Confirmar</button></a>
-                    </div>
-                    <div>
-                        <button type="button"  class="texto-botao primario" onclick="history.back()">
-                            Voltar
-                        </button>
-                    </div>
-                </div>
-            </form>
+        <div>
+            <input type="text" id="cnpj-ong" name="cnpj-ong" placeholder="CNPJ"/>
+            <input type="text" id="telefone-grupo-ong" name="telefoneOng" placeholder="Telefone"/>
+            <input type="email" id="email-grupo-ong" name="emailGrupoOng" placeholder="E-mail Institucional"/>
+            <input type="text" id="Website-grupo-ong" name="websiteGrupoOng" placeholder="Website"/>
+            <input type="text" id="area-atuacao-grupo-ong" name="areaAtuacaoGrupoOng" placeholder="Área de Atividade"/>
         </div>
-    </div> <!-- fim div container -->
-
+        <h2 class="forms-section-container forms-padding forms-blue-bg">Dados da Ações Social/Responsável pelo cadastro</h2>
+        <div>
+            <input type="text" id="nome-responsavel-ong"name="nomeResponsavelOng" placeholder="Nome do Responsável"/>
+            <input type="text" id="cpf-responsavel-ong"name="cpfResponsavelOng" placeholder="CPF do Responsável"/>                            
+        </div>
+        <div>
+            <input type="text" id="telefone-responsavel-ong"name="telefoneResponsavelOng" placeholder="Telefone do Responsável"/>
+            <input type="email" id="email-responsavel-ong"name="emailResponsavelOng"  placeholder="E-mail Responsável"/>
+        </div>
+        <h2 class="forms-section-container forms-padding forms-yellow-bg">Dados de Coleta</h2>
+        <div>
+            <input type="text" id="cep-ong" name="cepColeta"placeholder="CEP"/>
+            <input type="text" id="cidade-coleta"name="cidadeColeta" placeholder="Cidade"/>
+            <select id="uf-coleta" name="ufColeta">
+                    <option value="">UF</option>
+                    <option value="">AC</option>
+                    <option value="">AL</option>
+                    <option value="">AP</option>
+                    <option value="">AM</option>
+                    <option value="">BA</option>
+                    <option value="">CE</option>
+                    <option value="">ES</option>
+                    <option value="">GO</option>
+                    <option value="">MA</option>
+                    <option value="">MT</option>
+                    <option value="">MS</option>
+                    <option value="">MG</option>
+                    <option value="">PA</option>
+                    <option value="">PB</option>
+                    <option value="">PR</option>
+                    <option value="">PE</option>
+                    <option value="">PI</option>
+                    <option value="">RJ</option>
+                    <option value="">RN</option>
+                    <option value="">RS</option>
+                    <option value="">RO</option>
+                    <option value="">RR</option>
+                    <option value="">SC</option>
+                    <option value="">SP</option>
+                    <option value="">SE</option>
+                    <option value="">TO</option>
+                    <option value="">DF</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" id="endereco-coleta-ong"name="enderecoColetaOng" placeholder="Endereço para Coleta"/>
+            <input type="text" id="numero-coleta-ong"name="numeroColetaOng" placeholder="Número"/>
+        </div>
+        <div>
+             <input type="text" id="bairro-coleta-ong" name="bairroColetaOng" placeholder="Bairro"/>
+             <input type="text" id="complemento-coleta-ong" name="complementoColetaOng" placeholder="Complemento"/>                            
+        </div>
+        <div>
+            <p class="text">Você pode incluir essa informação para que as postagens de coleta próximos desse dia/horário apareçam no topo da sua lista de coletas em aberto.</p>
+        </div>
+        <div>
+            <select id="melhor-dia-coletar"name="melhorDiaColetar">
+                <option value="">Melhor dia para coletar<option>
+                <option value="segunda-feira">Segunda-feira<option>
+                <option value="terça-feira">Terça-feira</option>
+                <option value="quarta-feira">Quarta-feira<option>
+                <option value="quinta-feira">Quinta-feira<option>
+                <option value="sexta-feira">Sexta-feira</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+            <select id="melhor-horario-coletar"name="melhorHorarioaColetar">
+                <option value="">Melhor horário para coletar<option>
+                <option value="08:00-10:00">08:00-10:00</option>
+                <option value="10:00-12:00">10:00-12:00</option>
+                <option value="12:00-14:00">12:00-14:00</option>
+                <option value="14:00-16:00">14:00-16:00</option>
+                <option value="16:00-18:00">16:00-18:00</option>
+                <option value="18:00-20:00">18:00-20:00</option>
+                <option value="20:00-22:00">20:00-22:00</option>
+                <option value="22:00-00:00">22:00-00:00</option>
+                <option value="00:00-02:00">22:00-00:00</option>
+                <option value="02:00-04:00">02:00-04:00</option>
+                <option value="04:00-06:00">04:00-06:00</option>
+                <option value="06:00-08:00">06:00-08:00<option>                    
+            </select>
+        </div>
+        <h2 class="forms-section-container forms-padding forms-blue-bg">Histórico da ONG</h2>
+        <div>
+            <input type="text" id="tempo-atuacao-ong" name="tempoAtuacaoOng" placeholder="Tempo de Atuação"/>
+            <input type="text" id="pessoas-assistidas-ong" name="pessoasAssistidasOng" placeholder="Quantas Pessoas são Assistidas Atualmente?"/>
+        </div>     
+        <div>
+            <input type="text" id="historia-ong" name="historiaOng" placeholder="Breve História do Grupo"/>
+        </div>                    
+        <h2 class="forms-section-container forms-padding forms-yellow-bg">Informações</h2>
+        <div>
+            <p class="text"> As informações preenchidas nesse formulário serão usadas para simplificar o processo de encontrar ONGs/Grupos de assistência humanitária perto da sua região. Para isso, o endereço listado na seção Ação Social, assim como o nome do responsável e informações de contato, será divulgado para as ONGs/Grupos inscritos. Não serão divulgados informações como CPF sem necessidade ou interesse público. Informações estatísticas (tais como número de contribuições, frequência destas, entre outras) serão coletadas e utilizadas de modo consciente visando averiguar a eficiente do projeto em questão podendo também ser usada na sua divulgação. A identificação da Empresa, assim como os seus atos junto ao RedeAlimenta, poderão ser usados pela mesma para fins de divulgação sem ônus para a Empresa em questão. A RedeAlimenta se reserva o direito de excluir qualquer conta ou encerrar o serviço unilateralmente.</p>
+        </div>
+        <div id="acao" class="button-container">
+            <a href="./coleta-aberto-ONG.html"><button type="button" class="texto-botao primario">Confirmar</button></a>
+            <button type="button"  class="texto-botao primario"onclick="history.back()">Voltar</button>
+        </div>
+    </form> <!-- fim do formulário de cadastro -->
     <footer>
-        <div class="redes-sociais"><br>
-            <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/iconInstagramFigma.svg" alt="logo instagram"></a>
-        </div>
-        <div class="texto">
-            <p>RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG</p>
-            <p>Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados</p>
-        </div>
+            <div class="redes-sociais"><br>
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/iconInstagramFigma.svg" alt="logo instagram"></a>
+            </div>
+            <div class="texto">
+                <p>RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG</p>
+                <p>Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados</p>
+            </div>
     </footer>
 </body>
 </html>
