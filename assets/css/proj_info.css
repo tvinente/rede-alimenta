@@ -1,9 +1,25 @@
 /* CSS da página "Como o projeto funciona"*/
 
 /* Tags */
+
+body {
+    width: 100vw;
+}
+
 nav a {
     color:unset;
     text-decoration: unset;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7vw;
 }
 
 /* Classes */
@@ -21,14 +37,6 @@ nav a {
     color: var(--preto);
 }
 
-.nav-header {
-    width: 100vw; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 7vw;
-}
-
 @media (max-width: 1200px) {
     .nav-header {
         padding: 0 1vw
@@ -36,15 +44,10 @@ nav a {
 }
 
 .menu-botoes-nav {
-    justify-content: flex-end; 
+    /* justify-content: flex-end;  */
     align-items: center; 
     gap: 60px; 
     display: inline-flex;
-}
-
-.estilo-botao {
-    text-align: center; 
-    word-wrap: break-word;
 }
 
 .borda-botao {
