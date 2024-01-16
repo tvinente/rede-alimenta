@@ -103,12 +103,12 @@ nav a:hover {
     color: var(--amarelo);
 }
 
-.leftRightPadding {
+.proj-info-leftRightPadding {
     padding: 0vw 20vw;
 }
 
 @media (max-width: 1200px) {
-    .leftRightPadding {
+    .proj-info-leftRightPadding {
         padding: 0vw 1vw;
     }
 }
