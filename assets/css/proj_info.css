@@ -1,56 +1,28 @@
-/* Aquivo css com os estilos da página "Como o projeto funciona" (proj_info.html) */
+/* CSS da página "Como o projeto funciona"*/
 
-/* Espaçamento entre as caixas de texto colapsaveis. Evitar colocar para zero pois a linha interna se sobrepõe dando a impressão que ela é diferente das outras da borda */
-.divisor-entre-caixas {
-    height: 16px;
+/* Tags */
+nav a {
+    color:unset;
+    text-decoration: unset;
 }
 
-/* Estilo da parte externa da caixa colapsavel. Adiciona a linha na parte de cima e de baixo com o tamanho da tela toda. */
+nav a:hover {
+    color: var(--amarelo);
+}
+
+/* Classes */
 .caixa-externa {
     width: 100vw;
     border-top: 1px var(--azul) solid;
     border-bottom: 1px var(--azul) solid;
-    /* flex-direction: column; */
-    /* justify-content: center;  */
-    /* align-items: flex-start;  */
-    /* display: inline-flex; */
 }
 
-/* Estilo da parte interna da caixa colapsavel que funciona como um botão para abrir e fechar a caixa de texto */
-.colapsaveis {
-    background-color: var(--branco);
-    cursor: pointer;
-    padding: 16px;
-    width: 100vw;
-    border: none;
-    text-align: left;
-}
-
-/* Adiciona uma animação que muda a cor de fundo quando o mouse por cima ou o botão é clicado*/
-.ativo, .colapsaveis:hover {
-    background-color: var(--brancoLight);
-}
-
-/* Estilo da caixa de texto interna. Defini elementos da animação */
 .conteudo {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     color: var(--preto);
-}
-
-/*  */
-.colapsaveis:depois {
-    content: url(/assets/img/selectarrow.svg);
-    transform: rotate(270deg);
-    float: right;
-    align-content: center;
-}
-
-/*  */
-.ativo:depois {
-    transform: rotate(0deg);
 }
 
 .nav-header {
@@ -89,20 +61,6 @@
     display:flex;
 }
 
-#new-logo {
-    height: 84px;
-    margin: 10px 0px;
-}
-
-nav a {
-    color:unset;
-    text-decoration: unset;
-}
-
-nav a:hover {
-    color: var(--amarelo);
-}
-
 .proj-info-leftRightPadding {
     padding: 0vw 20vw;
 }
@@ -115,4 +73,40 @@ nav a:hover {
 
 .proj-info-topMargin {
     margin-top: 25px;
+}
+
+/* Colapsáveis */
+.colapsaveis {
+    background-color: var(--branco);
+    cursor: pointer;
+    padding: 16px;
+    width: 100vw;
+    border: none;
+    text-align: left;
+}
+
+.ativo, .colapsaveis:hover {
+    background-color: var(--brancoLight);
+}
+
+.colapsaveis:depois {
+    content: url(/assets/img/selectarrow.svg);
+    transform: rotate(270deg);
+    float: right;
+    align-content: center;
+}
+
+.ativo:depois {
+    transform: rotate(0deg);
+}
+
+/* Id */
+#new-logo {
+    height: 84px;
+    margin: 10px 0px;
+}
+
+/* Substituído classe definida no main.css  */
+#header-banner {
+    width: unset;
 }
