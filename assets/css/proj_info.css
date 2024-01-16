@@ -6,10 +6,6 @@ nav a {
     text-decoration: unset;
 }
 
-nav a:hover {
-    color: var(--amarelo);
-}
-
 /* Classes */
 .caixa-externa {
     width: 100vw;
