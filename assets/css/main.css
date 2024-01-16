@@ -144,7 +144,7 @@ header #projeto-descricao {
     word-wrap: break-word
 }
 
-.container-head-subtitulo {   
+.container-head-subtitle {   
     padding: 0.5em;
     border-radius: 5px;
     color: var(--branco) !important;
