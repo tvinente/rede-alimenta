@@ -23,41 +23,18 @@ header>div {
 }
 
 /* Classes */
-.caixa-externa {
+.proj-info-caixa-externa {
     width: 100vw;
     border-top: 1px var(--azul) solid;
     border-bottom: 1px var(--azul) solid;
 }
 
-.conteudo {
+.proj-info-conteudo {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     color: var(--preto);
-}
-
-@media (max-width: 1200px) {
-    .nav-header {
-        padding: 0 1vw
-    }
-}
-
-.menu-botoes-nav {
-    /* justify-content: flex-end;  */
-    align-items: center; 
-    gap: 60px; 
-    display: inline-flex;
-}
-
-.borda-botao {
-    width: 98px;
-    padding: 4px 2px 4px 2px;
-    border-radius: 3px; 
-    border: 2px var(--amarelo) solid;
-    justify-content: center; 
-    align-items: center; 
-    display:flex;
 }
 
 .proj-info-leftRightPadding {
@@ -75,7 +52,7 @@ header>div {
 }
 
 /* Colapsáveis */
-.colapsaveis {
+.proj-info-colapsaveis {
     background-color: var(--branco);
     cursor: pointer;
     padding: 16px;
@@ -84,26 +61,19 @@ header>div {
     text-align: left;
 }
 
-.ativo, .colapsaveis:hover {
+.ativo, .proj-info-colapsaveis:hover {
     background-color: var(--brancoLight);
 }
 
-.colapsaveis:depois {
+.proj-info-colapsaveis:depois {
     content: url(/assets/img/selectarrow.svg);
     transform: rotate(270deg);
     float: right;
     align-content: center;
 }
 
-.ativo:depois {
-    transform: rotate(0deg);
-}
-
 /* Id */
-#new-logo {
-    height: 84px;
-    margin: 10px 0px;
-}
+
 
 /* Substituído classe definida no main.css  */
 #header-banner {
