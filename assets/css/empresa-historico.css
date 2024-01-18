@@ -1,0 +1,65 @@
+/* Aquivo css com os estilos da página "Histórico Empresa" (empresa-historico.html) */
+
+
+/* Estilização do subtitulo */
+
+.titulo-cadastro-um{
+    display: flex;
+width: 1920px;
+padding-left: 320px;
+align-items: flex-start;
+gap: 10px;
+}
+
+/* Estilização do container dos botões */
+
+.button-container{
+    display: flex;
+width: 1920px;
+padding: 0px 184px;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+/* Estilização das empresas e das informações conforme o figma */
+
+.empresa-container {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.empresa-container div ul {
+    display: flex;
+    width: 630px;
+    height: 99px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 67px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--Azul, rgba(82, 129, 228, 0.94));
+    color: white
+}
+
+/* Botão histórico confome o figma*/
+
+.botao-historico{
+    display: flex;
+    width: 630px;
+    height: 80px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 67px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--Azul, rgba(82, 129, 228, 0.94));
+}
+
+/* A próxima etapa é fazer com que as informações dentros dos cards fiquem distribuidas conforme o Figma e acrescentar essa borda de separação */
+
+
+
