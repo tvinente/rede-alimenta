@@ -6,15 +6,11 @@ body {
     width: 100vw;
 }
 
-nav a {
-    color:unset;
-    text-decoration: unset;
-}
-
 header {
     display: flex;
     flex-direction: column;
 }
+
 
 header>div {
     display: flex;
@@ -22,9 +18,9 @@ header>div {
     margin: 0 7vw;
 }
 
-h3 {
-    margin: unset;
-    text-align: left;
+nav a {
+    color:unset;
+    text-decoration: unset;
 }
 
 main {
@@ -33,16 +29,6 @@ main {
 }
 
 /* Classes */
-
-.proj-info-conteudo {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    color: var(--preto);
-    background-color: white;
-    margin-bottom: 15px;
-    border-bottom: 2px solid var(--azul);
-}
 
 .proj-info-leftRightPadding {
     padding: 0vw 20vw;
@@ -54,11 +40,20 @@ main {
     }
 }
 
-.proj-info-topMargin {
-    margin-top: 25px;
+.proj-info-banner {
+    display: flex;
+    align-items: center;
+    height: 108px;
+    margin-bottom: 45px;
+    background: var(--azul);
+    color: var(--branco); 
+    /* h2 style from main.css */
+    font-size: 40px; 
+    font-family: Kadwa-bold;
+    font-weight: 700;
+    letter-spacing: 1.2px;
 }
 
-/* Colapsáveis */
 .proj-info-colapsaveis {
     border-top: 2px solid var(--azul);
     border-bottom: none;
@@ -94,18 +89,14 @@ main {
     transform: rotate(0deg);
 }
 
-.proj-info-banner {
-    display: flex;
-    align-items: center;
-    height: 108px;
-    margin-bottom: 45px;
-    background: var(--azul);
-    color: var(--branco); 
-    /* h2 style from main.css */
-    font-size: 40px; 
-    font-family: Kadwa-bold;
-    font-weight: 700;
-    letter-spacing: 1.2px;
+.proj-info-conteudo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: var(--preto);
+    background-color: white;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--azul);
 }
 
 /* Id */
