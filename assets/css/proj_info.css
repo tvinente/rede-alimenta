@@ -22,20 +22,26 @@ header>div {
     margin: 0 7vw;
 }
 
-/* Classes */
-.proj-info-caixa-externa {
-    width: 100vw;
-    border-top: 1px var(--azul) solid;
-    border-bottom: 1px var(--azul) solid;
+h3 {
+    margin: unset;
+    text-align: left;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Classes */
+
 .proj-info-conteudo {
-    padding: 0 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     color: var(--preto);
     background-color: white;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--azul);
 }
 
 .proj-info-leftRightPadding {
@@ -54,23 +60,52 @@ header>div {
 
 /* Colapsáveis */
 .proj-info-colapsaveis {
+    border-top: 2px solid var(--azul);
+    border-bottom: none;
     background-color: var(--branco);
     cursor: pointer;
-    padding: 16px;
-    width: 100vw;
-    border: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /* border: none; */
     text-align: left;
+    /* h3 style from main.css */
+    color: var(--preto); 
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .ativo, .proj-info-colapsaveis:hover {
     background-color: var(--brancoLight);
 }
 
-.proj-info-colapsaveis:depois {
+.ativo {
+    border-bottom: unset;
+}
+
+.proj-info-colapsaveis:after {
     content: url(/assets/img/selectarrow.svg);
     transform: rotate(270deg);
-    float: right;
-    align-content: center;
+    float: left;
+}
+
+.ativo:after {
+    transform: rotate(0deg);
+}
+
+.proj-info-banner {
+    display: flex;
+    align-items: center;
+    height: 108px;
+    margin-bottom: 45px;
+    background: var(--azul);
+    color: var(--branco); 
+    /* h2 style from main.css */
+    font-size: 40px; 
+    font-family: Kadwa-bold;
+    font-weight: 700;
+    letter-spacing: 1.2px;
 }
 
 /* Id */
