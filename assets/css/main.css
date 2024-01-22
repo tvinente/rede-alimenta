@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
 @font-face {
-    font-family: Kadwa;
+    font-family: Kadwa, 'Roboto', sans-serif;
     src: url(../fonts/Kadwa/Kadwa-Regular.ttf);
 }
+
 
 body {
     font-family: Kadwa;
