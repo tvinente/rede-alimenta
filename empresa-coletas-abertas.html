@@ -1,0 +1,111 @@
+<!-- 
+    Nome do projeto: RedeAlimenta
+    Integrantes: Breno Chrispim (@DChrispim), Ciane Pereira (@ciane-pereira), Carlos Giorgio (@calgio), Pedro Amaral (@pedroamaralrs29), Talyta Vinente (@tvinente)
+    Descrição da página: Essa é a página onde o usuário empresa vai preencher o formulario com os seus dados. Ela vai conter duas seções, uma para cadastro da empresa e outra para cadastro da ação social dessa empresa. A página deve conter:
+        Cadastro da empresa: Razão social/Nome fantasia, CNPJ, telefone, e-mail, site, área de atuação, endereço completo;
+        Cadastro da ação social da empresa: Nome do responsável, telefone, categoria de alimento a ser doado, Melhores dias/horário para coleta, endereço completo;
+        Rodapé com informações de contato;
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coletas em Aberto</title>
+
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/proj_info.css">
+    </head>
+    <body>
+        <!-- Cabecalho utilizado em todas as paginas com a logo e nome do projeto -->
+        <header class="sample-header">
+            <div>
+                <img id="new-logo" class="logo-img" src="assets/img/Logo.png" alt="Logo RedeAlimenta">
+            </div>
+        </header>
+        <main>
+            <div class="container">        
+                <div class="container-head">
+                    <h1 class="header-text">RedeAlimenta</h1>
+                    <h2 class="container-head-subtitle">Pronto para ajudar a rede?</h2>
+                </div>
+                <div class="flex-inner">
+                    <div id="acao" class="button-container">
+                        <div>
+                            <a href="./empresa-formulario-contribuicao.html">
+                                <button type="button" class="texto-botao primario">Fazer Postagem</button>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./empresa-coletas-abertas.html">
+                                <button type="button"  class="texto-botao primario">Coletas em Aberto</button>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./empresa-historico.html">
+                                <button type="button"  class="texto-botao primario">Histórico</button>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./empresa-formulario.html">
+                                <button type="button"  class="texto-botao primario">Editar Informações</button>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./index.html">
+                                <button type="button"  class="texto-botao primario">Sair</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-outer">
+                    <form action="/coletas-abertas" method="post">
+                        <div id="secao-coleta">
+                            <h2 class="titulo-cadastro-um">Lista de Doações em Aberto</h2>   
+                            <div id="campos-coleta">
+                                <div class="flex-inner">
+                                    <div class="texto informacao-extra w30">
+                                            * Bata Asterix (2 kg)
+                                            * Leite (2 Litros)
+                                            * Cebola Branca (1,4 Kg)
+                                    </div>
+                                    <input type="text" id="hora-coleta" name="horaColeta" value="22:00H" class="w20" disabled>
+                                    <input type="text" id="data-coleta" name="dataColeta" value="Segunda-feira" class="w20" disabled/>
+                                    <input type="text" id="descricao" name="descricao" class="w45" value="Esperando ONG" disabled/>
+                                    <div>
+                                        <button type="button" class="texto-botao primario">Cancelar</button>
+                                    </div>                       
+                                </div>
+
+                                <div id="campos-coleta">
+                                    <div class="flex-inner">
+                                        <div class="texto informacao-extra w30">
+                                                * Bata Asterix (2 kg)
+                                                * Leite (2 Litros)
+                                                * Cebola Branca (1,4 Kg) 
+                                        </div>
+                                        <input type="text" id="hora-coleta" name="horaColeta" value="08:00H" class="w20" disabled>
+                                        <input type="text" id="data-coleta" name="dataColeta" value="Terça-feira" class="w20" disabled/>
+                                        <input type="text" id="descricao" name="descricao" class="w45" value="ONG Amigos do ABC" disabled/>
+                                        <div>
+                                            <button type="button" class="texto-botao primario">Cancelar</button>
+                                        </div>                       
+                                    </div>
+                                </div>
+                            </div>                       
+                        </div>
+                    </form>
+                </div>
+            </div> <!-- fim div container -->
+        </main>
+        <footer>
+            <div class="redes-sociais"><br>
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/iconInstagramFigma.svg" height="60" alt="logo instagram"></a>
+            </div>
+            <div class="texto">
+                <p>RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG</p>
+                <p>Copyright© 2023 RedeAlimenta S/A - Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </body>
+</html>

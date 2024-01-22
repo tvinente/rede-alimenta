@@ -25,13 +25,15 @@ A plataforma também tem como objetivo evitar o desperdício de alimentos. As em
 ### Code Review
 
 - Não é permitido realizar push diretamente da branch main;
-- Criar branch com a identificação do desenvolvedor (feature/desenvolvedor);
+- Criar branch com a identificação do desenvolvedor (feature/desenvolvedor) no primeiro momento;
+- Posteriormente identificar branch de acordo com as atividades demandadas (feature/.../...);
 - Após finalização do desenvolvimento o responsável deve abrir um Pull Request para branch main; 
-- O merge será após avaliação de no mínimo um revisor;
+- Revisores: [@DChrispim](https://github.com/DChrispim),  [@tvinente](https://github.com/tvinente);
 - Revisor irá buscar inconsistências;
 - Em caso afirmativo, retornará com feedback solictando correção ou exclusão do commit;
-- Na ausência de inconsistências, retorna com feedback e realiza merge.
-
+- Na ausência de inconsistências, aprova e realiza merge.
+- Branch será deleta após o merge
+  
 ## Referência
 
  - [OngsBrasil](https://www.ongsbrasil.com.br/)
