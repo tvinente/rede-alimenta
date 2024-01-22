@@ -58,7 +58,7 @@ header #projeto-descricao {
 }
 
 .container-head-title {
-    font-size: 50px;
+    font-size: 3.2rem; /*50px;*/
     font-weight: 600;
     line-height: 123.15px;
     letter-spacing: 13px;
@@ -197,7 +197,7 @@ button.primario {
 .informacao-extra {
     background: rgba(81.86, 128.87, 228.44, 0.94);
     color: white;
-    font-size: 14px;
+    font-size: 0.9rem; /*14px;*/
     font-weight: 400;
     text-align: justify;
     padding: 0.8em;
@@ -217,7 +217,7 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 14px;
+    font-size: 0.9rem; /*14px;*/
 }
 
 
