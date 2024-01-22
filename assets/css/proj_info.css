@@ -1,100 +1,21 @@
-/* Aquivo css com os estilos da página "Como o projeto funciona" (projeto-informacoes.html) */
+/* Aquivo css com os estilos da página "Como o projeto funciona" (proj_info.html) */
 
-/* Espaçamento entre as caixas de texto colapsaveis. Evitar colocar para zero pois a linha interna se sobrepõe dando a impressão que ela é diferente das outras da borda */
-.divisor-entre-caixas {
-    height: 16px;
+/* Tags */
+
+body {
+    width: 100vw;
 }
 
-/* Estilo da parte externa da caixa colapsavel. Adiciona a linha na parte de cima e de baixo com o tamanho da tela toda. */
-.caixa-externa {
-    width: 100%;
-    height: 100%;
-    border-top: 1px var(--azul) solid;
-    border-bottom: 1px var(--azul) solid;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: flex-start; 
-    display: inline-flex;
-}
-
-/* Estilo da parte interna da caixa colapsavel que funciona como um botão para abrir e fechar a caixa de texto */
-.colapsaveis {
-    background-color: var(--branco);
-    cursor: pointer;
-    padding: 16px;
-    width: 100%;
-    border: none;
-    text-align: left;
-}
-
-/* Adiciona uma animação que muda a cor de fundo quando o mouse por cima ou o botão é clicado*/
-.ativo, .colapsaveis:hover {
-    background-color: var(--brancoLight);
-}
-
-/* Estilo da caixa de texto interna. Defini elementos da animação */
-.conteudo {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    color: var(--preto);
-}
-
-/*  */
-.colapsaveis:depois {
-    content: url(/assets/img/selectarrow.svg);
-    transform: rotate(270deg);
-    float: right;
-    align-content: center;
-}
-
-/*  */
-.ativo:depois {
-    transform: rotate(0deg);
-}
-
-.text-botao {
-    color: var(--amarelo); 
-    font-size: 24px; 
-    font-weight: 700;
-}
-
-.nav-header {
-    width: 100%; 
+header {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+
+
+header>div {
+    display: flex;
     justify-content: space-between;
-}
-
-.menu-botoes-nav {
-    padding-right: 15px; 
-    top: 0px; 
-    justify-content: flex-end; 
-    align-items: center; 
-    gap: 60px; 
-    display: inline-flex;
-}
-
-.estilo-botao {
-    text-align: center; 
-    word-wrap: break-word;
-}
-
-.borda-botao {
-    width: 98px;
-    padding: 4px 2px 4px 2px;
-    border-radius: 3px; 
-    border: 2px var(--amarelo) solid;
-    justify-content: center; 
-    align-items: center; 
-    display:flex;
-}
-
-#new-logo {
-    height: 84px;
-    margin: 10px;
-
+    margin: 0 7vw;
 }
 
 nav a {
@@ -102,6 +23,90 @@ nav a {
     text-decoration: unset;
 }
 
-nav a:hover {
-    color: var(--amarelo);
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Classes */
+
+.proj-info-leftRightPadding {
+    padding: 0vw 20vw;
+}
+
+@media (max-width: 1200px) {
+    .proj-info-leftRightPadding {
+        padding: 0vw 1vw;
+    }
+}
+
+.proj-info-banner {
+    display: flex;
+    align-items: center;
+    height: 108px;
+    margin-bottom: 45px;
+    background: var(--azul);
+    color: var(--branco); 
+    /* h2 style from main.css */
+    font-size: 40px; 
+    font-family: Kadwa-bold;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.proj-info-colapsaveis {
+    border-top: 2px solid var(--azul);
+    border-bottom: none;
+    background-color: var(--branco);
+    cursor: pointer;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /* border: none; */
+    text-align: left;
+    /* h3 style from main.css */
+    color: var(--preto); 
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ativo, .proj-info-colapsaveis:hover {
+    background-color: var(--brancoLight);
+}
+
+.ativo {
+    border-bottom: unset;
+}
+
+.proj-info-colapsaveis:after {
+    content: url(/assets/img/selectarrow.svg);
+    transform: rotate(270deg);
+    float: left;
+}
+
+.ativo:after {
+    transform: rotate(0deg);
+}
+
+.proj-info-conteudo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: var(--preto);
+    background-color: white;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--azul);
+}
+
+/* Id */
+
+#proj-info-bg {
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:overlay;
+}
+
+/* Substituído classe definida no main.css  */
+#header-banner {
+    width: unset;
 }

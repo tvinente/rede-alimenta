@@ -68,11 +68,22 @@ a {
     font-family: Kadwa-bold !important;
 }
 
-.texto-botao {
+.text-botao {
     color: var(--amarelo); 
     font-size: 24px !important; 
     font-family: Kadwa-bold !important;
 }
+
+.borda-botao {
+    width: 98px;
+    padding: 4px 2px 4px 2px;
+    border-radius: 3px; 
+    border: 2px var(--amarelo) solid;
+    justify-content: center; 
+    align-items: center; 
+    display:flex;
+}
+
 body {
     word-wrap: break-word;
     margin: 0;
@@ -111,9 +122,9 @@ header {
 }
 
 
-header #logo {
-    height: 200px;
-    margin: 20px;
+#new-logo {
+    height: 84px;
+    margin: 10px 0px;
 }
 
 header #projeto-descricao {
@@ -239,4 +250,10 @@ footer .img-networks {
     width: 38px;
     height: 38px;
     margin-left: 15%;
+}
+
+.menu-botoes-nav {
+    align-items: center; 
+    gap: 60px; 
+    display: inline-flex;
 }
