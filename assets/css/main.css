@@ -105,13 +105,17 @@ body {
     width: 100%; 
     height: 180px; 
     background: var(--azul);
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:difference;    
 }
 
 #header-banner-texto {
     padding: 50px 0px 0px 10px;
     color: var(--branco); 
     word-wrap: break-word;
-}
+    text-align:center;    
+} 
+
 
 header {
   left: 0;
@@ -256,4 +260,44 @@ footer .img-networks {
     align-items: center; 
     gap: 60px; 
     display: inline-flex;
+}
+
+/****** página index*******/
+
+.motivar, .conecta-todos, .quem-somos, .ranking-contribuicao{    
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:multiply;
+    background-position: left;
+    background-size: 65rem;
+    
+}
+/***section motivar***/
+.motivar {
+    background-color: var(--amarelo);
+    margin-top: 20px;
+    font-family: Kadwa;
+    font-size: 1rem;   
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between; 
+}
+
+.motivar-texto {
+    align-items: center;      
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 620px;
+    align-items: center;
+}
+
+#lata-img {
+   border-radius: 20px;
+   width: 850px;
+   height: 280px;     
+}
+
+.frase-efeito {    
+font-size: 2.5rem;
+font-weight: 750;
+letter-spacing: 1px;
 }
