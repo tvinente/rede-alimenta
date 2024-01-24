@@ -1,6 +1,8 @@
 .historico-doacoes-container {
     display: flex;
     align-items: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
 
 .historico-doacoes-container h3 {
@@ -44,6 +46,8 @@ li {
 .empresa-container {
     display: flex;
     gap: 20px;
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
 
 .empresa-container p div ul {
@@ -62,7 +66,7 @@ li {
 
 .botao-historico {
     display: flex;
-    flex-grow: 1; 
+    width: 630px;
     height: 80px;
     padding: 10px;
     justify-content: center;
@@ -71,6 +75,7 @@ li {
     flex-shrink: 0;
     border-radius: 15px;
     background: var(--Azul, rgba(82, 129, 228, 0.94));
+
 }
 
 #forms-bg {
