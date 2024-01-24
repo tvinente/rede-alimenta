@@ -87,14 +87,31 @@ a {
 body {
     word-wrap: break-word;
     margin: 0;
+    width: 100vw;
 }
 
 
 
 /* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color:unset;
+    text-decoration: unset;
+}
+
 #header-RedeAlimenta {
-    padding-left: 10%;
-    height: 122.57px; 
+    height: 122px; 
     left: 320px; 
     top: 0px; 
     color: var(--preto); 
@@ -113,14 +130,13 @@ body {
     word-wrap: break-word;
 }
 
-header {
+/* header {
   left: 0;
   top: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
-}
-
+} */
 
 #new-logo {
     height: 84px;
@@ -156,11 +172,23 @@ header #projeto-descricao {
 }
 
 .container-head-subtitle {   
-    padding: 0.5em;
-    border-radius: 5px;
-    color: var(--branco) !important;
-    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+    height: 110px;
+    margin-bottom: 5px;
+    background: var(--azul);
+    color: var(--branco); 
+    /* h2 style from main.css */
+    font-size: 40px; 
+    font-family: Kadwa-bold;
+    font-weight: 700;
+    letter-spacing: 1.2px;
 }
+
+.leftRightPadding {
+    padding: 0vw 20vw;
+}
+
 
 .flex-inner {
     display: flex;
@@ -194,11 +222,17 @@ select {
 }
 
 button.primario {
+    border: none;
     margin: 0 5px;
     padding: 12px 20px;
-    border-radius: 8px;
+    border-radius: 15px;
     background: var(--amarelo);
     color: var(--branco);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+button.desativado {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.58) 0%, rgba(255, 255, 255, 0.58) 100%), var(--Amarelo, #E7B675);
 }
 
 .button-container {
@@ -256,4 +290,9 @@ footer .img-networks {
     align-items: center; 
     gap: 60px; 
     display: inline-flex;
+}
+
+#bg {
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:overlay;
 }
