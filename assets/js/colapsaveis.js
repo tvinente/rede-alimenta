@@ -3,7 +3,7 @@
  */
 function adicionaEventoColapsaveis () {
     // Definições das variáveis
-    let arrayElementos = document.getElementsByClassName("colapsaveis");
+    let arrayElementos = document.getElementsByClassName("proj-info-colapsaveis");
 
     // Loop sob todos os elementos da classe colapsáveis
     for (let i = 0; i < arrayElementos.length; i++) {

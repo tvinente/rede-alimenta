@@ -7,7 +7,7 @@
         Rodapé com informações de contato;
 -->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="proj-info-bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,71 +20,61 @@
 </head>
 <body>
     <header>
-        <div class="nav-header">
-            <div>
-                <img id="new-logo" class="logo-img" src="assets/img/Logo.png" alt="Logo RedeAlimenta">
-            </div>
+        <div>
+            <img id="new-logo" src="assets/img/Logo.png" alt="Logo RedeAlimenta">
             <nav class="menu-botoes-nav">
-                <div class="texto-botao estilo-botao"><a href="./index.html">Página inicial</a></div>
-                <div class="texto-botao estilo-botao"><a href="./projeto-informacoes.html">Como o projeto funciona</a></div>
-                <div class="texto-botao estilo-botao borda-botao"><a href="./index-entrar-logar.html">Entrar</a></div>
+                <div class="text-botao"><a href="./index.html">Página inicial</a></div>
+                <div class="text-botao"><a href="./projeto-informacoes.html">Como o projeto funciona</a></div>
+                <div class="text-botao borda-botao"><a href="./index-entrar-logar.html">Entrar</a></div>
             </nav>
         </div>
+        <div class="header-text proj-info-leftRightPadding" id="header-RedeAlimenta">RedeAlimenta</div>
     </header>
     <main>
-        <div>
-            <div class="header-text" id="header-RedeAlimenta">RedeAlimenta</div>
-            <div id="header-banner">
-                <h2 id="header-banner-texto">Como nós funcionamos?</h2>
-            </div>
+        <div class="proj-info-banner proj-info-leftRightPadding">
+            Como nós funcionamos?
         </div>
-        <!-- 
-            Perguntas e respostas sobre o projeto
-            Aqui deve ser utilizado o estilo onde o nome aparece sempre com um indicativo para abrir a caixa. Essa caixa vai expandir e mostrar a resposta da pergunta. Ver layout para mais informações.
-        -->
-        <div style="height: 15px;"></div>
-        <div class="caixa-externa">
-            <button type="button" class="colapsaveis"><h3>O que é o projeto RedeAlimenta?</h3></button>
-            <div class="texto conteudo">
-                <p>O projeto é plataforma para cadastrar estabelecimentos interessados em doar e cadastrar voluntários que podem produzir as refeições e distribuí-las e facilitando a conexão entre os lados</p>
-            </div>
+        <button type="button" class="proj-info-colapsaveis proj-info-leftRightPadding">
+            O que é o projeto RedeAlimenta?
+        </button>
+        <div class="texto proj-info-conteudo proj-info-leftRightPadding">
+            O projeto é plataforma para cadastrar estabelecimentos interessados em doar e cadastrar voluntários que podem produzir as refeições e distribuí-las e facilitando a conexão entre os lados
         </div>
-        <div class="divisor-entre-caixas"></div>
-        <div class="caixa-externa">
-            <button type="button" class="colapsaveis"><h3>Quem pode participar?</h3></button>
-            <div class="texto conteudo">
-                <p>Empresas dispostas a doar alimentos que embora não sejam comercialmente vendáveis, ainda podem ser consumidos. Grupos de Voluntários e ONG's, dispostas a coletar esses alimentos, prepará-los e distribuí-los às pessoas em situação de insegurança alimentar.</p>
-            </div>
+
+        <button type="button" class="proj-info-colapsaveis proj-info-leftRightPadding">
+            Quem pode participar?
+        </button>
+        <div class="texto proj-info-conteudo proj-info-leftRightPadding">
+            Empresas dispostas a doar alimentos que embora não sejam comercialmente vendáveis, ainda podem ser consumidos. Grupos de Voluntários e ONG's, dispostas a coletar esses alimentos, prepará-los e distribuí-los às pessoas em situação de insegurança alimentar.
         </div>
-        <div class="divisor-entre-caixas"></div>
-        <div class="caixa-externa">
-            <button type="button" class="colapsaveis"><h3>Existe limite de doações?</h3></button>
-            <div class="texto conteudo">
-                <p>Seu coração é o limite.</p>
-            </div>
+
+        <button type="button" class="proj-info-colapsaveis proj-info-leftRightPadding">
+            Existe limite de doações?
+        </button>
+        <div class="texto proj-info-conteudo proj-info-leftRightPadding">
+            Seu coração é o limite.
         </div>
-        <div class="divisor-entre-caixas"></div>
-        <div class="caixa-externa">
-            <button type="button" class="colapsaveis"><h3>Como faço para participar?</h3></button>
-            <div class="texto conteudo">
-                <p>Tanto empresas, quanto grupos de voluntários, podem participar após o preenchimento  do cadastro na nossa plataforma.</p>
-            </div>
+
+        <button type="button" class="proj-info-colapsaveis proj-info-leftRightPadding">
+            Como faço para participar?
+        </button>
+        <div class="texto proj-info-conteudo proj-info-leftRightPadding">
+            Tanto empresas, quanto grupos de voluntários, podem participar após o preenchimento  do cadastro na nossa plataforma.
         </div>
-        <div class="divisor-entre-caixas"></div>
-        <div class="caixa-externa">
-            <button type="button" class="colapsaveis"><h3>A Plataforma pretende atender quais regiões do Brasil?</h3></button>
-            <div class="texto conteudo">
-                <p>Todas as regiões.</p>
-            </div>
+
+        <button type="button" class="proj-info-colapsaveis proj-info-leftRightPadding">
+            A Plataforma pretende atender quais regiões do Brasil?
+        </button>
+        <div class="texto proj-info-conteudo proj-info-leftRightPadding">
+            Todas as regiões.
         </div>
-        <div class="divisor-entre-caixas"></div>
-        <div class="caixa-externa">
-            <button type="button" class="h3 colapsaveis"><h3>Por que a Plataforma foca só no Brasil?</h3></button>
-            <div class="texto conteudo">
-                <p>Porque entendemos que é necessário arrumar nossa casa primeiro, para poder arrumar a casa dos outros.</p>
-            </div>
+
+        <button type="button" class="proj-info-colapsaveis proj-info-leftRightPadding">
+            Por que a Plataforma foca só no Brasil?
+        </button>
+        <div class="texto proj-info-conteudo proj-info-leftRightPadding">
+            Porque entendemos que é necessário arrumar nossa casa primeiro, para poder arrumar a casa dos outros.
         </div>
-        <div class="divisor-entre-caixas"></div>
    </main>
    <!-- Seção footer da página, deve ser igual em todas as páginas. -->
    <footer>
