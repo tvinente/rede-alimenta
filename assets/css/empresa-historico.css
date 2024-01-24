@@ -73,6 +73,11 @@ li {
     background: var(--Azul, rgba(82, 129, 228, 0.94));
 }
 
+#forms-bg {
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:overlay;
+}
+
 
 
 
