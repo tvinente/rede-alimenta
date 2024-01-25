@@ -3,6 +3,7 @@
     align-items: center;
     padding-left: 20vw;
     padding-right: 20vw;
+    flex-direction: column;
 }
 
 .historico-doacoes-container h3 {
@@ -13,13 +14,15 @@
 
 .card {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--Azul);
-    border-radius: 15px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+width: 630px;
+height: 99px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 67px;
+flex-shrink: 0;
+border-radius: 15px;
+background: var(--Azul, rgba(82, 129, 228, 0.94));
 }
 
 .card .info-container {
@@ -39,6 +42,7 @@ ul {
 li {
     color: black;
     font-size: 18px;
+    margin: 5px 0;
     margin: 5px;
     text-align: justify;
 }
@@ -46,8 +50,6 @@ li {
 .empresa-container {
     display: flex;
     gap: 20px;
-    padding-left: 20vw;
-    padding-right: 20vw;
 }
 
 .empresa-container p div ul {
@@ -76,6 +78,12 @@ li {
     border-radius: 15px;
     background: var(--Azul, rgba(82, 129, 228, 0.94));
 
+}
+
+.empresa-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #forms-bg {
