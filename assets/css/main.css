@@ -1,7 +1,13 @@
+/* 
+Aquivo css com os estilos da página globais
+Não usar prefixos
+*/
+
 /* Seção de definições globais */
 :root {
     /* Cores */
     --amarelo: rgba(231, 182, 117, 1);
+    --amareloForte: rgb(230, 144, 33);
     --preto: rgba(0, 0, 0, 1);
     --azul: rgba(82, 129, 228, 0.94);
     --azulLight: rgba(82, 129, 228, 0.5);
@@ -24,13 +30,6 @@ html *
    font-family: Kadwa !important;
 }
 /* Definição de tamanhos padrões de fonte */
-.header-text {
-    color: var(--preto);
-    font-family: Kadwa-bold !important;
-    font-size: 96px;
-    line-height: 128.284%; /* 123.153px */
-    letter-spacing: 13.44px;
-}
 
 h1 {
     color: var(--preto); 
@@ -68,13 +67,45 @@ a {
     font-family: Kadwa-bold !important;
 }
 
-.text-botao {
+.hover-button:hover {
+    color: var(--amareloForte);
+    border-color: var(--amareloForte);
+
+}
+
+body {
+    /* Manter porcentagem para não extender a página lateralmente */
+    width: 100%;
+    margin: unset; 
+}
+
+
+/* Imagem de fundo */
+
+#bg {
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:overlay;
+}
+
+/* Seção header */
+#new-logo {
+    height: 84px;
+    margin: 10px 0px;
+}
+
+.menu-botoes-nav {
+    align-items: center; 
+    gap: 60px; 
+    display: inline-flex;
+}
+
+.text-button {
     color: var(--amarelo); 
     font-size: 24px !important; 
     font-family: Kadwa-bold !important;
 }
 
-.borda-botao {
+.border-button {
     width: 98px;
     padding: 4px 2px 4px 2px;
     border-radius: 3px; 
@@ -84,17 +115,45 @@ a {
     display:flex;
 }
 
-body {
-    word-wrap: break-word;
-    margin: 0;
+.header-text {
+    color: var(--preto);
+    font-family: Kadwa-bold !important;
+    font-size: 96px;
+    line-height: 128.284%; /* 123.153px */
+    letter-spacing: 13.44px;
 }
 
+.info-banner {
+    display: flex;
+    align-items: center;
+    height: 108px;
+    margin-bottom: 45px;
+    color: var(--branco); 
+    /* h2 style from main.css */
+    font-size: 40px; 
+    font-family: Kadwa-bold;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
 
+.info-banner-bg {
+    background-blend-mode: overlay;
+    background: var(--azul);
+}
+/* Fim seção header */
 
-/* header */
+header>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color:unset;
+    text-decoration: unset;
+}
+
 #header-RedeAlimenta {
-    padding-left: 10%;
-    height: 122.57px; 
+    height: 122px; 
     left: 320px; 
     top: 0px; 
     color: var(--preto); 
@@ -116,20 +175,6 @@ body {
     text-align:center;    
 } 
 
-
-header {
-  left: 0;
-  top: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-
-#new-logo {
-    height: 84px;
-    margin: 10px 0px;
-}
 
 header #projeto-descricao {
     height: 200px;
@@ -160,11 +205,23 @@ header #projeto-descricao {
 }
 
 .container-head-subtitle {   
-    padding: 0.5em;
-    border-radius: 5px;
-    color: var(--branco) !important;
-    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+    height: 110px;
+    margin-bottom: 5px;
+    background: var(--azul);
+    color: var(--branco); 
+    /* h2 style from main.css */
+    font-size: 40px; 
+    font-family: Kadwa-bold;
+    font-weight: 700;
+    letter-spacing: 1.2px;
 }
+
+.leftRightPadding {
+    padding: 0vw 20vw;
+}
+
 
 .flex-inner {
     display: flex;
@@ -198,11 +255,17 @@ select {
 }
 
 button.primario {
+    border: none;
     margin: 0 5px;
     padding: 12px 20px;
-    border-radius: 8px;
+    border-radius: 15px;
     background: var(--amarelo);
     color: var(--branco);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+button.desativado {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.58) 0%, rgba(255, 255, 255, 0.58) 100%), var(--Amarelo, #E7B675);
 }
 
 .button-container {
@@ -256,8 +319,7 @@ footer .img-networks {
     margin-left: 15%;
 }
 
-.menu-botoes-nav {
-    align-items: center; 
-    gap: 60px; 
-    display: inline-flex;
+#bg {
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:overlay;
 }
