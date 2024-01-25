@@ -1,7 +1,13 @@
+/* 
+Aquivo css com os estilos da página globais
+Não usar prefixos
+*/
+
 /* Seção de definições globais */
 :root {
     /* Cores */
     --amarelo: rgba(231, 182, 117, 1);
+    --amareloForte: rgb(230, 144, 33);
     --preto: rgba(0, 0, 0, 1);
     --azul: rgba(82, 129, 228, 0.94);
     --azulLight: rgba(82, 129, 228, 0.5);
@@ -61,10 +67,24 @@ a {
     font-family: Kadwa-bold !important;
 }
 
+.hover-button:hover {
+    color: var(--amareloForte);
+    border-color: var(--amareloForte);
+
+}
+
 body {
-    word-wrap: break-word;
-    margin: 0;
-    width: 100vw;
+    /* Manter porcentagem para não extender a página lateralmente */
+    width: 100%;
+    margin: unset; 
+}
+
+
+/* Imagem de fundo */
+
+#bg {
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:overlay;
 }
 
 /* Seção header */
@@ -108,13 +128,17 @@ body {
     align-items: center;
     height: 108px;
     margin-bottom: 45px;
-    background: var(--azul);
     color: var(--branco); 
     /* h2 style from main.css */
     font-size: 40px; 
     font-family: Kadwa-bold;
     font-weight: 700;
     letter-spacing: 1.2px;
+}
+
+.info-banner-bg {
+    background-blend-mode: overlay;
+    background: var(--azul);
 }
 /* Fim seção header */
 

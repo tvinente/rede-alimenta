@@ -1,11 +1,9 @@
-/* Aquivo css com os estilos da página "Como o projeto funciona" (proj_info.html) */
+/* 
+Aquivo css com os estilos da página "Como o projeto funciona" (proj_info.html)
+Usar prefixo proj-info-
+*/
 
 /* Tags */
-
-body {
-    width: 100%;
-    margin: unset;
-}
 
 header {
     display: flex;
@@ -86,11 +84,6 @@ main {
 }
 
 /* Id */
-
-#proj-info-bg {
-    background-image: url('/assets/img/forms_bg.svg');
-    background-blend-mode:overlay;
-}
 
 /* Substituído classe definida no main.css  */
 #header-banner {

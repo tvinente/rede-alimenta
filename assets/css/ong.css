@@ -1,3 +1,8 @@
+/* 
+Aquivo css com os estilos da página "ONG" (ONG-coletas-abertas.html e ONG-historico)
+Usar prefixo ong-
+*/
+
 .ong-main-header {
     display: flex;
     align-items: center;
