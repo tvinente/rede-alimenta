@@ -1,96 +1,48 @@
-.historico-doacoes-container {
+.titulo-empresa-historico {
     display: flex;
-    align-items: center;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    flex-direction: column;
+    gap: 10px;
+    background: var(--Amarelo, #E7B675);
 }
 
-.historico-doacoes-container h3 {
-    color: var(--Azul);
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.card {
-    display: flex;
-width: 630px;
-height: 99px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-gap: 67px;
-flex-shrink: 0;
-border-radius: 15px;
-background: var(--Azul, rgba(82, 129, 228, 0.94));
-}
-
-.card .info-container {
-    color: black;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-ul {
-    align-self: flex-start;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    color: black;
-    font-size: 18px;
-    margin: 5px 0;
-    margin: 5px;
-    text-align: justify;
-}
-
-.empresa-container {
-    display: flex;
-    gap: 20px;
-}
-
-.empresa-container p div ul {
-    display: flex;
-    width: 100%;
-    height: 99px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 67px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    background: var(--Azul, rgba(82, 129, 228, 0.94));
-    color: white;
-}
-
-.botao-historico {
+.card-empresa-historico {
     display: flex;
     width: 630px;
-    height: 80px;
-    padding: 10px;
+    height: 130px;
+    padding: 10px 0 25px 0;
     justify-content: center;
     align-items: center;
     gap: 67px;
     flex-shrink: 0;
     border-radius: 15px;
     background: var(--Azul, rgba(82, 129, 228, 0.94));
-
 }
 
-.empresa-cards-container {
+.detalhes-entrega {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    color: white;
+    font-size: 18px;
+    gap: 10px;
 }
 
-#forms-bg {
-    background-image: url('/assets/img/forms_bg.svg');
-    background-blend-mode:overlay;
+.lista-entrega {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    gap: 5px;
+    list-style-type: circle;
 }
 
+.nome-ONG{
+    margin-right: 50px;
+}
 
-
+.proj-info-leftRightPadding {
+    display: flex;
+    padding-left: 320px;
+}
 
