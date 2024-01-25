@@ -9,7 +9,9 @@
     <title>RedeAlimenta | Ligando quem faz com quem pode</title>
 
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/proj_info.css">
+    <script src="./assets/js/index.js" defer></script>
  </head>
  <body>
 
@@ -24,10 +26,10 @@
                 <div class="text-botao estilo-botao borda-botao"><a href="./index-entrar-logar.html">Entrar</a></div>
             </nav>
         </div>
+        <div class="header-text" id="header-RedeAlimenta">RedeAlimenta</div>
     </header>
     <main>
-        <div>
-            <div class="header-text" id="header-RedeAlimenta">RedeAlimenta</div>
+        <div>            
             <div id="header-banner">
                 <h2 id="header-banner-texto">Ligando quem faz com quem pode</h2>
             </div>
@@ -41,39 +43,38 @@
                 </p>                               
             </div>
             <div>
-                <img src="./assets/img/lata doacao1.png" id="lata-img" alt="imagem de uma mão entregando uma lata de comida"> 
+                <img src="./assets/img/lata_doacao1.png" id="lata-img" alt="imagem de uma mão entregando uma lata"> 
             </div>
             
         </section>      
         
         <!--fazer carrosel com slides com dados estatísticos sobre fome -->
-        <section>
-            <div class="slides">
-                <!--radio buttons-->
-                <input type="radio" name="radioBtn" id="radio1">
-                <input type="radio" name="radioBtn" id="radio2"> 
-                <input type="radio" name="radioBtn" id="radio3"> 
-                <input type="radio" name="radioBtn" id="radio4">             
+        <section class="container-slide">
+            <div class="slider">               
+                     <!--radio buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2"> 
+                <input type="radio" name="radio-btn" id="radio3"> 
+                <input type="radio" name="radio-btn" id="radio4">             
       
               <!--slides imagens-->
-             <div class="slide first">
-              <h2>"No Brasil<strong class="dado-fome"> 21 milhões</strong> de pessoas <strong>não tem o que comer</strong> todos os dias</h2>
-              <img src="assets/img/pessoa_rua.jpeg" alt="imagem de pessoas andando na rua" width="200">       
+             <div class="slide-box first">
+              <h2>No Brasil 21 milhões de pessoas não tem o que comer todos os dias</h2>
+              <img src="assets/img/prato-vazio.jpg" alt="imagem de prato vazio" class="img-slide">       
              </div>
-             <div class="slide">
-              <h2>No <strong class="dado-fome">Norte 25%</strong> das famílias convivem com a fome e no <strong class="dado-fome">Nordeste são 20%</strong> das famílias</h2>          
-              <img src="assets/img/img_pao.svg" alt="" width="200">
+             <div class="slide-box">
+              <h2>No Norte 25% das famílias convivem com a fome e no Nordeste são 20% das famílias</h2>          
+              <img src="assets/img/pedinte.jpg" alt="imagem pedinte" class="img-slide">
              </div>
-             <div class="slide">
-              <h2>Desperdiça-se cerca de <strong class="dado-fome">55 milhões de toneladas</strong> de alimentos</h2>
-              <img src="assets/img/despedicio_comida.jpg" alt="imagem jogando comida no lixo" width="200">
+             <div class="slide-box">
+              <h2>Desperdiça-se cerca de 55 milhões de toneladas de alimentos</h2>
+              <img src="assets/img/despedicio_comida.jpg" alt="imagem jogando comida no lixo" class="img-slide">
              </div>
-             <div class="slide">
+             <div class="slide-box">
               <h2>Entre 10 famílias <strong class="dado-fome"> 6 famílias <strong>não tem acesso</strong> a alimentação plena</h2>
-              <img src="assets/img/pessoas_pedintes.jpeg" alt="imagem pessoa pedido ajuda na rua" width="200">
+              <img src="assets/img/crianças-juntas.jpg" alt="imagem pessoa pedido ajuda na rua" class="img-slide">
              </div>
-             <!-- final slide imagens-->
-      
+             <!-- final slide imagens-->      
               <!--navigation auto-->
               <div class="navigation-auto">
                   <div class="auto-btn1"></div>
@@ -81,70 +82,40 @@
                   <div class="auto-btn3"></div>
                   <div class="auto-btn4"></div>
               </div>
-            </div>
-             <!--final div slides-->
-      
-             <!--criando botões(label) para(referente) o input radio -->
+                       
+                </div>
+                 <!--criando botões(label) para(referente) o input radio -->
              <div class="manual-navigation">
-                  <label for="radio1" class="manual-btn"></label>
-                  <label for="radio2" class="manual-btn"></label>
-                  <label for="radio3" class="manual-btn"></label>
-                  <label for="radio4" class="manual-btn"></label>
-                  
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>                 
               </div> 
         </section>
 
-    <!--cards com dados sobre a fome-->
-    <section class="cards">
-        <div>
-            <div class="info-destaque">
-                <div class="show-case card-1">
-                    <div class="card-img"><img src="assets/img/mulher_crianca_colo.jpeg" alt="imagem mulher preta com crinça no colo na cozinha" width="200"></div>
-                    <h2>A fome tem gênero</h2>
-                    <p class="card-text">6 de cada 10 famílias comandada por mulheres convivem com a insegurança alimentar</p>                
-                </div>
-                <div class="show-case card-2">
-                    <div class="card-img"><img src="assets/img/panele_vazia.jpeg" alt="imagem mulher preta com panela sem comida" width="200"></div>
-                    <h2>A fome tem cor</h2>
-                    <p class="card-text">Em famílias comandadas por pessoas pretas ou pardas há fome em 65% dos lares</p> 
-                </div>
-                <div class="show-case card-3">
-                    <div class="card-img"><img src="assets/img/criança_comida.jpeg" alt="imagem crianças pedido comida" width="200"></div>
-                    <h2>Crianças são mais vulneráveis à fome</h2>
-                    <p class="card-text">A fome dobrou em famílias com crianças menores de 10 anos entre 2020 - 2022 de 9% para 18%</p> 
-                </div>
-                <div class="show-case card-4">
-                    <div class="card-img"><img src="assets/img/coleta_lixo.jpeg" alt="imagem de saco com comida dentro" width="200">></div>
-                    <h2>Falta refeição nos lares</h2>
-                    <p class="card-text">Em 28% dos lares uma pessoa não consome três refeições diáras, sendo que em 70% também não tem carne</p>
-                    <cite>Fonte: Rede Penssan</cite> 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--conexão com todos-->
-    <section>
-        <div class="conecta-todos">
-            <h2>O que podemos fazer?</h2>
-            <div>
+    <!--conexão com todos os envolvidos na doação-->
+    <section class="conecta-todos">
+        <h2 id="que-fazer">O que podemos fazer?</h2>
+        <div class="conectar-parceiros">          
+            <div class="colaborar " id="conecta-empresa">
                 <h2>Empresa</h2>
                 <p>quem pode doar</p>
             </div>
-            <div>
+            <div  class="colaborar">
                 <h2>RedeAlimenta</h2>
                 <p>é a conexão</p>
+                <hr class="hr">               
                 <img src="assets/img/Logo.png" alt="logo RedeAlimenta">
             </div>
-            <div>
+            <div class="colaborar conecta-ong" id="conecta-ong">
                 <h2>ONG</h2>
                 <p>quem ajuda</p>
             </div>
         </div>    
     </section>   
 
-        <section>
-            <div class="quem-somos">
+        <section class="quem-somos">
+            <div>
                 <!--<h2>Quem Somos</h2>-->
                 <p>Somos um grupo de pessoas voluntárias que colaboram para oferecer alimentação às pessoas em situação de vulnerabilidade, pois acreditamos que todos têm direito à alimentação digna. Para contribuirmos, criamos a plataforma <strong>RedeAlimenta</strong> para conectar empresas que descartariam seus produtos, por não ter mais valor comercial, mas que continuam aptos ao consumo, com as instituições que preparam e distribuem as refeições prontas.
                 Trabalhamos de forma independente e voluntária, sem nenhum vínculo com partido político, governamental ou empresarial.                  

@@ -1,0 +1,254 @@
+/****** configuração padrão do projeto*******/
+:root {
+    /* Cores */
+    --amarelo: rgba(231, 182, 117, 1);
+    --preto: rgba(0, 0, 0, 1);
+    --azul: rgba(82, 129, 228, 0.94);
+    --azulLight: rgba(82, 129, 228, 0.5);
+    --branco: white;
+    --brancoLight: rgba(238, 238, 238, 1);
+}
+/****** página index*******/
+
+.motivar, .conecta-todos, .quem-somos, .ranking-contribuicao {    
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:multiply;
+    background-position: left;
+    background-size: 65rem;   
+}
+
+/***section motivar***/
+.motivar {
+    background-color: var(--amarelo);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Kadwa;
+    font-size: 1rem;   
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between; 
+}
+
+.motivar-texto {
+    align-items: center;      
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 620px;
+    align-items: center;
+}
+
+#lata-img {
+   width: 850px;
+   height: 300px;     
+}
+
+.frase-efeito {    
+    font-size: 2.5rem;
+    font-weight: 750;
+    letter-spacing: 1px;
+}
+
+/******início carrosel*******/
+
+section .container-slide {    
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+}
+
+.slider { 
+    /*margin: 0 auto;
+    width: 100%; 
+    height: 500px; 
+    overflow: hidden;*/
+    width: 400%;
+    height: auto;
+    display: flex;    
+}
+
+/****tenho as imgs e os botões***/
+.slider {
+    /*width: 100%;*/ 
+    height:500px; 
+    display:flex;       
+}
+
+/***ocultar os inputs***/
+.slider input {
+    display: none;
+}
+
+/*** onde está cada class e div, ajuste referente ao slides width 400%***/ 
+.slide-box {
+    /*width: 100%;    
+    position: relative;
+    transition: 5s;
+    flex-direction: column;*/
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 0.5s;   
+}
+
+.slide-box img {
+    /*width: 100%;     
+    height: 100%;*/
+    width: 100%;       
+}
+
+.img-slide{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+.manual-navigation {
+    /*position: absolute;
+    width: 1000px;
+    margin-top: -40px;    
+    display: flex;
+    justify-content: center;*/
+    position: absolute;
+    width: 100%;
+    /****posiciona as bolinhas no slide****/
+    margin-top: -3%;   
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {   
+    padding: 5px;
+    margin-left: 7.px;
+    margin-right: 7.5px;
+    border-radius: 50%;
+    border: 5px solid var(--amarelo);
+    cursor: pointer;
+    transition: 5ms;    
+}
+
+/**espaçamento dos botões**/
+.manual-btn:not(:last-child) {
+    margin-right: 32px;
+}
+
+.manual-btn:hover {
+    background-color: var(--azul);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+/**estilizar os botões***/
+.navigation-auto {
+    position:absolute;
+    width: 1000px;
+    margin-top: 460px;   
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div { 
+    border: 5px solid var(--azul);
+    padding: 5px;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: 5ms;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: var(--azul);
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn2 {
+    background-color: var(--azul);
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn3 {
+    background-color: var(--azul);
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn4 {
+    background-color: var(--azul);
+}
+
+/***texto dentro do carrosel***/
+ .slide-box h2 {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    font-size: 2.8em;
+    color: var(--preto);
+    text-align: center;
+    margin-right: 30px;
+    text-shadow: 2px 2px var(--azul);
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+/*****section conecta todos os envolvidos na doação******/
+
+.conecta-todos {
+    margin-top: 20px;       
+    /*background-color: blue;*/
+    text-align: center;
+}
+
+section > #que-fazer {
+    background-color: var(--amarelo);
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:multiply;
+    background-position:right; 
+    margin-top: 20px; 
+    margin-bottom: 20px;  
+}
+
+.quem-somos {
+    margin-bottom: 20px;
+}
+
+.conectar-parceiros {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;   
+}
+
+.hr {
+    border-top:5px solid var(--amarelo);
+    border-bottom: 5px solid var(var(--amarelo));
+    width: 32rem;    
+  }
+
+.colaborar ~ div {
+    line-height: 2px;    
+  }
+  
+ .conecta-empresa  {
+    background-color: var(--amarelo);
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:multiply;
+    background-position:right;  
+    
+ }
+ 
+
+
