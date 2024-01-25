@@ -7,7 +7,7 @@
         Rodapé com informações de contato;
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="bg">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,103 +15,51 @@
         <title>Coletas em Aberto</title>
 
         <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="./assets/css/proj_info.css">
+        <link rel="stylesheet" href="./assets/css/ong.css">
+        <script src="./assets/js/ong-marcar-coleta.js" defer></script>
     </head>
     <body>
         <!-- Cabecalho utilizado em todas as paginas com a logo e nome do projeto -->
-        <header class="sample-header">
-            <div id="logo">
-                <img src="assets/img/Logo.png" />
+        <header>
+            <div class="header-text leftRightPadding" id="header-RedeAlimenta">
+                RedeAlimenta
+            </div>
+            <div class="container-head-subtitle leftRightPadding">
+                Pronto para ajudar a rede?
+            </div>
+            <div class="flex-inner">
+                <div id="acao" class="button-container">
+                    <div>
+                        <a href="./ONG-coletas-abertas.html">
+                            <button type="submit"  class="primario desativado">Coletas em Aberto</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./ONG-historico.html">
+                            <button type="submit"  class="primario">Histórico</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./ONG-formulario.html">
+                            <button type="submit"  class="primario">Editar Informações</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./index.html">
+                            <button type="submit"  class="primario">Sair</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
-            <div class="container">
-                <!-- Banner principal -->        
-                <div class="container-head">
-                    <h1 class="header-text">RedeAlimenta</h1>
-                    <h2 class="container-head-subtitle">Pronto para ajudar a rede?</h2>
-                </div>
-                <!-- Botões de navegação internos -->
-                <div class="flex-inner">
-                    <div id="acao" class="button-container">
-                        <div>
-                            <a href="./ONG-marcacao-coletas.html">
-                                <button type="submit"  class="texto-botao primario">Coletas em Aberto</button>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="./ONG-historico.html">
-                                <button type="submit"  class="texto-botao primario">Histórico</button>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="./ONG-formulario.html">
-                                <button type="submit"  class="texto-botao primario">Editar Informações</button>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="./index.html">
-                                <button type="submit"  class="texto-botao primario">Sair</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Divisão coletas em aberto -->
-                <div class="flex-outer">
-                    <form action="/coletas-abertas" method="post">
-                        <div id="secao-coleta">
-                            <h2 class="titulo-cadastro-um">Lista de Doações em Aberto</h2>    
-                            <div id="campos-coleta">
-                                <div style="border-top: solid; border-bottom: solid;" class="flex-inner">
-                                    <div class="texto informacao-extra">
-                                        Cognito In. <br>
-                                        Roberto Alexandre (99) 12345-6789 <br>
-                                        Rua ABC 331, CIdade A. DT
-                                        <ul>
-                                            <li>Bata Asterix (2 kg)</li>
-                                            <li>Leite (2 Litros)</li>
-                                            <li>Cebola Branca (1,4 Kg)</li>
-                                        </ul>
-                                    </div>
-                                    <input type="text" id="hora-coleta" name="horaColeta" value="22:00h" class="" disabled>
-                                    <input type="text" id="data-coleta" name="dataColeta" class="" value="Terça-feira" disabled/>
-                                    <input type="text" id="descricao" name="descricao" value="Vamos alimentar 10 pessoas!" class="" disabled/> 
-                                    <div class="flex-inner">
-                                        <div>
-                                            <a href="./ONG-marcacao-coletas.html">
-                                                <button type="button" class="texto-botao primario">Cancelar</button>
-                                            </a>
-                                            <a href="./ONG-historico.html">
-                                                <button type="button" class="texto-botao primario">Confirmar Coleta </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="campos-coleta">
-                                    <div class="flex-inner">
-                                        <div class="texto informacao-extra ">
-                                            MegaCorp <br>
-                                            Roberto Alexandre (99) 12345-6789 <br>
-                                            Rua DEA 449, CIdade A. DT
-                                            <ul>
-                                                <li>Bata Asterix (2 kg)</li>
-                                                <li>Leite (2 Litros)</li>
-                                                <li>Cebola Branca (1,4 Kg)</li>
-                                            </ul>
-                                        </div>
-                                        <input type="text" id="hora-coleta" name="horaColeta" value="08:00h" class="" disabled>
-                                        <input type="text" id="data-coleta" name="dataColeta" class="" value="Segunda-feira" disabled/>
-                                        <input type="text" id="descricao" name="descricao" placeholder="Como esses produtos vão ser usados?" class=""/>
-                                        <div>
-                                            <button type="button" class="texto-botao primario">Marcar</button>
-                                        </div>                       
-                                    </div>
-                                </div>                       
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div> <!-- fim div container -->
+            <div class="ong-main-header leftRightPadding">Lista de Doações em Aberto</div>
+            <div class="ong-lines ong-separator" id="ong-coletas-marcadas">
+                <h3>Marque uma Coleta</h3>
+            </div>
+            <div class="ong-separator" id="ong-coletas-para-marcar">
+                <!-- Elementos incluídos usando JavaScript -->
+            </div>
         </main>
         <footer>
             <div class="redes-sociais"><br>
