@@ -3,7 +3,8 @@
 /* Tags */
 
 body {
-    width: 100vw;
+    width: 100%;
+    margin: unset;
 }
 
 header {
@@ -15,7 +16,6 @@ header {
 header>div {
     display: flex;
     justify-content: space-between;
-    margin: 0 7vw;
 }
 
 nav a {
@@ -38,20 +38,6 @@ main {
     .proj-info-leftRightPadding {
         padding: 0vw 1vw;
     }
-}
-
-.proj-info-banner {
-    display: flex;
-    align-items: center;
-    height: 108px;
-    margin-bottom: 45px;
-    background: var(--azul);
-    color: var(--branco); 
-    /* h2 style from main.css */
-    font-size: 40px; 
-    font-family: Kadwa-bold;
-    font-weight: 700;
-    letter-spacing: 1.2px;
 }
 
 .proj-info-colapsaveis {

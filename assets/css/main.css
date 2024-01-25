@@ -24,13 +24,6 @@ html *
    font-family: Kadwa !important;
 }
 /* Definição de tamanhos padrões de fonte */
-.header-text {
-    color: var(--preto);
-    font-family: Kadwa-bold !important;
-    font-size: 96px;
-    line-height: 128.284%; /* 123.153px */
-    letter-spacing: 13.44px;
-}
 
 h1 {
     color: var(--preto); 
@@ -68,13 +61,31 @@ a {
     font-family: Kadwa-bold !important;
 }
 
-.text-botao {
+body {
+    word-wrap: break-word;
+    margin: 0;
+    width: 100vw;
+}
+
+/* Seção header */
+#new-logo {
+    height: 84px;
+    margin: 10px 0px;
+}
+
+.menu-botoes-nav {
+    align-items: center; 
+    gap: 60px; 
+    display: inline-flex;
+}
+
+.text-button {
     color: var(--amarelo); 
     font-size: 24px !important; 
     font-family: Kadwa-bold !important;
 }
 
-.borda-botao {
+.border-button {
     width: 98px;
     padding: 4px 2px 4px 2px;
     border-radius: 3px; 
@@ -84,21 +95,28 @@ a {
     display:flex;
 }
 
-body {
-    word-wrap: break-word;
-    margin: 0;
-    width: 100vw;
+.header-text {
+    color: var(--preto);
+    font-family: Kadwa-bold !important;
+    font-size: 96px;
+    line-height: 128.284%; /* 123.153px */
+    letter-spacing: 13.44px;
 }
 
-
-
-/* header */
-
-header {
+.info-banner {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    height: 108px;
+    margin-bottom: 45px;
+    background: var(--azul);
+    color: var(--branco); 
+    /* h2 style from main.css */
+    font-size: 40px; 
+    font-family: Kadwa-bold;
+    font-weight: 700;
+    letter-spacing: 1.2px;
 }
-
+/* Fim seção header */
 
 header>div {
     display: flex;
@@ -128,19 +146,6 @@ nav a {
     padding: 50px 0px 0px 10px;
     color: var(--branco); 
     word-wrap: break-word;
-}
-
-/* header {
-  left: 0;
-  top: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-} */
-
-#new-logo {
-    height: 84px;
-    margin: 10px 0px;
 }
 
 header #projeto-descricao {
@@ -284,12 +289,6 @@ footer .img-networks {
     width: 38px;
     height: 38px;
     margin-left: 15%;
-}
-
-.menu-botoes-nav {
-    align-items: center; 
-    gap: 60px; 
-    display: inline-flex;
 }
 
 #bg {
