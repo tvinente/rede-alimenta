@@ -47,7 +47,8 @@
 }
 
 div > #lata-img{ 
-    width:1000px;    
+    width:1000px;
+      
 }
 
 /******início carrosel*******/
@@ -206,7 +207,7 @@ section > #que-fazer {
 .conectar-parceiros {
     display: flex;
     flex-flow: row wrap;
-    justify-content:space-evenly;   
+    justify-content:space-around;   
 }
 
 .hr {
