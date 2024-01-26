@@ -14,14 +14,14 @@ h2 {
 }
 .nome-ONG {
     margin-right: 50px;
-    width: 150px; /* Largura fixa para o nome da ONG */
+    width: 150px; 
     word-wrap: break-word;
 }
 
 .cards-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espaçamento entre os cards */
+    gap: 20px; 
 }
 
 .card-empresa-historico {
@@ -83,7 +83,7 @@ h2 {
     padding: 0;
     cursor: pointer;
     border-radius: 15px;
-    margin-right: 25px;
+    margin-right: 30px;
 }
 
 .proj-info-leftRightPadding {
