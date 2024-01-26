@@ -313,13 +313,12 @@ section .container-slide {
     height: 65vh;
     position: relative;    
     object-fit: cover;
-    /*display: block;*/
     margin: 0;
 }
 
 .resultado-projeto {
     width: 100%;
-    height: 100%;
+    height:65vh;
     top: 5;
     left: 0;
     position: absolute;  
@@ -327,19 +326,28 @@ section .container-slide {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    overflow-x:auto;
 }
-.resultado-projeto p {
-    font-size: 1rem;   
-    color: var(--amarelo);
-    margin: 0;
+
+.tabela-sobre-ajuda {
     border-radius: 10px;
+    color: var(--amarelo);
     background-color:var(--branco);
     text-align: center;
-    text-decoration-line: overline;
-    text-decoration: none;
-    padding: 0 20px;
+    border: 0 none var(--branco);
+    padding: 5px;
+    margin: 0 20px;
+    overflow-x:auto;
 }
+
+tbody .dados-ajuda {
+    border-spacing: 0.7rem;
+    width: 50%;
+}
+
+th, td {
+    padding: 0 1.2rem;
+}   
 
 .botton-project {
     width: 100%;
@@ -349,11 +357,10 @@ section .container-slide {
     position: absolute;  
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 15rem;
     align-items:center;
     flex-direction: row;
 }
-
 
  .botton-project a {
     text-decoration: none;
@@ -361,11 +368,131 @@ section .container-slide {
     border-radius: 8px;
     background: var(--amarelo);
     color: var(--branco);   
-    margin-right: 25px;   
-    
+    margin-right: 25px;    
 }
 
 .botton-project a:hover {
     color: var(--azul);
 }
 
+.ranking {
+    display: flex;
+    flex-direction:row;
+    align-items:stretch;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+/****tabela empresa****/
+
+.ranking-empresa {
+    width: 100vw;
+    height:60vh;    
+    background-image: linear-gradient(to right, rgb(15, 83, 209), rgba(137, 157, 187, 0.5));  
+}
+
+.ranking-empresa .tabela-ranking-empresa {
+    display: inline-table;
+    border-color: transparent;
+    line-height: 80px;
+    /*border: 0px;*/ 
+    position: absolute;
+}
+
+#a-empr, #b-empr, #c-empr {
+    border: 2px solid var(--amarelo);
+    border-radius: 30%;
+    background-color: azure;
+    color: var(--azul);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.5rem;  
+    
+}
+
+/***tabela ong***/
+
+.ranking-ong .tabela-ranking-ong {
+    display: inline-table;
+    border-color: transparent;
+    line-height: 80px;
+    position: relative;
+    top: 10%;
+    /*border: 0px;*/ 
+    
+}
+
+#a-ong, #b-ong, #c-ong {
+    border: 2px solid var(--amarelo);
+    border-radius: 30%;
+    background-color: azure;
+    color: var(--azul);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.5rem;  
+    
+}
+.ranking-ong { 
+    width: 100vw; 
+    height:60vh;     
+    background-image: linear-gradient(to left, rgb(15, 83, 209), rgba(137, 157, 187, 0.5));    
+}
+
+.img-fundo-sacola > img {
+    width:15vw;
+    height:60vh;
+    position: relative;    
+    object-fit: cover;    
+    margin: 0;
+    padding: 0;   
+}
+
+.ranking-empresa {   
+    color: var(--branco);
+    text-align: center;
+      
+}
+
+.ranking-ong {   
+    color: var(--branco);
+    text-align: center;  
+}
+
+tbody .dados-ajuda {
+    border-spacing: 0.7rem;
+    width: 100%;
+}
+
+th, td {
+    padding: 0 1.2rem;
+}
+
+th {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tabela-ranking-empresa  {   
+    color: var(--branco);   
+    text-align: center;   
+    margin: 50px;
+    
+}
+
+/* Cores 
+--amarelo: rgba(231, 182, 117, 1);
+--preto: rgba(0, 0, 0, 1);
+--azul: rgba(82, 129, 228, 0.94);
+--azulLight: rgba(82, 129, 228, 0.5);
+--branco: white;
+--brancoLight: rgba(238, 238, 238, 1);
+}
+
+
+.motivar, .conecta-todos, .ranking-contribuicao {    
+background-image: url('/assets/img/forms_bg.svg');
+background-blend-mode:multiply;
+background-position: center;
+background-size: 60rem;   
+}*/

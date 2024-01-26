@@ -120,11 +120,30 @@
             <h2 id="sobre-projeto">Quer conhecer mais sobre o projeto?</h2>
             <div class="conhecer-projeto">
                 <div class="img-fundo-legumes">
-                    <img src="assets/img/banca_legumes.jpeg" alt="imagem banca com legumes"></div>
-
-                <div class="resultado-projeto">
-                    <p><strong>Conheça mais sobre a nossa a ajuda</strong>Conheça mais sobre a nossa a ajuda<br>2.000 pessoas 1.300 Kg 50<br>Pessoas assistidas Comida doada Instituições parceiras <br></p><br>                                     
-                </div>
+                    <img src="assets/img/banca_legumes.jpeg" alt="imagem banca com legumes">
+                </div>                
+                    <div class="resultado-projeto">
+                        <table class="tabela-sobre-ajuda" summary="sobre-ajuda" border="0" cellspacing="3" cellpadding="10" >                    
+                            <thead>
+                                <tr><th colspan="3">Conheça mais sobre a nossa a ajuda</th>                
+                                </tr>                        
+                            </thead>           
+                            <tbody class="dados-ajuda">                                
+                                <tr>
+                                    <td>2000</td>
+                                    <td>1300 kg</td>
+                                    <td>50</td>
+                                </tr> 
+                                <tr>
+                                    <td>Pessoas assistidas</td>
+                                    <td>Comida doada</td>
+                                    <td>Instituições parceiras</td>
+                                </tr>                                             
+                            </tbody>
+                            <tfoot>                        
+                            </tfoot>      
+                        </table>
+                    </div>         
                         <div class="botton-project">
                             <a  href="./projeto-informacoes.html">Conheça mais como o projeto funciona</a>  
                         </div>                             
@@ -133,25 +152,25 @@
         
         <!--tabela do ranking de empresas e ongs-->
         <section class="ranking-contribuicao">
-            <h2>Conheça quem mais contribui com o nosso projeto</h2>
+            <h2 id="sobre-projeto" >Conheça quem mais contribui com o nosso projeto</h2>
         <div class="ranking">
-            <div class="ranking-empresa">
-                <table class="table" summary="ranking das empresas" border="1" cellspacing="3" cellpadding="10" >                   
+            <div class="ranking-empresa">               
+                <table class="tabela-ranking-empresa" summary="ranking das empresas" border="1" cellspacing="3" cellpadding="10" >                   
                     <thead>
-                        <tr><th colspan="2">Empresa</th>                
+                        <tr><th colspan="2">Empresas</th>                
                         </tr>                        
                     </thead>           
                     <tbody>
                         <tr>
-                            <td>120</td>
+                            <td id="a-empr">120</td>
                             <td>Empresa A</td>
                         </tr>
                         <tr>
-                            <td>100</td>
+                            <td id="b-empr">100</td>
                             <td>Empresa B</td>
                         </tr> 
                         <tr>
-                            <td>90</td>
+                            <td id="c-empr">90</td>
                             <td>Empresa C</td>
                         </tr>                                             
                     </tbody>
@@ -159,23 +178,26 @@
                     </tfoot>        
                 </table>
             </div>
+            <div class="img-fundo-sacola">
+                <img src="assets/img/doacao_alimento.jpeg" alt="imagem sacola com legumes">
+            </div> 
             <div class="ranking-ong">
-                <table class="table" summary="ranking das ongs" border="1" cellspacing="3" cellpadding="10" >                    
+                <table class="tabela-ranking-ong" summary="ranking das ongs" border="1" cellspacing="3" cellpadding="10" >                    
                     <thead>
-                        <tr><th colspan="2">Empresa</th>                
+                        <tr><th colspan="2">ONGs</th>                
                         </tr>                        
                     </thead>           
                     <tbody>
                         <tr>
-                            <td>120</td>
+                            <td id="a-ong">120</td>
                             <td>ONG A</td>
                         </tr>
                         <tr>
-                            <td>100</td>
+                            <td id="b-ong">100</td>
                             <td>ONG B</td>
                         </tr> 
                         <tr>
-                            <td>90</td>
+                            <td id="b-ong">90</td>
                             <td>ONG C</td>
                         </tr>                                             
                     </tbody>
