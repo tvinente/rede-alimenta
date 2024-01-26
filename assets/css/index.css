@@ -11,8 +11,8 @@
 /****** página index*******/
 
 .motivar, .conecta-todos, .ranking-contribuicao {    
-    background-image: url('/assets/img/forms_bg.svg');
-    background-blend-mode:multiply;
+    background-image: url('../img/forms_bg.svg');
+    background-blend-mode:overlay;
     background-position: left;
     background-size: 65rem;   
 }

@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/index_landing.css">
+    <script src="./assets/js/index.js" defer></script>
  </head>
  <body>
 
@@ -24,7 +25,7 @@
         </div>
         <div class="header-text leftRightPadding" id="header-RedeAlimenta">RedeAlimenta</div>
         <div class="info-banner leftRightPadding info-banner-bg">
-            Pronto para aumentar a rede?
+            Ligando quem faz com quem pode
         </div>
     </header>
     <main>
@@ -35,22 +36,21 @@
                 As doações<br>geraram pontos para a sua  empresa, e gera um selo de empresa que colabora com<br>a erradicação da fome na sociedade.
                 </p>                               
             </div>
-            <div>
-                <img src="./assets/img/lata_doacao1.png" id="lata-img" alt="imagem de uma mão entregando uma lata"> 
-            </div>
-            
+            <div >
+                <img src="./assets/img/lata_doacao1.png" alt="imagem de uma mão entregando uma lata" id="lata-img"> 
+            </div>            
         </section>      
         
-        <!--fazer carrosel com slides com dados estatísticos sobre fome -->
-        <section class="container-slide">
-            <div class="slider">               
-                     <!--radio buttons-->
+        <!--fazer carrosel com slides com dados estatísticos sobre fome 
+     <section class="container-slide">
+            <div class="slider">              
+                     <!-radio buttons
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2"> 
                 <input type="radio" name="radio-btn" id="radio3"> 
                 <input type="radio" name="radio-btn" id="radio4">             
       
-              <!--slides imagens-->
+              <!-slides imagens--
              <div class="slide-box first">
               <h2>No Brasil 21 milhões de pessoas não tem o que comer todos os dias</h2>
               <img src="assets/img/prato-vazio.jpg" alt="imagem de prato vazio" class="img-slide">       
@@ -67,8 +67,8 @@
               <h2>Entre 10 famílias <strong class="dado-fome"> 6 famílias <strong>não tem acesso</strong> a alimentação plena</h2>
               <img src="assets/img/crianças-juntas.jpg" alt="imagem pessoa pedido ajuda na rua" class="img-slide">
              </div>
-             <!-- final slide imagens-->      
-              <!--navigation auto-->
+             <!- final slide imagens-->      
+              <!--navigation auto--
               <div class="navigation-auto">
                   <div class="auto-btn1"></div>
                   <div class="auto-btn2"></div>
@@ -77,32 +77,32 @@
               </div>
                        
                 </div>
-                 <!--criando botões(label) para(referente) o input radio -->
+                 <!-criando botões(label) para(referente) o input radio --
              <div class="manual-navigation">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
                 <label for="radio4" class="manual-btn"></label>                 
               </div> 
-        </section>
+        </section>-->
 
     <!--conexão com todos os envolvidos na doação-->
     <section class="conecta-todos">
         <h2 id="que-fazer">O que podemos fazer?</h2>
         <div class="conectar-parceiros">          
-            <div class="colaborar " id="conecta-empresa">
+            <div class="colaborar-empresa">
                 <h2>Empresa</h2>
-                <p>quem pode doar</p>
+                <h4>quem pode doar</h4>
             </div>
-            <div  class="colaborar">
+            <div class="colaborar-rede">
                 <h2>RedeAlimenta</h2>
-                <p>é a conexão</p>
+                <h4>é a conexão</h4>
                 <hr class="hr">               
-                <img src="assets/img/Logo.png" alt="logo RedeAlimenta">
+                <img src="assets/img/Logo.png" alt="logo RedeAlimenta" id= "logo-redeAlimenta" >
             </div>
-            <div class="colaborar conecta-ong" id="conecta-ong">
+            <div class="colaborar-ong">
                 <h2>ONG</h2>
-                <p>quem ajuda</p>
+                <h4>quem ajuda</h4>
             </div>
         </div>    
     </section>   
@@ -112,15 +112,15 @@
                 <p>Somos um grupo de pessoas voluntárias que colaboram para oferecer alimentação às pessoas em situação de vulnerabilidade, pois acreditamos que todos têm direito à alimentação digna. Para contribuirmos, criamos a plataforma <strong>RedeAlimenta</strong> para conectar empresas que descartariam seus produtos, por não ter mais valor comercial, mas que continuam aptos ao consumo, com as instituições que preparam e distribuem as refeições prontas.
                 Trabalhamos de forma independente e voluntária, sem nenhum vínculo com partido político, governamental ou empresarial.                  
                 </p>
-                <a class="botton-login" href="./index-entrar-logar.html">Inscreva-se e comece a ajudar!</a>                
+                <a href="./index-entrar-logar.html" id="botton-login">Inscreva-se e comece a ajudar!</a>                
             </div> 
         </section>
 
         <section class="quer-conhecer-projeto">
             <h2 id="sobre-projeto">Quer conhecer mais sobre o projeto?</h2>
             <div class="conhecer-projeto">
-                <div class="img-fundo">
-                    <img src="assets/img/banca_legumes.jpeg" alt="imagem banca com legumes" id="img-fundo"></div>
+                <div class="img-fundo-legumes">
+                    <img src="assets/img/banca_legumes.jpeg" alt="imagem banca com legumes"></div>
 
                 <div class="resultado-projeto">
                     <p><strong>Conheça mais sobre a nossa a ajuda</strong>Conheça mais sobre a nossa a ajuda<br>2.000 pessoas 1.300 Kg 50<br>Pessoas assistidas Comida doada Instituições parceiras <br></p><br>                                     
@@ -133,7 +133,7 @@
         
         <!--tabela do ranking de empresas e ongs-->
         <section class="ranking-contribuicao">
-            <h2>Conheça quem mais contribui com o nosso projeto RedeAlimenta</h2>
+            <h2>Conheça quem mais contribui com o nosso projeto</h2>
         <div class="ranking">
             <div class="ranking-empresa">
                 <table class="table" summary="ranking das empresas" border="1" cellspacing="3" cellpadding="10" >                   
