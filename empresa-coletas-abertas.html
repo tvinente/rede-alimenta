@@ -7,57 +7,57 @@
         Rodapé com informações de contato;
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="bg">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/logo_pequena.png" type="image/x-icon">
         <title>Coletas em Aberto</title>
 
         <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="./assets/css/proj_info.css">
+        <link rel="stylesheet" href="./assets/css/empresa.css">
     </head>
     <body>
         <!-- Cabecalho utilizado em todas as paginas com a logo e nome do projeto -->
-        <header class="sample-header">
-            <div>
-                <img id="new-logo" class="logo-img" src="assets/img/Logo.png" alt="Logo RedeAlimenta">
+        <header>
+            <div class="header-text leftRightPadding" id="header-RedeAlimenta">
+                RedeAlimenta
+            </div>
+            <div class="container-head-subtitle leftRightPadding">
+                Pronto para ajudar a rede?
+            </div>
+            <div class="flex-inner">
+                <div id="acao" class="button-container">
+                    <div>
+                        <a href="./empresa-formulario-contribuicao.html">
+                            <button type="button" class="primario">Fazer Postagem</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./empresa-coletas-abertas.html">
+                            <button type="button"  class="primario desativado">Coletas em Aberto</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./empresa-historico.html">
+                            <button type="button"  class="primario">Histórico</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./empresa-formulario.html">
+                            <button type="button"  class="primario">Editar Informações</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./index.html">
+                            <button type="button"  class="primario">Sair</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
             <div class="container">        
-                <div class="container-head">
-                    <h1 class="header-text">RedeAlimenta</h1>
-                    <h2 class="container-head-subtitle">Pronto para ajudar a rede?</h2>
-                </div>
-                <div class="flex-inner">
-                    <div id="acao" class="button-container">
-                        <div>
-                            <a href="./empresa-formulario-contribuicao.html">
-                                <button type="button" class="texto-botao primario">Fazer Postagem</button>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="./empresa-coletas-abertas.html">
-                                <button type="button"  class="texto-botao primario">Coletas em Aberto</button>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="./empresa-historico.html">
-                                <button type="button"  class="texto-botao primario">Histórico</button>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="./empresa-formulario.html">
-                                <button type="button"  class="texto-botao primario">Editar Informações</button>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="./index.html">
-                                <button type="button"  class="texto-botao primario">Sair</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
                 <div class="flex-outer">
                     <form action="/coletas-abertas" method="post">
                         <div id="secao-coleta">
