@@ -2,3 +2,64 @@
 Aquivo css com os estilos da página "Entrar e Login" (index-entrar-logar.html)
 Usar prefixo index-ent-log-
 */
+
+/****** configuração padrão do projeto*******/
+:root {
+    /* Cores */
+    --amarelo: rgba(231, 182, 117, 1);
+    --preto: rgba(0, 0, 0, 1);
+    --azul: rgba(82, 129, 228, 0.94);
+    --azulLight: rgba(82, 129, 228, 0.5);
+    --branco: white;
+    --brancoLight: rgba(238, 238, 238, 1);
+}
+
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*background-color: var(--branco);*/
+}
+
+/*****pronto aumentar rede****
+.info-banner{
+    color: var(--branco);
+}
+
+
+.info-banner-bg {
+    margin-top: 20px;
+    text-align: center;
+    border: 5px solid blue;
+}*/
+/*****entrar na sua conta e use a rede*****/
+#conta-rede {
+    background-color: var(--amarelo);
+    /*background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:multiply;
+    background-position:right;*/ 
+    /*margin-top: 20px; 
+    margin-bottom: 20px;*/
+    color: var(--brancoLight);
+    text-align:center;    
+    border: 5px solid red;   
+}
+
+/*****formulário login rede******/
+.login-rede {
+    margin-top: 20px;
+    display: flex;
+    border: 5px solid red;
+}
+
+
+
+@media (max-width: 1200px) {
+    .leftRightPadding {
+        padding: 0vw 1vw;
+        text-align: center;       
+    }
+    #header-RedeAlimenta {
+        font-size: 2.9rem;      
+    }
+}
