@@ -7,6 +7,7 @@ Usar prefixo empresa-
     display: flex;
     gap: 10px;
     background: var(--Amarelo, #E7B675);
+    margin-top: 15px;
 }
 h2 {
     color: white;
@@ -67,7 +68,7 @@ h2 {
     margin-right: 50px;
 }
 
-.empresa-botao-historico {
+.ONG-botao-historico {
     display: flex;
     width: 630px;
     height: 70px;
@@ -90,7 +91,7 @@ h2 {
     border-radius: 15px;
     margin-right: 30px;
     margin-top: 35px;
-    
+
 }
 
 .proj-info-leftRightPadding {

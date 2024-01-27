@@ -110,6 +110,7 @@ p {
     display: flex;
     gap: 10px;
     background: var(--Amarelo, #E7B675);
+    margin-top: 15px;
 }
 h2 {
     color: white;
