@@ -108,8 +108,17 @@ p {
 
 .titulo-ONG-historico {
     display: flex;
-    gap: 10px;
-    background: var(--Amarelo, #E7B675);
+    align-items: center;
+    height: 108px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: var(--amarelo);
+    color: var(--branco); 
+    /* h2 style from main.css */
+    font-size: 2.5rem; /*40px;*/ 
+    font-family: Kadwa-bold;
+    font-weight: 700;
+    letter-spacing: 1.2px;
 }
 h2 {
     color: white;
