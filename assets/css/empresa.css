@@ -122,10 +122,12 @@ Usar prefixo empresa-
     align-items: flex-start;
     gap: 10px;
     background: var(--Amarelo, #E7B675);
+    color: white;
 }
 
 .contribuicoes-input{
     display: flex;
+    padding-left: 280px;
     margin-bottom: 20px;
 }
 
@@ -138,12 +140,21 @@ Usar prefixo empresa-
     margin-bottom: 10px;
 }
 
+.dados-coleta h2 {
+    color: white; /* Garante que o texto dentro de h2 seja branco */
+}
+
 .contribuicoes-informacoes-titulo {
     display: flex;
     padding-left: 280px;
     align-items: flex-start;
     gap: 10px;
     background: var(--Amarelo, #E7B675);
+    color: white;
+}
+
+.contribuicoes-informacoes-titulo h2 {
+    color: white;
 }
 
 .contribuicao-botao {
