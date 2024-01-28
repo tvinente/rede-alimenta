@@ -5,13 +5,19 @@ Usar prefixo empresa-
 
 .titulo-empresa-historico {
     display: flex;
-    gap: 10px;
-    background: var(--Amarelo, #E7B675);
-    margin-top: 15px;
+    align-items: center;
+    height: 108px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: var(--amarelo);
+    color: var(--branco); 
+    /* h2 style from main.css */
+    font-size: 2.5rem; /*40px;*/ 
+    font-family: Kadwa-bold;
+    font-weight: 700;
+    letter-spacing: 1.2px;
 }
-h2 {
-    color: white;
-}
+
 .empresa-historico{
     display: flex;
     align-items: flex-start;
@@ -85,7 +91,6 @@ h2 {
     font-size: 1.125rem; /*18px;*/
     border: none;
     background: var(--Azul, rgba(82, 129, 228, 0.94));
-    padding: 15px 30px;
     padding: 0;
     cursor: pointer;
     border-radius: 15px;
