@@ -105,17 +105,27 @@ h2 {
 
 /* Estilização da tela de contribuição da empresa */
 
+.proj-info-leftRightPadding{
+    display: flex;
+    padding-left: 280px;
+}
+
 .contribuicoes-titulo{
     display: flex;
-    padding-left: 320px;
+    padding-left: 280px;
     align-items: flex-start;
     gap: 10px;
     background: var(--Amarelo, #E7B675);
 }
 
+.contribuicoes-input{
+    display: flex;
+    margin-bottom: 20px;
+}
+
 .dados-coleta{
     display: flex;
-    padding-left: 320px;
+    padding-left: 280px;
     align-items: flex-start;
     gap: 10px;
     background: var(--Azul, rgba(82, 129, 228, 0.94));
@@ -124,7 +134,7 @@ h2 {
 
 .contribuicoes-informacoes-titulo {
     display: flex;
-    padding-left: 320px;
+    padding-left: 280px;
     align-items: flex-start;
     gap: 10px;
     background: var(--Amarelo, #E7B675);
@@ -146,6 +156,8 @@ h2 {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -158,7 +170,7 @@ h2 {
     display: flex;
     width: 196px;
     padding: 10px;
-    margin-left: 320px;
+    margin-left: 280px;
     justify-content: center;
     align-items: center;
     gap: 10px;
