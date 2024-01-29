@@ -49,7 +49,7 @@ main {
     text-align: left;
     /* h3 style from main.css */
     color: var(--preto); 
-    font-size: 24px;
+    font-size: 1.5rem; /*24px;*/
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -64,7 +64,7 @@ main {
 }
 
 .proj-info-colapsaveis:after {
-    content: url(/assets/img/selectarrow.svg);
+    content: url(/assets/img/select_arrow.svg);
     transform: rotate(270deg);
     float: left;
 }

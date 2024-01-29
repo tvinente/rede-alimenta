@@ -57,30 +57,43 @@
             </div>
         </header>
         <main>
-            <div class="container">        
-                <div>
-                    <div class="lista-doacoes">
-                        <h2 class="titulo-cadastro-um">Lista de Doações</h2>
-                        <form> 
+                    <div>
+                        <h2 class="contribuicoes-titulo">Lista de Doações</h2>
+                        <form class="contribuicao-leftPadding"> 
+                            <div class="contribuicoes-input ">
                             <input type="text" placeholder="Produto">
-                            <input type="number" placeholder="Quantidade">
+                            <input type="text" placeholder="Quantidade">
                             <select name="unidade">
                                 <option value="litros">Litros</option>
                                 <option value="quilos">Quilos</option>
                             </select>
-                            <button class="texto-botao">+</button>
-                            <ul>
-                                <li> Batata <span>2,0</span> <span>kg</span></li>
-                                <li> Arroz <span>5,0</span> <span>kg</span>
-                                <li> Feijão <span>6,0</span> <span>kg</span>
-                                <li> Carne <span>6,0</span> <span>kg</span>
-                                <li> Óleo de soja <span>10,0</span> <span>l</span>
-                            </ul>
+                            <button class="contribuicao-botao">+</button>
+                            </div>
                         </form>
+                        <div class="contribuicoes-input proj-info-leftRightPadding">
+                            <input type="text" placeholder="Arroz" disabled>
+                            <input type="text" placeholder="20" disabled>
+                            <select name="unidade" disabled>
+                                <option value="litros">Quilos</option>
+                                <option value="quilos">Litros</option>
+                            </select>
+                            <button class="contribuicao-botao">+</button>
+                            </div>
+                            <div class="contribuicoes-input proj-info-leftRightPadding">
+                                <input type="text" placeholder="Óleo de soja" disabled>
+                                <input type="text" placeholder="10" disabled>
+                                <select name="unidade" disabled>
+                                    <option value="litros">Litros</option>
+                                    <option value="quilos">Quilos</option>
+                                </select>
+                                <button class="contribuicao-botao">+</button>
+                                </div>
                     </div>
                     <div class="dados-coleta">
-                        <h1>Dados da coleta</h1>
-                        <form>
+                        <h2>Dados da coleta</h2>
+                    </div>
+                    <div>
+                        <form class="proj-info-leftRightPadding">
                             <select name="horarioColeta" id="horario-coleta">
                                 <option>08:00 - 09:00</option>
                                 <option>09:00 - 10:00</option>
@@ -109,17 +122,19 @@
                             </select>
                         </form>
                     </div>
-                    <div class="informacoes">
-                        <h1>Informações</h1>
+                    <div class="contribuicoes-informacoes-titulo">
+                        <h2>Informações</h2>
+                    </div>
+                    <div class="contribuicoes-informacoes">
+                    <div class="contribuicoes-informacoes-texto">
                         <p> As informações preenchidas nesse formlário serão postadas para todas as ONG's cadastradas na sua região dentro da RedeAlimenta. Fique atendto as mensagens da RedeAlimenta avisando o aceite e qual ONG irá fazer a coleta no dia informado</p>
                     </div>
-                    <button class="texto-botao" id="botao-postagem">FAZER POSTAGEM</button>
-                </div>
-            </div>
+                    <button class="postagem-botao" id="botao-postagem">FAZER POSTAGEM</button>
+                    </div>
         </main>
         <footer>
             <div class="redes-sociais"><br>
-                <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/iconInstagramFigma.svg" height="60" alt="logo instagram"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/icon_instagram_figma.svg" height="60" alt="logo instagram"></a>
             </div>
             <div class="texto">
                 <p>RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG</p>
