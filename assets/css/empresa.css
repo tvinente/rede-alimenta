@@ -109,3 +109,104 @@ Usar prefixo empresa-
     background-blend-mode:overlay;
 }
 
+/* Estilização da tela de contribuição da empresa */
+
+.proj-info-leftRightPadding{
+    display: flex;
+    padding-left: 280px;
+}
+
+.contribuicoes-titulo{
+    display: flex;
+    padding-left: 280px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--Amarelo, #E7B675);
+    color: white;
+}
+
+.contribuicoes-input{
+    display: flex;
+    padding-left: 280px;
+    margin-bottom: 20px;
+}
+
+.dados-coleta{
+    display: flex;
+    padding-left: 280px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--Azul, rgba(82, 129, 228, 0.94));
+    margin-bottom: 10px;
+}
+
+.dados-coleta h2 {
+    color: white; /* Garante que o texto dentro de h2 seja branco */
+}
+
+.contribuicoes-informacoes-titulo {
+    display: flex;
+    padding-left: 280px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--Amarelo, #E7B675);
+    color: white;
+}
+
+.contribuicoes-informacoes-titulo h2 {
+    color: white;
+}
+
+.contribuicao-botao {
+    width: 50px; 
+    height: 50px; 
+    padding: 5px; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--Amarelo, #E7B675);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.contribuicoes-informacoes-texto{
+    color: var(--branco);
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(--Azul, rgba(82, 129, 228, 0.94));
+}
+
+.postagem-botao{
+    color: var(--branco);
+    display: flex;
+    width: 196px;
+    padding: 10px;
+    margin-left: 280px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(--Amarelo, #E7B675);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.constribuicoes-lista {
+    display: flex;
+    list-style-type: none;
+}
+
+.constribuicoes-lista li{
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 8px 15px;
+    width: 148px;
+}
