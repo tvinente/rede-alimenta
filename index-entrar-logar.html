@@ -34,45 +34,54 @@
         </header>
    <main>
     <section>
-        <div class="login-rede">
-            <h2>Entre na sua conta e use a Rede!</h2>
-            <form action="" class="login-dados">
-                <div>
-                    <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
-                </div>
-                <div>
-                    <label for="password">Senha</label>
-                <input type="password" name="password" id="password">
+        <h2 id="conta-rede">Entre na sua conta e use a Rede!</h2>
+        <div class="acesso">
+            <div class="login-rede">            
+                <form action="">
+                   <div class="acessar-site">
+                    <div class="input-box">
+                        <input type="email" name="email" id="email-rede" placeholder="E-mail" autocomplete="off" required>
+                        <input type="password" name="password" id="senha-rede" placeholder="Senha" required>
+                    </div>
+                    <div class="button-login">                          
+                        <button type="submit" value="login" id="btn-login">Login</button>
+                        <a href="" id="senha-esqueci">Esqueci a senha</a>
+                    </div>
+                   </div>                                                    
+                </form>                
+            </div>
+            <div class="img-login-dados">
+                <img src="assets/img/brocolis.avif" alt="imagem legumes"> 
             </div> 
-            <button type="button" id="btn-login" class="texto-botao primario">Login</button>
-            <button type="button" id="btn-password" class="texto-botao primario">Esqueci a senha</button>
-            <div>
-                <img src="assets/img/prato_com_comida.jpeg" alt="imagem prato com comida" width="300"> 
-            </div>
-            </form>
-        </div>
+        </div>        
     </section>
-    <div class="login-cadastro-novo">
-        <h2>Primeira vez aqui? Cadastre-se!</h2>
-        <p>Informe as suas credenciais e se você representa uma Empresa (quem pode doar) ou uma ONG(quem sabe ajudar)</p>
-        <form action="" class="login-dados-novo">
-            <div>
-                <label for="email">E-mail</label>
-            <input type="email" name="email" id="email-novo">
-            </div>
-            <div>
-                <label for="password">Senha</label>
-            <input type="password" name="password" id="password-new">
-        </div> 
-        <a href="./empresa-formulario.html"><button type="button" id="btn-login-new" class="texto-botao primario">Empresa</button></a>
-        <a href="./ONG-formulario.html"><button type="button" id="btn-password-new" class="texto-botao primario">ONG</button></a>
-       <div>
-        <img src="assets/img/arroz_linguica.jpg" alt="imagem prato com arroz e carne" width="300">
-       </div>             
-        </form>
-    </div>
-</section>    
+
+    <section>
+        <h2 id="cadastro-rede">Primeira vez aqui? Cadastre-se!</h2>
+        <div class="cadastro">           
+                <div class="informar-credencial">
+                    <p>Informe as suas credenciais e se você representa  uma Empresa<br> (quem pode doar) ou uma ONG(quem sabe ajudar)</p>
+                </div>            
+            <form action="">
+                <div class="login-dados-novo">
+                    <div class="dado-novo">
+                        <input type="email" name="email" id="email-novo" placeholder="E-mail" autocomplete="off" required>
+                        <input type="password" name="password" id="password-new" placeholder="Senha" required>
+                    </div>          
+               
+                <div class="cadastro-empr-ong">
+                    <a href="./empresa-formulario.html"><button type="button" id="btn-login-new" class="texto-botao primario">Empresa</button></a>
+                    <a href="./ONG-formulario.html"><button type="button" id="btn-ong-new" class="texto-botao primario">ONG</button></a> 
+                    </div> 
+                </div>                                    
+            </form>     
+           
+            <div class="img-cadastro">
+            <img src="assets/img/arroz_linguica.jpg" alt="imagem prato com arroz e carne">
+           </div> 
+        </div>    
+    </section>  
+ 
    </main>
 
     <!--footer da página-->

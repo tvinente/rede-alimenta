@@ -2,3 +2,283 @@
 Aquivo css com os estilos da página "Entrar e Login" (index-entrar-logar.html)
 Usar prefixo index-ent-log-
 */
+
+/****** configuração padrão do projeto*******/
+:root {
+    /* Cores */
+    --amarelo: rgba(231, 182, 117, 1);
+    --preto: rgba(0, 0, 0, 1);
+    --azul: rgba(82, 129, 228, 0.94);
+    --azulLight: rgba(82, 129, 228, 0.5);
+    --branco: white;
+    --brancoLight: rgba(238, 238, 238, 1);
+}
+
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+/*****entrar na sua conta e use a rede*****/
+#conta-rede {
+    background-color: var(--amarelo);
+    color: var(--brancoLight);
+    text-align:center;    
+}
+
+/*****formulário login rede******/
+.acesso {           
+    display: flex;
+    flex-direction: column;   
+    justify-content:space-around;
+    align-items:center;   
+    width: 100vw;
+    /*height: 50vh;*/
+   
+}
+
+.acesso .acessar-site {
+    position:absolute;
+    z-index: 1;
+   
+}
+
+.acesso .img-login-dados {
+    position: relative;
+    z-index: 0; 
+}
+
+.acessar-site {    
+    opacity: 3;    
+    background-color:rgba(238, 238, 238, 0.8);    
+    border-radius: 8px; 
+    margin-top: 8rem;
+}
+
+#email-rede, #senha-rede {
+    width: 90%;
+    border: none;
+    border-radius: 8px;   
+    margin: 10px;
+    padding: 0;
+    padding-left: 10px;   
+    margin-left: 10px;    
+    font-weight: bold;
+    font-size: 0.8rem;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+    cursor: pointer;    
+}
+
+.button-login {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 15px;
+    text-align: center;   
+}
+
+#btn-login, #senha-esqueci {    
+    font-size:1rem;
+    font-weight: bolder;
+    text-decoration: none;
+    border: none;
+    margin: 0 5px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    background: var(--amarelo);
+    color: var(--branco);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;   
+}
+
+#email-rede:hover {
+    background-color: var(--azul);
+    transition: 0.5s;        
+    opacity: 0.7;        
+       }
+#senha-rede:hover {
+    background-color: var(--azul);
+    transition: 0.5s;        
+    opacity: 0.7;        
+           }
+#btn-login:hover {
+    background-color: var(--azul);
+    transition: 0.5s;        
+    opacity: 0.7;        
+               }
+
+#senha-esqueci:hover {
+    background-color: var(--azul);
+    transition: 0.5s;        
+    opacity: 0.7;        
+}
+
+.img-login-dados > img {
+    width: 1200px;
+    height:460px;
+    object-fit:cover;
+    margin: 0;
+ }
+
+/*****cadastro****/
+#cadastro-rede {    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--azul);
+    color: var(--brancoLight);
+    text-align:center;  
+}
+
+.cadastro {    
+    display: flex;
+    flex-direction: column;   
+    justify-content:center;
+    align-items:center;
+    margin:  auto;
+    width: 100vw;
+    height: 450px;
+}
+
+.cadastro .informar-credencial {
+    position: absolute;
+    z-index: 2;
+}
+
+.cadastro .login-dados-novo {
+    position:relative;
+    z-index: 1;
+    right: 1rem;
+    top: 3rem;
+} 
+
+.cadastro .img-cadastro {    
+    position: absolute;
+    z-index: 0;
+    object-fit: contain;
+}
+
+.img-cadastro > img {
+    width: 100%;
+    height: 450px;
+    object-fit:contain;
+    margin: 0;
+    
+}
+
+.informar-credencial {
+    margin-bottom: 12rem;
+    border-radius: 15px;
+    padding: 5px;   
+    background-color: var(--azul);
+    color: var(--brancoLight);
+    text-align: center;  
+}
+
+.login-dados-novo {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;        
+    opacity: 3;    
+    background-color:rgba(238, 238, 238, 0.9);    
+    border-radius: 8px; 
+}
+
+.dado-novo, .cadastro-empr-ong{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#email-novo, #password-new {
+    width: 90%;
+    border: none;
+    border-radius: 8px;   
+       font-weight: bold;
+    font-size: 0.8rem;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+    cursor: pointer;    
+}
+
+#email-novo {
+    margin: 10px;
+    padding: 0;
+    padding-left: 10px;   
+    margin-left: 25px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.cadastro-empr-ong #btn-login-new, #btn-ong-new  {    
+    font-size:0.8rem;
+    font-weight: bolder;
+    text-decoration: none;
+    border: none;  
+    border-radius: 8px;
+    background: var(--amarelo);
+    color: var(--branco);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+#btn-login-new {
+    margin-top: 36px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    padding: 0 20px;
+}
+
+#btn-login-new:hover {
+    background-color: var(--azul);
+        transition: 0.5s;        
+        opacity: 0.7;           
+}
+
+#btn-ong-new {
+    margin-top: 5px;
+    margin-bottom: 10px;      
+}
+
+#btn-ong-new:hover {
+     background-color: var(--azul);
+    transition: 0.5s;        
+    opacity: 0.7;        
+        }
+
+@media (max-width: 1200px) {
+    .leftRightPadding {
+        padding: 0vw 1vw;
+        text-align: center;       
+    }
+    #header-RedeAlimenta {
+        font-size: 2.9rem;      
+    }
+    .acessar-site {        
+        margin-top: 10rem;
+        margin-right: 3rem;
+        display:block;
+    }
+
+     .informar-credencial {
+        text-align: center;
+        font-size: 0.9rem;
+}
+.img-cadastro > img {
+    width: 100%;
+     height: 450px;
+      object-fit:contain;
+      margin: 0;
+      
+  }
+  .img-login-dados > img {
+    width: 100%;
+    height:460px;
+     object-fit:contain;
+     margin: 0;
+ }
+}
