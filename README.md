@@ -1,5 +1,5 @@
 <h1 align="left">
-  <img src="assets/img/Logo.png" alt="Logo" width="100">
+  <img src="assets/img/logo.png" alt="logo" width="100">
 </h1>
 
 # RedeAlimenta 

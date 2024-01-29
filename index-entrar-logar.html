@@ -20,7 +20,7 @@
      <body>    
         <header>
             <div class="leftRightPadding">
-                <img id="new-logo" src="assets/img/Logo.png" alt="Logo RedeAlimenta">
+                <img id="new-logo" src="assets/img/logo.png" alt="logo RedeAlimenta">
                 <nav class="menu-botoes-nav">
                     <div class="text-button hover-button"><a href="./index.html">Página inicial</a></div>
                     <div class="text-button hover-button"><a href="./projeto-informacoes.html">Como o projeto funciona</a></div>
@@ -55,39 +55,32 @@
             </div> 
         </div>        
     </section>
-
-    <section>
-        <h2 id="cadastro-rede">Primeira vez aqui? Cadastre-se!</h2>
-        <div class="cadastro">           
-                <div class="informar-credencial">
-                    <p>Informe as suas credenciais e se você representa  uma Empresa<br> (quem pode doar) ou uma ONG(quem sabe ajudar)</p>
-                </div>            
-            <form action="">
-                <div class="login-dados-novo">
-                    <div class="dado-novo">
-                        <input type="email" name="email" id="email-novo" placeholder="E-mail" autocomplete="off" required>
-                        <input type="password" name="password" id="password-new" placeholder="Senha" required>
-                    </div>          
-               
-                <div class="cadastro-empr-ong">
-                    <a href="./empresa-formulario.html"><button type="button" id="btn-login-new" class="texto-botao primario">Empresa</button></a>
-                    <a href="./ONG-formulario.html"><button type="button" id="btn-ong-new" class="texto-botao primario">ONG</button></a> 
-                    </div> 
-                </div>                                    
-            </form>     
-           
-            <div class="img-cadastro">
-            <img src="assets/img/arroz_linguiça.jpg" alt="imagem prato com arroz e carne">
-           </div> 
-        </div>    
-    </section>  
- 
+    <div class="login-cadastro-novo">
+        <h2>Primeira vez aqui? Cadastre-se!</h2>
+        <p>Informe as suas credenciais e se você representa uma Empresa (quem pode doar) ou uma ONG(quem sabe ajudar)</p>
+        <form action="" class="login-dados-novo">
+            <div>
+                <label for="email">E-mail</label>
+            <input type="email" name="email" id="email-novo">
+            </div>
+            <div>
+                <label for="password">Senha</label>
+            <input type="password" name="password" id="password-new">
+        </div> 
+        <a href="./empresa-formulario.html"><button type="button" id="btn-login-new" class="texto-botao primario">Empresa</button></a>
+        <a href="./ONG-formulario.html"><button type="button" id="btn-password-new" class="texto-botao primario">ONG</button></a>
+       <div>
+        <img src="assets/img/arroz_linguica.jpg" alt="imagem prato com arroz e carne" width="300">
+       </div>             
+        </form>
+    </div>
+</section>    
    </main>
 
     <!--footer da página-->
     <footer>
         <div class="redes-sociais"><br>
-            <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/iconInstagramFigma.svg" height="60" alt="logo instagram"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/icon_instagram_figma.svg" height="60" alt="logo instagram"></a>
         </div>
         <div class="texto">
             <p>RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG</p>
