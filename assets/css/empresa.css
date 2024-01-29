@@ -111,29 +111,50 @@ Usar prefixo empresa-
 
 /* Estilização da tela de contribuição da empresa */
 
+.proj-info-leftRightPadding{
+    display: flex;
+    padding-left: 280px;
+}
+
 .contribuicoes-titulo{
     display: flex;
-    padding-left: 320px;
+    padding-left: 280px;
     align-items: flex-start;
     gap: 10px;
     background: var(--Amarelo, #E7B675);
+    color: white;
+}
+
+.contribuicoes-input{
+    display: flex;
+    padding-left: 280px;
+    margin-bottom: 20px;
 }
 
 .dados-coleta{
     display: flex;
-    padding-left: 320px;
+    padding-left: 280px;
     align-items: flex-start;
     gap: 10px;
     background: var(--Azul, rgba(82, 129, 228, 0.94));
     margin-bottom: 10px;
 }
 
+.dados-coleta h2 {
+    color: white; /* Garante que o texto dentro de h2 seja branco */
+}
+
 .contribuicoes-informacoes-titulo {
     display: flex;
-    padding-left: 320px;
+    padding-left: 280px;
     align-items: flex-start;
     gap: 10px;
     background: var(--Amarelo, #E7B675);
+    color: white;
+}
+
+.contribuicoes-informacoes-titulo h2 {
+    color: white;
 }
 
 .contribuicao-botao {
@@ -149,9 +170,12 @@ Usar prefixo empresa-
 }
 
 .contribuicoes-informacoes-texto{
+    color: var(--branco);
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -161,10 +185,11 @@ Usar prefixo empresa-
 }
 
 .postagem-botao{
+    color: var(--branco);
     display: flex;
     width: 196px;
     padding: 10px;
-    margin-left: 320px;
+    margin-left: 280px;
     justify-content: center;
     align-items: center;
     gap: 10px;
