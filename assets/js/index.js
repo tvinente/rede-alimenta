@@ -1,28 +1,31 @@
-/***slider*****/
+/***slider
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval(function(){
+    nextImage();
+}, 7000)
+
+function nextImage(){
+    count++;
+    if(count>4){
+        count = 1;
+    }
+
+    document.getElementById("radio"+count).checked = true
+}***/
 
 let slideIndex = 1;
-showSlides(slideIndex);
+showSlides();
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let botoes = document.getElementsByClassName("botao");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < botoes.length; i++) {
-    botoes[i].className = botoes[i].className.replace(" active", "");
-  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  botoes[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
 }
