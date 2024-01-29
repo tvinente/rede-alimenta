@@ -28,13 +28,11 @@ Usar prefixo index-ent-log-
 }
 
 /*****formulário login rede******/
-.acesso {
-    /*margin-top: 5px;*/       
+.acesso {           
     display: flex;
     flex-direction: column;   
     justify-content:space-around;
-    align-items:center;
-    /*margin: auto;*/
+    align-items:center;   
     width: 100vw;
     /*height: 50vh;*/
    
@@ -120,8 +118,8 @@ Usar prefixo index-ent-log-
 .img-login-dados > img {
     width: 1200px;
     height:460px;
-     object-fit:cover;
-     margin: 0;
+    object-fit:cover;
+    margin: 0;
  }
 
 /*****cadastro****/
@@ -162,8 +160,8 @@ Usar prefixo index-ent-log-
 }
 
 .img-cadastro > img {
-  width: 100%;
-   height: 450px;
+    width: 100%;
+    height: 450px;
     object-fit:contain;
     margin: 0;
     
@@ -171,23 +169,21 @@ Usar prefixo index-ent-log-
 
 .informar-credencial {
     margin-bottom: 12rem;
-   border-radius: 15px;
-   padding: 5px;   
-   background-color: var(--azul);
-   color: var(--brancoLight);
-   text-align: center;  
+    border-radius: 15px;
+    padding: 5px;   
+    background-color: var(--azul);
+    color: var(--brancoLight);
+    text-align: center;  
 }
 
 .login-dados-novo {
     display: flex;
     flex-direction: row;
     justify-content:center;
-    align-items:center;
-        
+    align-items:center;        
     opacity: 3;    
     background-color:rgba(238, 238, 238, 0.9);    
     border-radius: 8px; 
-    border: 5px solid red;
 }
 
 .dado-novo, .cadastro-empr-ong{
