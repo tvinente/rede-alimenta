@@ -83,7 +83,7 @@ a {
 body {
     /* Manter porcentagem para não extender a página lateralmente */
     width: 100%;
-    margin: unset; 
+    margin: unset;   
 }
 
 
@@ -171,13 +171,17 @@ nav a {
     width: 100%; 
     height: 180px; 
     background: var(--azul);
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:overlay;    
 }
 
 #header-banner-texto {
     padding: 50px 0px 0px 10px;
     color: var(--branco); 
     word-wrap: break-word;
-}
+    text-align:center;    
+} 
+
 
 header #projeto-descricao {
     height: 200px;
