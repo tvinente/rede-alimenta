@@ -210,3 +210,34 @@ Usar prefixo empresa-
     padding: 8px 15px;
     width: 148px;
 }
+
+
+/* Empresa coletas em aberto */
+
+.coletas-abertas-titulo{
+    display: flex;
+    padding-left: 280px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--Amarelo, #E7B675);
+    color: white;
+}
+
+.situacao-coletas-empresa{
+    display: flex;
+    flex-direction: column;
+}
+
+.informacao-coletas-empresa{
+    color: var(--branco);
+    text-align: justify;
+    padding: 0.8em;
+    margin: 10px;
+    border-radius: 8px;
+    flex-direction: column;
+    /* padding-right: 10%; */
+    flex: 1;
+    max-width: 450px;
+    background: var(--azul);
+    mix-blend-mode: overlay;
+}
