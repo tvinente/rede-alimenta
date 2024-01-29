@@ -2,3 +2,242 @@
 Aquivo css com os estilos da páginas de Empresa (empresa-coletas-abertas.html, empresa-formulario-contribuicao.html e empresa-historico.html)
 Usar prefixo empresa-
 */
+
+.titulo-empresa-historico {
+    display: flex;
+    align-items: center;
+    height: 108px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: var(--amarelo);
+    color: var(--branco); 
+    /* h2 style from main.css */
+    font-size: 2.5rem; /*40px;*/ 
+    font-family: Kadwa-bold;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.empresa-historico{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.nome-ONG {
+    margin-right: 50px;
+    width: 150px; 
+    word-wrap: break-word;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.card-empresa-historico {
+    display: flex;
+    width: 630px;
+    height: 130px;
+    padding: 10px 0 25px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 67px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--Azul, rgba(82, 129, 228, 0.94));
+    
+}
+
+.detalhes-entrega {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.125rem; /*18px;*/
+    gap: 10px;
+}
+
+.lista-entrega {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 1.125rem; /*18px;*/
+    gap: 5px;
+    list-style-type: circle;
+}
+
+.nome-ONG{
+    margin-right: 50px;
+}
+
+.ONG-botao-historico {
+    display: flex;
+    width: 630px;
+    height: 70px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 67px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    color: white;
+    font-size: 1.125rem; /*18px;*/
+    border: none;
+    background: var(--Azul, rgba(82, 129, 228, 0.94));
+    padding: 0;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-right: 30px;
+    margin-top: 35px;
+
+}
+
+.proj-info-leftRightPadding {
+    display: flex;
+    padding-left: 320px;
+}
+
+#forms-bg {
+    background-image: url('/assets/img/forms_bg.svg');
+    background-blend-mode:overlay;
+}
+
+/* Estilização da tela de contribuição da empresa */
+
+.proj-info-leftRightPadding{
+    display: flex;
+    padding-left: 280px;
+}
+
+.contribuicoes-titulo{
+    display: flex;
+    padding-left: 280px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--Amarelo, #E7B675);
+    color: white;
+}
+
+.contribuicoes-input{
+    display: flex;
+    padding-left: 280px;
+    margin-bottom: 20px;
+}
+
+.dados-coleta{
+    display: flex;
+    padding-left: 280px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--Azul, rgba(82, 129, 228, 0.94));
+    margin-bottom: 10px;
+}
+
+.dados-coleta h2 {
+    color: white; /* Garante que o texto dentro de h2 seja branco */
+}
+
+.contribuicoes-informacoes-titulo {
+    display: flex;
+    padding-left: 280px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--Amarelo, #E7B675);
+    color: white;
+}
+
+.contribuicoes-informacoes-titulo h2 {
+    color: white;
+}
+
+.contribuicao-botao {
+    width: 50px; 
+    height: 50px; 
+    padding: 5px; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--Amarelo, #E7B675);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.contribuicoes-informacoes-texto{
+    color: var(--branco);
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(--Azul, rgba(82, 129, 228, 0.94));
+}
+
+.postagem-botao{
+    color: var(--branco);
+    display: flex;
+    width: 196px;
+    padding: 10px;
+    margin-left: 280px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(--Amarelo, #E7B675);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.constribuicoes-lista {
+    display: flex;
+    list-style-type: none;
+}
+
+.constribuicoes-lista li{
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 8px 15px;
+    width: 148px;
+}
+
+
+/* Empresa coletas em aberto */
+
+.coletas-abertas-titulo{
+    display: flex;
+    padding-left: 280px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--Amarelo, #E7B675);
+    color: white;
+}
+
+.situacao-coletas-empresa{
+    display: flex;
+    flex-direction: column;
+}
+
+.informacao-coletas-empresa{
+    color: var(--branco);
+    text-align: justify;
+    padding: 0.8em;
+    margin: 10px;
+    border-radius: 8px;
+    flex-direction: column;
+    /* padding-right: 10%; */
+    flex: 1;
+    max-width: 450px;
+    background: var(--azul);
+    mix-blend-mode: overlay;
+}
