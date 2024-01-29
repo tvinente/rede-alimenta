@@ -170,6 +170,7 @@ Usar prefixo empresa-
 }
 
 .contribuicoes-informacoes-texto{
+    color: var(--branco);
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -184,6 +185,7 @@ Usar prefixo empresa-
 }
 
 .postagem-botao{
+    color: var(--branco);
     display: flex;
     width: 196px;
     padding: 10px;
