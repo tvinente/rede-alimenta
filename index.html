@@ -1,7 +1,8 @@
 <!--Nome do projeto: RedeAlimenta
     Integrantes: Breno Chrispim (@DChrispim), Ciane Pereira (@ciane-pereira), Carlos Giorgio (@calgio), Pedro Amaral (@pedroamaralrs29), Talyta Vinente (@tvinente)-->
  <!DOCTYPE html>
- <html lang="pt-BR" id="bg">
+ <!--<html lang="pt-BR" id="bg">-->
+    <html lang="pt-BR" >
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,12 +33,12 @@
         <section class="motivar">
             <div class="motivar-texto">         
                 <h2>Vamos Colaborar</h2>
-                <p>Cadastre seu estabelecimento e doe, seja uma colaborador para reduzir a fome e ajude voluntários distribuir refeições, fazendo parte dessa conexão.
-                As doações geraram pontos para a sua  empresa, e gera um selo de empresa que colabora coma erradicação da fome na sociedade.
+                <p>Cadastre seu estabelecimento e doe, seja um colaborador para reduzir a fome e ajude voluntários a distribuir refeições, fazendo parte dessa conexão.
+                As doações geraram pontos para a sua  empresa, e gera um selo de empresa que colabora com a erradicação da fome na sociedade.
                 </p>                               
             </div>
             <div >
-                <img src="./assets/img/lata_doacao1.png" alt="imagem de uma mão entregando uma lata" id="lata-img"> 
+                <img src="./assets/img/caixa doação legumes.jpg" alt="imagem de mãos recebendo caixa de legumes" id="caixa-img"> 
             </div>            
         </section>      
         
@@ -88,42 +89,45 @@
 
 
          <!-carrossel slides -->
-<div class="slideshow-container">
+         <section class="carrosel">
+            <div class="slideshow-container">
+                <!-- slides passagem -->
+                <div class="mySlides fade">  
+                  <img src="./assets/img/pedinte.jpg" class="img-slides" style="width:100%">
+                  <div class="text-slide"> <h2>No Brasil 21 milhões de pessoas não tem o que comer todos os dias</h2></div>
+                </div>
+              
+                <div class="mySlides fade">     
+                  <img src="./assets/img/homem tampa panela.jpg" style="width:100%">
+                  <div class="text-slide"><h2>No Norte 25% das famílias convivem com a fome e no Nordeste são 20% das famílias</h2></div>
+                </div>
+              
+                <div class="mySlides fade">   
+                  <img src="./assets/img/desperdicio_comida.jpg" style="width:100%">
+                  <div class="text-slide"><h2>Desperdiça-se cerca de 55 milhões de toneladas de alimentos no Brasil</h2></div>
+                </div>
+            
+                <div class="mySlides fade">    
+                    <img src="./assets/img/crianças-juntas.jpg" style="width:100%">
+                    <div class="text-slide"> <h2>Entre 10 famílias 6 famílias não tem acesso a alimentação plena</h2></div>
+                  </div>
+              
+                <!-- mudança botões -->
+                <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!---- botões -->
+              <!--<div style="text-align:center">-->
+              <div class="btn-botao">
+                <span class="botao" onclick="currentSlide(1)"></span>
+                <span class="botao" onclick="currentSlide(2)"></span>
+                <span class="botao" onclick="currentSlide(3)"></span>
+                <span class="botao" onclick="currentSlide(4)"></span>
+              </div>
+         </section>
 
-    <!-- slides passagem -->
-    <div class="mySlides fade">  
-      <img src="./assets/img/pedinte.jpg" style="width:100%">
-      <div class="text"> <h2>No Brasil 21 milhões de pessoas não tem o que comer todos os dias</h2></div>
-    </div>
-  
-    <div class="mySlides fade">     
-      <img src="./assets/img/prato-vazio.jpg" style="width:100%"; >
-      <div class="text"><h2>No Norte 25% das famílias convivem com a fome e no Nordeste são 20% das famílias</h2></div>
-    </div>
-  
-    <div class="mySlides fade">   
-      <img src="./assets/img/desperdicio_comida.jpg" style="width:100%">
-      <div class="text"><h2>Desperdiça-se cerca de 55 milhões de toneladas de alimentos</h2></div>
-    </div>
-
-    <div class="mySlides fade">    
-        <img src="./assets/img/crianças-juntas.jpg" style="width:100%">
-        <div class="text"> <h2>Entre 10 famílias6 famílias não tem acesso a alimentação plena</h2></div>
-      </div>
-  
-    <!-- mudança botões -->
-    <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!---- botões -->
-  <div style="text-align:center">
-    <span class="botao" onclick="currentSlide(1)"></span>
-    <span class="botao" onclick="currentSlide(2)"></span>
-    <span class="botao" onclick="currentSlide(3)"></span>
-    <span class="botao" onclick="currentSlide(4)"></span>
-  </div>
 
 
     <!--conexão com todos os envolvidos na doação-->
@@ -160,7 +164,7 @@
             <h2 id="sobre-projeto">Quer conhecer mais sobre o projeto?</h2>
             <div class="conhecer-projeto">
                 <div class="img-fundo-legumes">
-                    <img src="assets/img/banca_legumes.jpeg" alt="imagem banca com legumes">
+                    <img src="assets/img/brocolis.avif" alt="imagem banca com legumes">
                 </div>                
                     <div class="resultado-projeto">
                         <table class="tabela-sobre-ajuda" summary="sobre-ajuda" border="0" cellspacing="3" cellpadding="10" >                    

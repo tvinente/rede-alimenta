@@ -32,41 +32,61 @@ body {
 
 /***section motivar***/
 .motivar {
-    background-color: var(--amarelo);
-    margin-bottom: 20px; 
+    background-color: var(--amarelo);   
     display: flex;
     flex-direction: row;  
-    align-items: center;
-    justify-content: center;    
-    width: 100%; 
+    align-items:center;
+    justify-content:space-between;    
+    width: 100%;
+    margin-bottom: 15px;     
 }
 
-.motivar-texto {   
-    margin-left: 12rem;
-    margin-right: 12rem;
-    padding-left: 10rem;        
+.motivar-texto {          
     font-size: 1rem;
-    font-weight: 700;    
+    font-weight: 700; 
+    padding: 0vw 20vw;
+    text-align: left;   
 }
 
- #lata-img{     
-    width: 50vw; 
+ #caixa-img { 
+    width: 40vw;    
     display: flex;
-    padding-left: 2.5rem;   
- }  
+    object-fit:cover;
+    opacity: 0.77;
+ } 
+ 
+/** section carrosel*******/
 
-/**carrosel*******/
-.slideshow-container {
-    width:50vw;  
-    position: relative;  
+ .carrosel {
     margin: 0 auto;
-    object-fit: contain;
-  }
+    width:100vw;
+    height: 60vh;
+    position: relative;    
+}
 
-  .mySlides {
-    display: none;
-  }
-  
+.mySlides img {
+    width:100vw;
+    height: 60vh;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.text-slide h2 {   
+    width:100%;
+    display: flex; 
+    justify-content:center;     
+    text-align:center;
+    align-content: center;    
+    color: rgba(11, 69, 155, 0.788);
+    font-style: italic;
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 6.5rem;    
+    font-weight: 700; 
+    padding: 40px 80px ;
+}
+ 
+  /***passador de seta***/
   .anterior, .proximo {
     cursor: pointer;
     position: absolute;
@@ -74,46 +94,43 @@ body {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: var(--branco);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 50px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
-  /* Position the "next button" to the right */
+  /** posição do próximo botão para a direita **/
   .proximo {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .anterior:hover, .proximo:hover {
+.anterior:hover, .proximo:hover {
     background-color: rgba(238, 231, 231, 0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: blue;
-    font-style: italic;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
+}
   
   /* botões */
+ .btn-botao{   
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;    
+}
+
   .botao {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
+    /*display: inline-block;*/
     transition: background-color 0.6s ease;
   }
   
@@ -129,7 +146,7 @@ body {
   }
   
   @keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0.4}
     to {opacity: 1}
   }
 
@@ -231,9 +248,9 @@ body {
     
 }
 
-.img-fundo-legumes > img {
+.img-fundo-legumes img {
     width:100vw;
-    height: 65vh;
+    height: 60vh;
     position: relative;    
     object-fit: cover;
     margin: 0;
@@ -241,7 +258,7 @@ body {
 
 .resultado-projeto {
     width: 100%;
-    height:65vh;
+    height:60vh;
     top: 5;
     left: 0;
     position: absolute;  
@@ -420,19 +437,55 @@ th {
     }
     .conecta-todos{
         display: none;
- } 
+ }
+ .text-slide h2 {
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 3.5rem;    
+    font-weight: 700; 
+    padding: 20px 40px ;
+}
     
  }  
  
  @media screen and (max-width: 600px){
-     .text {
+     /*.text {
         display: none;
-  }
+  }*/
+
+  
+  /* botões */
+ .btn-botao{
+    display: none;   
+}
+
+.text-slide h2 { 
+    font-size: 1.5rem;
+    bottom: 2.5rem;   
+}
 }
 
 @media screen and (min-width:900px){
    .formacao{
        width: 50%;
    }
-   
+  
+}
+
+@media screen and (max-width: 300px) {
+    .text-slide h2 {
+        font-size: 2.5rem;
+        position: absolute;
+        bottom: 3.5rem;    
+        font-weight: 700; 
+        padding: 20px 40px ;
+    }
+    .btn-botao{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        width: 100%;    
+    }
 }
