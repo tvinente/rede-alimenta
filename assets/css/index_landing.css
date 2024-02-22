@@ -6,6 +6,7 @@ Usar prefixo ind-landing-
 :root {
     /* Cores */
     --amarelo: rgba(231, 182, 117, 1);
+    --amareloForte: rgb(230, 144, 33);
     --preto: rgba(0, 0, 0, 1);
     --azul: rgba(82, 129, 228, 0.94);
     --azulLight: rgba(82, 129, 228, 0.5);
@@ -22,122 +23,142 @@ Usar prefixo ind-landing-
 
 body {
     width: 100%;
+    overflow-x: hidden;
 }
+
+/*****background das sections*******/
 .motivar, .conecta-todos, .ranking-contribuicao {    
     background-image: url('/assets/img/forms_bg.svg');
     background-blend-mode:multiply;
     background-position: center;
-    background-size: 60rem;   
+    background-size: 30rem;   
 }
 
 /***section motivar***/
 .motivar {
-    background-color: var(--amarelo);
-    margin-bottom: 20px; 
+    background-color: var(--amarelo);   
     display: flex;
     flex-direction: row;  
-    align-items: center;
-    justify-content: center;    
-    width: 100%; 
+    align-items:center;
+    justify-content:space-between;    
+    width: 100%;
+    margin-bottom: 15px;     
 }
 
-.motivar-texto {   
-    margin-left: 12rem;
-    margin-right: 12rem;
-    padding-left: 10rem;        
+.motivar-texto {          
     font-size: 1rem;
-    font-weight: 700;    
+    font-weight: 700; 
+    padding: 0vw 20vw;
+    text-align: left;   
 }
 
- #lata-img{     
-    width: 50vw; 
+#caixa-img { 
+    width: 40vw;    
     display: flex;
-    padding-left: 2.5rem;   
- }  
+    object-fit:cover;
+    opacity: 0.77;
+ } 
+ 
+/** section carrosel*******/
 
-/**carrosel*******/
-.slideshow-container {
-    width:50vw;  
-    position: relative;  
+.carrosel {
     margin: 0 auto;
-    object-fit: contain;
-  }
+    width:100%;
+    height: 60vh;
+    position: relative;    
+}
 
-  .mySlides {
-    display: none;
-  }
-  
-  .anterior, .proximo {
+.mySlides img {
+    width:100%;
+    height: 60vh;
+    object-fit: cover;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-slide h2 {   
+    width:100%;
+    display: flex; 
+    justify-content:center;     
+    text-align:center;
+    align-content: center;    
+    color: rgba(11, 69, 155, 0.788);
+    font-style: italic;
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 6.5rem;    
+    font-weight: 700; 
+    padding: 40px 80px ;
+}
+ 
+  /***seta***/
+.anterior, .proximo {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: var(--branco);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 50px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
-  /* Position the "next button" to the right */
-  .proximo {
+  /** posição do próximo botão para a direita **/
+.proximo {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .anterior:hover, .proximo:hover {
+.anterior:hover, .proximo:hover {
     background-color: rgba(238, 231, 231, 0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: blue;
-    font-style: italic;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
+}
   
   /* botões */
-  .botao {
+.btn-botao{   
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;    
+}
+
+.botao {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
     transition: background-color 0.6s ease;
   }
   
-  .active, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
   }
   
   /* animação*/
-  .fade {
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
     
   }
   
   @keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0.4}
     to {opacity: 1}
   }
 
 /*****section conecta todos os envolvidos na doação******/
 .conecta-todos {
     margin-top: 20px;       
-    text-align: center;
-    
+    text-align: center;    
 }
 
 #que-fazer {   
@@ -161,7 +182,7 @@ body {
     width: 20rem;    
   }
 
-  .colaborar-empresa {   
+.colaborar-empresa {   
     border-bottom-right-radius: 75%;
     border-top-right-radius:75%;
     background-image: linear-gradient(to right,rgba(82, 129, 228, 0.74), rgba(236, 137, 207, 0.5));
@@ -169,11 +190,11 @@ body {
     height: 200px;    
   }
 
-  .colaborar-rede {
+.colaborar-rede {
     background-color: var(--branco);  
   }
 
-  .colaborar-ong {
+.colaborar-ong {
     border-bottom-left-radius: 75%;
     border-top-left-radius:75%;
     background-image: linear-gradient(to right, rgba(231, 182, 117, 1), rgba(236, 196, 137, 0.5));
@@ -197,8 +218,7 @@ body {
     margin-top: 10px;      
  }
  
-
- #botton-login {       
+ #botton-login a {       
     text-decoration: none;   
     padding: 3px 5px;
     border-radius: 8px;
@@ -207,60 +227,60 @@ body {
     margin-top: 10px;   
     margin-right: 25px;   
  }
+
  #botton-login a:hover {
-    color: var(--azul);
+    color: var(--amareloForte);
  }
 
-/****conhecer mais sobre o projeto*****/
+/****conhecer resultado do projeto*****/
 
- #sobre-projeto {
+#sobre-projeto {
     background-color: var(--amarelo);
     background-image: url('/assets/img/forms_bg.svg');
     background-blend-mode:overlay;
     background-position:right; 
     margin-top: 20px; 
-    margin-bottom: 20px;
     text-align: center;   
 }
 
-.conhecer-projeto {     
+.container-resultado {     
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
+    margin: 0 ; 
+    padding: 0; 
 }
 
 .img-fundo-legumes > img {
-    width:100vw;
+    width:100%;
     height: 65vh;
-    position: relative;    
-    object-fit: cover;
-    margin: 0;
+    display: flex;
+    position: relative;
+    margin: 0 ; 
+    padding: 0;  
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .resultado-projeto {
-    width: 100%;
-    height:65vh;
-    top: 5;
-    left: 0;
-    position: absolute;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow-x:auto;
+    position: absolute; 
+    margin-top: -38rem;    
+}
+
+.botton-project {
+    display: flex;    
+    position: absolute; 
+    margin-top: -18rem; 
+    text-align: center;   
 }
 
 .tabela-sobre-ajuda {
     border-radius: 10px;
-    color: var(--amarelo);
+    color: var(--amareloForte);
     background-color:var(--branco);
     text-align: center;
     border: 0 none var(--branco);
-    padding: 5px;
-    margin: 0 20px;
-    overflow-x:auto;
 }
 
 tbody .dados-ajuda {
@@ -272,31 +292,19 @@ th, td {
     padding: 0 1.2rem;
 }   
 
-.botton-project {
-    width: 100%;
-    height: 100%;
-    top: 5;
-    left: 0;
-    position: absolute;  
-    display: flex;
-    justify-content: center;
-    margin-top: 15rem;
-    align-items:center;
-    flex-direction: row;
-}
-
  .botton-project a {
     text-decoration: none;
     padding: 3px 5px;
     border-radius: 8px;
     background: var(--amarelo);
-    color: var(--branco);   
-    margin-right: 25px;    
+    color: var(--branco);       
 }
 
 .botton-project a:hover {
-    color: var(--azul);
+    color: var(--amareloForte);
 }
+
+/*******ranking de empresas e ongs*********/
 
 .ranking {
     display: flex;
@@ -310,20 +318,24 @@ th, td {
 /****tabela empresa****/
 
 .ranking-empresa {
-    width: 100vw;
-    height:60vh;    
-    background-image: linear-gradient(to right, rgb(15, 83, 209), rgba(137, 157, 187, 0.5));  
+    width: 100%; 
+    background-image: linear-gradient(to right, rgb(15, 83, 209), rgba(137, 157, 187, 0.5)); 
+    color: var(--branco);
+    text-align: center; 
 }
 
-.ranking-empresa .tabela-ranking-empresa {
-    display: inline-table;
+.tabela-ranking-empresa {
+    display: inline-block;
     border-color: transparent;
-    line-height: 60px;   
-    /*border: 0px;*/ 
-    position: relative;
+    line-height: 60px;
+    margin-top: 30px;   
+
+    
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#a-empr, #b-empr, #c-empr {
+#a-empr, #b-empr, #c-empr, #a-ong, #b-ong, #c-ong {
     border: 2px solid var(--amarelo);
     border-radius: 30%;
     background-color: var(--brancoLight);
@@ -336,49 +348,30 @@ th, td {
 
 /***tabela ong***/
 
-.ranking-ong .tabela-ranking-ong {
-    display: inline-table;
-    border-color: transparent;
-    line-height: 60px;   
-    top: 5%;
-    /*border: 0px;*/ 
-    
+.ranking-ong {
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(15, 83, 209), rgba(137, 157, 187, 0.5));
+    color: var(--branco);
+    text-align: center;      
 }
 
-#a-ong, #b-ong, #c-ong {
-    border: 2px solid var(--amarelo);
-    border-radius: 30%;
-    background-color: azure;
-    color: var(--azul);
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 1rem;  
-    
-}
-.ranking-ong { 
-    width: 100vw; 
-    height:60vh;     
-    background-image: linear-gradient(to left, rgb(15, 83, 209), rgba(137, 157, 187, 0.5));    
+.tabela-ranking-ong {
+    display: inline-block;
+    border-color: transparent;
+    margin-left: 30px;
+    margin-top: 30px; 
+    line-height: 60px;    
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .img-fundo-sacola > img {
     width:15vw;
-    height:60vh;
-    position: relative;    
+    height:100%;
+    position: relative;  
     object-fit: cover;    
     margin: 0;
     padding: 0;   
-}
-
-.ranking-empresa {   
-    color: var(--branco);
-    text-align: center;
-      
-}
-
-.ranking-ong {   
-    color: var(--branco);
-    text-align: center;  
 }
 
 tbody .dados-ajuda {
@@ -395,12 +388,6 @@ th {
     font-weight: bold;
 }
 
-.tabela-ranking-empresa  {   
-    color: var(--branco);   
-    text-align: center;   
-    margin: 50px;
-    
-}
 
 @media (max-width: 1200px) {
     .leftRightPadding {
@@ -408,31 +395,99 @@ th {
         text-align: center;       
     }
     #header-RedeAlimenta {
-        font-size: 2.9rem;      
+        font-size: 3rem;      
     }
-    
-    .motivar-texto {       
+
+    .header-text {
+        color: var(--preto);
+        font-family: Kadwa-bold ;
+        font-size: 4rem;
+        letter-spacing: 3px;
+        line-height:60px;
+        margin-top:  25px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 0vw 1vw; 
-        margin: 0;
+        background-image: url('/assets/img/forms_bg.svg');
+        background-blend-mode:overlay;
+    }
+    
+    .info-banner {
+        background-color: var(--azul);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        height: 108px;
+        margin-bottom: 25px;
+        color: var(--branco); 
+        font-size: 2.5rem;
+        font-family: Kadwa-bold;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+    }
+
+    .motivar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 2.5rem;
+    }
+    
+    .motivar-texto {          
+        font-weight: 700; 
+        padding: 1.5rem;
+        text-align: left;   
     }
     .conecta-todos{
         display: none;
- } 
-    
+ }
+ .text-slide h2 {
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 3.5rem;    
+    font-weight: 700; 
+    padding: 20px 40px ;
+}
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
  }  
  
  @media screen and (max-width: 600px){
-     .text {
-        display: none;
-  }
+
+  /* botões */
+ .btn-botao{
+    display: none;   
 }
 
-@media screen and (min-width:900px){
-   .formacao{
-       width: 50%;
-   }
-   
+.text-slide h2 { 
+    font-size: 1.5rem;
+    bottom: 2.5rem;   
 }
+
+}
+
+/*@media screen and (max-width: 300px) {
+    .text-slide h2 {
+        font-size: 2.5rem;
+        position: absolute;
+        bottom: 3.5rem;    
+        font-weight: 700; 
+        padding: 20px 40px ;
+    }
+    .btn-botao{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        width: 100%;    
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+}*/
