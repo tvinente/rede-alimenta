@@ -24,7 +24,7 @@ Usar prefixo empresa-
     margin-bottom: 30px;
     margin-top: 30px;
 }
-.nome-ONG {
+.ong-nome {
     margin-right: 50px;
     width: 150px; 
     word-wrap: break-word;
@@ -70,7 +70,7 @@ Usar prefixo empresa-
     list-style-type: circle;
 }
 
-.nome-ONG{
+.ong-nome{
     margin-right: 50px;
 }
 

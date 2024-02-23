@@ -100,7 +100,7 @@ for (let i = 0; i < currentPosts.Posts.length; i++) {
     // Create DOM elements
     let novaPostagem = document.createElement("form");
     novaPostagem.method = "post";
-    novaPostagem.className = "forms-container";
+    novaPostagem.className = "ong-forms-container";
     novaPostagem.action = "";
     novaPostagem.id = id.toString();
 
