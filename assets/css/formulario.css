@@ -95,12 +95,12 @@ form .disabled {
     opacity: 0.5;
 }
 
-.warning {
+.forms-warning {
     background-color: red;
     display: flex;
 }
 
-.hidden {
+.forms-hidden {
     display: none;
 }
 

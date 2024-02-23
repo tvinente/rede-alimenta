@@ -351,8 +351,8 @@ function submitForm() {
             window.location = "./ONG-coletas-abertas.html";
         }, 1000);
     } else {
-        warningMenssage.classList.remove("hidden");
-        warningMenssage.classList.add("warning");
+        warningMenssage.classList.remove("forms-hidden");
+        warningMenssage.classList.add("forms-warning");
     }
 }
 
