@@ -4,7 +4,7 @@ Usar prefixo forms-
 */
 
 /* Tags */
-body{
+body {
     display: flex;
 }
 
@@ -33,7 +33,7 @@ form p {
 form div {
     display: flex;
     flex-wrap: wrap;
-    justify-content:left;
+    justify-content: left;
     /* margin: 0px 10px; */
     padding-left: 20vw;
     padding-right: 20vw;
@@ -80,8 +80,32 @@ form select {
     }
 }
 
+/* Form validation */
+
+/* form .valid {
+    border: 2px solid green;
+} */
+
+form .invalid {
+    border: 2px solid red;
+}
+
+form .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.warning {
+    background-color: red;
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
 /* tags */
 #forms-bg {
-    background-image: url('/assets/img/forms_bg.svg');
-    background-blend-mode:overlay;
+    background-image: url("/assets/img/forms_bg.svg");
+    background-blend-mode: overlay;
 }
