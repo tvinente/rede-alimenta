@@ -1,3 +1,6 @@
+// Array que vai armazernar a lista de produtos
+let listaItens = [];
+
 // Adicionar evento de clique ao botão de adicionar produto
 botaoAdicionarProduto.addEventListener('click', function(e) {
     e.preventDefault();
@@ -28,7 +31,7 @@ botaoAdicionarProduto.addEventListener('click', function(e) {
 
     // Criar um novo item de lista para o produto
     const novoItemLista = document.createElement('div');
-    novoItemLista.classList.add('contribuicoes-input', 'proj-info-leftRightPadding');
+    novoItemLista.classList.add('item-dinamico', 'proj-info-leftRightPadding');
 
     // Criar elementos para exibir o nome do produto e sua quantidade
     const novoInputProduto = document.createElement('input');
@@ -80,11 +83,34 @@ botaoAdicionarProduto.addEventListener('click', function(e) {
     // Adicionar o novo item à lista de doações
     const listaDoacoes = document.querySelector('.contribuicao-leftPadding');
     listaDoacoes.appendChild(novoItemLista);
+
+    const novoItem = {
+        produto: produto,
+        quantidade: quantidade,
+        unidade: unidade
+    };
+
+    listaItens.push(novoItem);
+
+    console.log('Novo item adicionado:', novoItem);
+
 });
 
 // Adicionar evento de clique ao botão FAZER POSTAGEM
 const botaoFazerPostagem = document.getElementById('botao-postagem');
 botaoFazerPostagem.addEventListener('click', function(e) {
     e.preventDefault();
+
+    const elementosDinamicos = document.querySelectorAll('.item-dinamico');
+elementosDinamicos.forEach(elemento => elemento.remove());
+
+    
     console.log("voce clicou no botão de postagem")
+    const selectedHoraColeta = document.getElementById("horario-coleta");
+    const horaColeta = selectedHoraColeta.value
+    const selectedDiaColeta = document.getElementById("dia-coleta");
+    const diaColeta = selectedDiaColeta.value
+    console.log(diaColeta)
+    console.log(horaColeta)
+    console.log(listaItens)
 });
