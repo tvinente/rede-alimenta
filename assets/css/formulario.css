@@ -82,9 +82,9 @@ form select {
 
 /* Form validation */
 
-form .valid {
+/* form .valid {
     border: 2px solid green;
-}
+} */
 
 form .invalid {
     border: 2px solid red;
@@ -93,6 +93,15 @@ form .invalid {
 form .disabled {
     pointer-events: none;
     opacity: 0.5;
+}
+
+.warning {
+    background-color: red;
+    display: flex;
+}
+
+.hidden {
+    display: none;
 }
 
 /* tags */

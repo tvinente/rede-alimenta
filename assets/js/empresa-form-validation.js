@@ -1,61 +1,54 @@
 let validForm = {
-    // Dados da ONG
-    nomeGrupo: false,
-    cnpjGrupo: false,
-    telefoneGrupo: false,
-    emailGrupo: false,
-    websiteGrupo: false,
-    // Dados da ação social
-    nomeResponsavel: false,
-    cpfResponsavel: false,
-    telefoneResponsavel: false,
-    emailResponsavel: false,
-    // Dados de coleta
-    cep: false,
-    // melhorDiaColetar: false,
-    // melhorHorarioaColetar: false,
+    emailResponsavelOng: false,
+    emailGrupoOng: false,
+    telefoneResponsavelOng: false,
+    telefoneOng: false,
+    cnpjOng: false,
+    razaoSocialEmpresa: false,
+    nomeResponsavelOng: false,
+    cpfResponsavelOng: false,
+    websiteGrupoOng: false,
+    numeroColetaOng: false,
+    melhorDiaColetar: false,
+    melhorHorarioaColetar: false,
 };
 
 // Form validation functions
 
 function validateEmail() {
+    // const emailInput = document.getElementById("email");
     const email = this.value.trim();
     const key = this.name;
+    // const email = emailInput.value.trim();
 
     if (isValidEmail(email)) {
-        // Remove/Add css style
+        // Email is valid
         this.classList.remove("invalid");
         this.classList.add("valid");
-
-        // Add to valid information list
         validForm[key] = true;
     } else {
-        // Remove/Add css style
+        // Email is invalid
         this.classList.remove("valid");
         this.classList.add("invalid");
-
-        // Remove from to valid information list
         validForm[key] = false;
     }
 }
 
 function validatePhoneNumber() {
+    // const emailInput = document.getElementById("email");
     const phone = this.value.trim();
     const key = this.name;
+    // const email = emailInput.value.trim();
 
     if (isValidPhoneNumber(phone)) {
-        // Remove/Add css style
+        // Email is valid
         this.classList.remove("invalid");
         this.classList.add("valid");
-
-        // Add to valid information list
         validForm[key] = true;
     } else {
-        // Remove/Add css style
+        // Email is invalid
         this.classList.remove("valid");
         this.classList.add("invalid");
-
-        // Remove from to valid information list
         validForm[key] = false;
     }
 }
@@ -65,18 +58,14 @@ function validateCNPJ() {
     const key = this.name;
 
     if (isValidCNPJ(cnpj)) {
-        // Remove/Add css style
+        // Email is valid
         this.classList.remove("invalid");
         this.classList.add("valid");
-
-        // Add to valid information list
         validForm[key] = true;
     } else {
-        // Remove/Add css style
+        // Email is invalid
         this.classList.remove("valid");
         this.classList.add("invalid");
-
-        // Remove from to valid information list
         validForm[key] = false;
     }
 }
@@ -86,18 +75,14 @@ function validateName() {
     const key = this.name;
 
     if (isValidName(name)) {
-        // Remove/Add css style
+        // Email is valid
         this.classList.remove("invalid");
         this.classList.add("valid");
-
-        // Add to valid information list
         validForm[key] = true;
     } else {
-        // Remove/Add css style
+        // Email is invalid
         this.classList.remove("valid");
         this.classList.add("invalid");
-
-        // Remove from to valid information list
         validForm[key] = false;
     }
 }
@@ -107,18 +92,14 @@ function validateCpf() {
     const key = this.name;
 
     if (isValidCPF(cpf)) {
-        // Remove/Add css style
+        // Email is valid
         this.classList.remove("invalid");
         this.classList.add("valid");
-
-        // Add to valid information list
         validForm[key] = true;
     } else {
-        // Remove/Add css style
+        // Email is invalid
         this.classList.remove("valid");
         this.classList.add("invalid");
-
-        // Remove from to valid information list
         validForm[key] = false;
     }
 }
@@ -128,64 +109,73 @@ function validateWebsite() {
     const key = this.name;
 
     if (isValidWebsite(website)) {
-        // Remove/Add css style
+        // Email is valid
         this.classList.remove("invalid");
         this.classList.add("valid");
-
-        // Add to valid information list
         validForm[key] = true;
     } else {
-        // Remove/Add css style
+        // Email is invalid
         this.classList.remove("valid");
         this.classList.add("invalid");
-
-        // Remove from to valid information list
         validForm[key] = false;
     }
 }
 
-// Not obligatory information! If obligatory use this function
-function validateChoice() {
-    const choice = this.value.trim();
+function validateAddressNumber() {
+    const number = this.value.trim();
+    const key = this.name;
 
-    if (isValidChoice(choice)) {
-        // Remove/Add css style
-        // this.classList.remove("invalid");
-        // this.classList.add("valid");
-        // Add to valid information list
-        // validForm[key] = true;
+    if (isValidAddressNumber(number)) {
+        // Email is valid
+        this.classList.remove("invalid");
+        this.classList.add("valid");
+        validForm[key] = true;
     } else {
-        // Remove/Add css style
-        // this.classList.remove("valid");
-        // this.classList.add("invalid");
-        // Remove from to valid information list
-        // validForm[key] = false;
+        // Email is invalid
+        this.classList.remove("valid");
+        this.classList.add("invalid");
+        validForm[key] = false;
     }
 }
 
+function validateChoice() {
+    const choice = this.value.trim();
+    const key = this.name;
+
+    if (isValidChoice(choice)) {
+        // Email is valid
+        this.classList.remove("invalid");
+        this.classList.add("valid");
+        // validForm[key] = true;
+    } else {
+        // Email is invalid
+        this.classList.remove("valid");
+        this.classList.add("invalid");
+        // validForm[key] = false;
+    }
+}
 // Is valid functions
 
 function isValidEmail(email) {
-    // Check email form ... + @ + ...+ .com
+    // Regular expression for basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
 
 function isValidPhoneNumber(phoneNumber) {
-    // Check prone in Brazil format
     const phoneRegex =
         /^\(?([1-9]{2})\)?[-. ]?([2-9][0-9]{3,4})[-. ]?([0-9]{4})$/;
     return phoneRegex.test(phoneNumber);
 }
 
 function isValidCNPJ(cnpj) {
-    // Remove any special characters
+    // Remove special characters from CNPJ string
     cnpj = cnpj.replace(/[^\d]+/g, "");
 
-    // CNPJ must have 14 digits
+    // CNPJ must have exactly 14 digits
     if (cnpj.length !== 14) return false;
 
-    // Basic invalid CNPJ patterns
+    // Check for known invalid CNPJ patterns (e.g., all digits are the same)
     const invalidCNPJs = [
         "00000000000000",
         "11111111111111",
@@ -235,13 +225,13 @@ function isValidName(name) {
 }
 
 function isValidCPF(cpf) {
-    // Remove any special characters
+    // Remove special characters from CPF string
     cpf = cpf.replace(/[^\d]+/g, "");
 
-    // CPF must have 14 digits
+    // CPF must have exactly 11 digits
     if (cpf.length !== 11) return false;
 
-    // Check for known invalid CPF
+    // Check for known invalid CPF patterns (e.g., all digits are the same)
     const invalidCPFs = [
         "00000000000",
         "11111111111",
@@ -289,61 +279,69 @@ function isValidWebsite(website) {
     return websiteRegex.test(website);
 }
 
-function isValidChoice(number) {
-    // All invalid options have value "00"
-    return !(number === "00");
+function isValidAddressNumber(number) {
+    // Regular expression for basic positive integer validation
+    const numberRegex = /^\d+$/;
+    return numberRegex.test(number);
 }
 
+function isValidChoice(number) {
+    return !(number === "00");
+}
 // Add events
 document.addEventListener("DOMContentLoaded", function () {
     // Emails
-    const emailInput1 = document.getElementById("email-grupo");
+    const emailInput1 = document.getElementById("email-grupo-ong");
     emailInput1.addEventListener("blur", validateEmail);
 
-    const emailInput2 = document.getElementById("email-responsavel");
+    const emailInput2 = document.getElementById("email-responsavel-ong");
     emailInput2.addEventListener("blur", validateEmail);
 
     // Phone numbers
-    const phoneInput1 = document.getElementById("telefone-grupo");
+    const phoneInput1 = document.getElementById("telefone-grupo-ong");
     phoneInput1.addEventListener("blur", validatePhoneNumber);
 
-    const phoneInput2 = document.getElementById("telefone-responsavel");
+    const phoneInput2 = document.getElementById("telefone-responsavel-ong");
     phoneInput2.addEventListener("blur", validatePhoneNumber);
 
     // CNPJ
-    const cnpjInput = document.getElementById("cnpj-grupo");
+    const cnpjInput = document.getElementById("cnpj-ong");
     cnpjInput.addEventListener("blur", validateCNPJ);
 
     // Names
-    const ongName = document.getElementById("nome-grupo");
-    ongName.addEventListener("blur", validateName);
+    const razaoSocial = document.getElementById("razao-social");
+    razaoSocial.addEventListener("blur", validateName);
 
-    const ongRespName = document.getElementById("nome-responsavel");
+    const ongRespName = document.getElementById("nome-responsavel-ong");
     ongRespName.addEventListener("blur", validateName);
 
     // CPF
-    const cpf = document.getElementById("cpf-responsavel");
+    const cpf = document.getElementById("cpf-responsavel-ong");
     cpf.addEventListener("blur", validateCpf);
 
     // website
-    const website = document.getElementById("Website-grupo");
+    const website = document.getElementById("Website-grupo-ong");
     website.addEventListener("blur", validateWebsite);
 
     // CEP
     // Is coded in html onblur trigger
 
+    // Address number
+    const number = document.getElementById("numero-coleta-ong");
+    number.addEventListener("blur", validateAddressNumber);
+
     // Select choices
-    const choiceBestDay = document.getElementById("melhor-dia");
+    const choiceBestDay = document.getElementById("melhor-dia-coletar");
     choiceBestDay.addEventListener("blur", validateChoice);
 
-    const choiceBestTime = document.getElementById("melhor-horario");
+    const choiceBestTime = document.getElementById("melhor-horario-coletar");
     choiceBestTime.addEventListener("blur", validateChoice);
 });
 
 // Form submission
 function submitForm() {
     let someTruthy = Object.values(validForm).some((val) => val === false);
-    let warningMenssage = document.getElementById("warning-menssage");
+    let warningMenssage = document.getElementById("warning-menssage")
 
     if (!someTruthy) {
         console.log("Form submitted!");
@@ -351,8 +349,8 @@ function submitForm() {
             window.location = "./ONG-coletas-abertas.html";
         }, 1000);
     } else {
-        warningMenssage.classList.remove("hidden");
-        warningMenssage.classList.add("warning");
+        warningMenssage.classList.remove("hidden")
+        warningMenssage.classList.add("warning")
     }
 }
 
@@ -367,27 +365,27 @@ document
 
 function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
-    document.getElementById("cep").value = "";
-    document.getElementById("endereco").value = "";
+    document.getElementById("rua").value = "";
     document.getElementById("bairro").value = "";
     document.getElementById("cidade").value = "";
-    document.getElementById("uf").value = "00";
+    document.getElementById("uf").value = "";
     // document.getElementById("ibge").value = "";
 }
 
 function meu_callback(conteudo) {
     if (!("erro" in conteudo)) {
         //Atualiza os campos com os valores.
-        document.getElementById("endereco").value = conteudo.logradouro;
-        document.getElementById("bairro").value = conteudo.bairro;
-        document.getElementById("cidade").value = conteudo.localidade;
-        document.getElementById("uf").value = conteudo.uf;
+        document.getElementById("endereco-coleta-ong").value =
+            conteudo.logradouro;
+        document.getElementById("bairro-coleta-ong").value = conteudo.bairro;
+        document.getElementById("cidade-coleta").value = conteudo.localidade;
+        document.getElementById("uf-coleta").value = conteudo.uf;
         // document.getElementById('ibge').value=(conteudo.ibge);
     } //end if.
     else {
         //CEP não Encontrado.
-        // limpa_formulário_cep();
-        alert("CEP não encontrado. Preencha as informações manualmente.");
+        limpa_formulário_cep();
+        alert("CEP não encontrado.");
     }
 }
 
@@ -403,10 +401,10 @@ function pesquisacep(valor) {
         //Valida o formato do CEP.
         if (validacep.test(cep)) {
             //Preenche os campos com "..." enquanto consulta webservice.
-            document.getElementById("endereco").value = "...";
-            document.getElementById("bairro").value = "...";
-            document.getElementById("cidade").value = "...";
-            document.getElementById("uf").value = "...";
+            document.getElementById("endereco-coleta-ong").value = "...";
+            document.getElementById("bairro-coleta-ong").value = "...";
+            document.getElementById("cidade-coleta").value = "...";
+            document.getElementById("uf-coleta").value = "...";
             // document.getElementById('ibge').value="...";
 
             //Cria um elemento javascript.
@@ -420,9 +418,6 @@ function pesquisacep(valor) {
 
             //Insere script no documento e carrega o conteúdo.
             document.body.appendChild(script);
-
-            // Add to valid information list
-            validForm["cep"] = true;
         } //end if.
         else {
             //cep é inválido.
