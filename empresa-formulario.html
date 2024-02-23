@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="./assets/css/main.css" />
         <link rel="stylesheet" href="./assets/css/formulario.css" />
 
-        <script src="./assets/js/empresa-form-validation.js"></script>
+        <script src="./assets/js/empresa-form-validation.js" defer></script>
     </head>
     <body class="forms-container">
         <div class="header-text forms-padding">Cadastro</div>
@@ -36,34 +36,34 @@
             <div>
                 <input
                     type="text"
-                    id="razao-social"
-                    name="razaoSocialEmpresa"
+                    id="nome-grupo"
+                    name="nomeGrupo"
                     placeholder="Razão Social/Nome Fantasia"
                 />
             </div>
             <div>
                 <input
                     type="text"
-                    id="cnpj"
-                    name="cnpjEmpresa"
+                    id="cnpj-grupo"
+                    name="cnpjGrupo"
                     placeholder="CNPJ"
                 />
                 <input
                     type="text"
-                    id="telefone"
-                    name="telefoneEmpresa"
+                    id="telefone-grupo"
+                    name="telefoneGrupo"
                     placeholder="Telefone"
                 />
                 <input
                     type="email"
-                    id="emailempresa"
-                    name="emailEmpresa"
+                    id="email-grupo"
+                    name="emailGrupo"
                     placeholder="E-mail Institucional"
                 />
                 <input
                     type="text"
-                    id="site"
-                    name="siteEmpresa"
+                    id="Website-grupo"
+                    name="websiteGrupo"
                     placeholder="Website"
                 />
                 <input
@@ -110,72 +110,73 @@
             <div>
                 <input
                     type="text"
-                    id="cep-coleta"
-                    name="cepColeta"
-                    placeholder="CEP"
+                    id="cep"
+                    name="cepa"
+                    placeholder="CEP*"
+                    onblur="pesquisacep(this.value)"
                 />
                 <input
                     type="text"
-                    id="cidade-coleta"
-                    name="cidadeColeta"
-                    placeholder="Cidade"
+                    id="cidade"
+                    name="cidade"
+                    placeholder="Cidade*"
                 />
-                <select id="uf-coleta" name="ufColeta">
-                    <option value="">UF</option>
-                    <option value="">AC</option>
-                    <option value="">AL</option>
-                    <option value="">AP</option>
-                    <option value="">AM</option>
-                    <option value="">BA</option>
-                    <option value="">CE</option>
-                    <option value="">ES</option>
-                    <option value="">GO</option>
-                    <option value="">MA</option>
-                    <option value="">MT</option>
-                    <option value="">MS</option>
-                    <option value="">MG</option>
-                    <option value="">PA</option>
-                    <option value="">PB</option>
-                    <option value="">PR</option>
-                    <option value="">PE</option>
-                    <option value="">PI</option>
-                    <option value="">RJ</option>
-                    <option value="">RN</option>
-                    <option value="">RS</option>
-                    <option value="">RO</option>
-                    <option value="">RR</option>
-                    <option value="">SC</option>
-                    <option value="">SP</option>
-                    <option value="">SE</option>
-                    <option value="">TO</option>
-                    <option value="">DF</option>
+                <select id="uf" name="uf">
+                    <option value="00">UF*</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                    <option value="DF">DF</option>
                 </select>
             </div>
             <div>
                 <input
                     type="text"
-                    id="endereco-coleta"
-                    name="enderecoColeta"
+                    id="endereco"
+                    name="endereco"
                     placeholder="Endereço"
                 />
                 <input
                     type="text"
-                    id="numero-coleta"
-                    name="numeroColeta"
+                    id="numero"
+                    name="numero"
                     placeholder="Número"
                 />
             </div>
             <div>
                 <input
                     type="text"
-                    id="bairro-coleta"
-                    name="bairroColeta"
+                    id="bairro"
+                    name="bairro"
                     placeholder="Bairro"
                 />
                 <input
                     type="text"
-                    id="complemento-coleta"
-                    name="complementoColeta"
+                    id="complemento"
+                    name="complemento"
                     placeholder="Complemento"
                 />
             </div>
@@ -188,8 +189,8 @@
                 </p>
             </div>
             <div>
-                <select id="melhor-dia-coleta" name="melhorDiaColeta">
-                    <option value="">Melhor dia para coleta</option>
+                <select id="melhor-dia" name="melhorDia">
+                    <option value="00">Melhor dia para coleta</option>
                     <option value="segunda-feira">Segunda-feira</option>
                     <option value="terça-feira">Terça-feira</option>
                     <option value="quarta-feira">Quarta-feira</option>
@@ -198,8 +199,8 @@
                     <option value="sabado">Sábado</option>
                     <option value="domingo">Domingo</option>
                 </select>
-                <select id="melhor-horario-coleta" name="melhorHorarioColeta">
-                    <option value="">Melhor horário para coleta</option>
+                <select id="melhor-horario" name="melhorHorario">
+                    <option value="00">Melhor horário para coleta</option>
                     <option value="08:00-10:00">08:00-10:00</option>
                     <option value="10:00-12:00">10:00-12:00</option>
                     <option value="12:00-14:00">12:00-14:00</option>
@@ -236,13 +237,18 @@
                     RedeAlimenta se reserva o direito de excluir qualquer conta
                     ou encerrar o serviço unilateralmente.
                 </p>
+                <p class="text hidden" id="warning-menssage">
+                    As informações marcadas com asterisco são obrigatórias.
+                </p>
             </div>
             <div id="acao" class="button-container">
-                <a href="./empresa-formulario-contribuicao.html"
-                    ><button type="button" class="texto-botao primario">
-                        Confirmar
-                    </button></a
+                <button
+                    class="texto-botao primario"
+                    id="submitBtn"
+                    onclick="submitForm()"
                 >
+                    Confirmar
+                </button>
                 <button
                     type="button"
                     class="texto-botao primario"

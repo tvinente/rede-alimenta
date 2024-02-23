@@ -357,9 +357,8 @@ function submitForm() {
 }
 
 // Remove default button action
-document
-    .getElementById("submitBtn")
-    .addEventListener("click", function (event) {
+let submitBtn = document.getElementById("submitBtn")
+submitBtn.addEventListener("click", function (event) {
         event.preventDefault();
     });
 
