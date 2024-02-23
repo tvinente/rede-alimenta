@@ -240,6 +240,14 @@ input[type=email] {
     border-radius: 5px;
 }
 
+input[type=number] {
+    padding: 8px 15px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1.0px solid;
+    border-radius: 5px;
+}
+
 select {
     padding: 8px 15px;
     margin: 10px;

@@ -16,6 +16,7 @@
 
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./assets/css/empresa.css">
+        <script src="./assets/js/empresa-formulario-contribuicao.js" defer></script>
     </head>
     <body>
         <!-- Cabecalho utilizado em todas as paginas com a logo e nome do projeto -->
@@ -61,34 +62,15 @@
                         <h2 class="contribuicoes-titulo">Lista de Doações</h2>
                         <form class="contribuicao-leftPadding"> 
                             <div class="contribuicoes-input ">
-                            <input type="text" placeholder="Produto">
-                            <input type="text" placeholder="Quantidade">
-                            <select name="unidade">
+                            <input type="text" placeholder="Produto" id="inputProduto">
+                            <input type="number" placeholder="Quantidade" id="inputQuantidade">
+                            <select name="unidade" id="unidadeProduto">
                                 <option value="litros">Litros</option>
                                 <option value="quilos">Quilos</option>
                             </select>
-                            <button class="contribuicao-botao">+</button>
+                            <button class="contribuicao-botao" id="botaoAdicionarProduto">+</button>
                             </div>
                         </form>
-                        <div class="contribuicoes-input proj-info-leftRightPadding">
-                            <input type="text" placeholder="Arroz" disabled>
-                            <input type="text" placeholder="20" disabled>
-                            <select name="unidade" disabled>
-                                <option value="litros">Quilos</option>
-                                <option value="quilos">Litros</option>
-                            </select>
-                            <button class="contribuicao-botao">+</button>
-                            </div>
-                            <div class="contribuicoes-input proj-info-leftRightPadding">
-                                <input type="text" placeholder="Óleo de soja" disabled>
-                                <input type="text" placeholder="10" disabled>
-                                <select name="unidade" disabled>
-                                    <option value="litros">Litros</option>
-                                    <option value="quilos">Quilos</option>
-                                </select>
-                                <button class="contribuicao-botao">+</button>
-                                </div>
-                    </div>
                     <div class="dados-coleta">
                         <h2>Dados da coleta</h2>
                     </div>
