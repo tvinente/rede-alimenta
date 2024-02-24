@@ -63,15 +63,15 @@ body {
 
 .carrosel {
     margin: 0 auto;
-    width:100%;
-    height: 60vh;
+    max-width:100%;
+    height: 100vh;
     position: relative;    
 }
 
 .mySlides img {
-    width:100%;
-    height: 60vh;
-    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    object-fit:cover;
     opacity: 0.6;
     background-repeat: no-repeat;
     background-position: center;
@@ -87,7 +87,7 @@ body {
     font-style: italic;
     font-size: 3.5rem;
     position: absolute;
-    bottom: 6.5rem;    
+    bottom: 10rem;    
     font-weight: 700; 
     padding: 40px 80px ;
 }
