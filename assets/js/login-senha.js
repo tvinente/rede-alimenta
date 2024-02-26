@@ -35,7 +35,6 @@ document.querySelector('.formulario-rede').addEventListener('submit', (e) => {
     validarEmail(email);
     validarSenha(senha);
 
-    /**validação email e senha para acessar conta**/
     if (emailValido && senhaValida) {
         mostrarAlerta('Redirecionando para a conta...');
     }
@@ -104,11 +103,11 @@ document.getElementById('cadastroForm').addEventListener('submit',  (e) => {
     // validação email e senha para acessar conta
     if (emailValidoCadastro && senhaValidaCadastro) {
         if (escolhaUsuario === 'empresa') {
-            window.location.href = './empresa-formulario.html'; // Redirecionar para o formulário de empresa
+            window.location.href = './empresa-formulario.html'; //Redirecionar para o formulário de empresa
         } else if (escolhaUsuario === 'ong') {
-            window.location.href = './ONG-formulario.html'; // Redirecionar para o formulário de ONG
+            window.location.href = './ONG-formulario.html'; //Redirecionar para o formulário de ONG
         } else {
-            mostrarAlerta('Por favor, selecione uma opção.');
+            mostrarAlerta('Selecione uma opção.');
         }
     }
 });
