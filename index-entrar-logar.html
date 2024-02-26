@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./assets/css/index_entrar_logar.css">
+        <script src="./assets/js/login-senha.js" defer></script>
      </head>
     
      <body>    
@@ -36,24 +37,27 @@
     <section>
         <h2 id="conta-rede">Entre na sua conta e use a Rede!</h2>
         <div class="acesso">
-            <div class="login-rede">            
-                <form action="">
-                   <div class="acessar-site">
-                    <div class="input-box">
-                        <input type="email" name="email" id="email-rede" placeholder="E-mail" autocomplete="off" required>
-                        <input type="password" name="password" id="senha-rede" placeholder="Senha" required>
+            <div class="login-rede">
+
+                <form class="formulario-rede">
+                    <div class="acessar-site">
+                        <div class="input-box">
+                            <input type="email" name="email" id="email-rede" placeholder="E-mail" autocomplete="off" required>
+                            <input type="password" name="password" id="senha-rede" placeholder="Senha" required>
+                        </div>
+                        <div class="button-login">
+                            <button type="submit" value="login" id="btn-login">Login</button>
+                            <a href="#" id="senha-esqueci">Esqueci a senha</a>
+                        </div>
                     </div>
-                    <div class="button-login">                          
-                        <button type="submit" value="login" id="btn-login">Login</button>
-                        <a href="" id="senha-esqueci">Esqueci a senha</a>
-                    </div>
-                   </div>                                                    
-                </form>                
+                </form>
+
+                               
             </div>
             <div class="img-login-dados">
-                <img src="assets/img/repolho.avif" alt="imagem legumes"> 
+                <img src="./assets/img/repolho.avif" alt="imagem legumes"> 
             </div> 
-        </div>        
+        </div>             
     </section>
 
     <section>
