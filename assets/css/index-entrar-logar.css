@@ -34,20 +34,20 @@ Usar prefixo index-ent-log-
     flex-direction: column;   
     justify-content:center;
     align-items:center;   
-    width:100vw;
+    width:100%;
     height:50vh;
-    margin-bottom: 15px;
-    padding: 0;   
+    margin-bottom: 15px; 
 }
 
 .acessar-site { 
     background-color:rgba(238, 238, 238, 0.8);   
     border-radius: 8px; 
-    margin-top: 8rem;
+    margin-top: 4rem;    
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    position: absolute;        
+    position: absolute;         
 }
 
 .img-login-dados > img {
