@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Form submission
 function submitForm() {
     let someTruthy = Object.values(validForm).some((val) => val === false);
-    let warningMenssage = document.getElementById("warning-menssage");
+    let warningMessage = document.getElementById("warning-menssage");
 
     if (!someTruthy) {
         console.log("Form submitted!");
@@ -351,17 +351,34 @@ function submitForm() {
             window.location = "empresa-formulario-contribuicao.html";
         }, 1000);
     } else {
-        warningMenssage.classList.remove("forms-hidden");
-        warningMenssage.classList.add("forms-warning");
+        warningMessage.classList.remove("forms-hidden");
+        warningMessage.classList.add("forms-warning");
+        showAllWarnings();
     }
 }
 
 // Remove default button action
-let submitBtn = document.getElementById("submitBtn")
+let submitBtn = document.getElementById("submitBtn");
 submitBtn.addEventListener("click", function (event) {
-        event.preventDefault();
-    });
+    event.preventDefault();
+});
 
+// Show all warning message on try to submit
+function showAllWarnings() {
+    let keys = Object.keys(validForm);
+
+    for (i = 0; i < keys.length; i++) {
+        if (validForm[keys[i]] == false) {
+            let warningMessage = document.getElementsByName(keys[i]);
+            warningMessage[0].classList.remove("valid");
+            warningMessage[0].classList.add("invalid");
+        } else {
+            let warningMessage = document.getElementsByName(keys[i]);
+            warningMessage[0].classList.add("valid");
+            warningMessage[0].classList.remove("invalid");
+        }
+    }
+}
 
 // CEP Source: https://viacep.com.br/
 
@@ -394,6 +411,7 @@ function meu_callback(conteudo) {
 function pesquisacep(valor) {
     //Nova variável "cep" somente com dígitos.
     let cep = valor.replace(/\D/g, "");
+    let warning = document.getElementById("cep")
 
     //Verifica se campo cep possui valor informado.
     if (cep != "") {
@@ -402,6 +420,9 @@ function pesquisacep(valor) {
 
         //Valida o formato do CEP.
         if (validacep.test(cep)) {
+            warning.classList.remove("invalid");
+            warning.classList.add("valid");
+
             //Preenche os campos com "..." enquanto consulta webservice.
             document.getElementById("endereco").value = "...";
             document.getElementById("bairro").value = "...";
