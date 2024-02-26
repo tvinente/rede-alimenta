@@ -12,7 +12,7 @@ h2 {
     margin-bottom: 30px;
     margin-top: 30px;
 }
-.nome-ONG {
+.ong-nome {
     margin-right: 50px;
     width: 150px; 
     word-wrap: break-word;
@@ -58,7 +58,7 @@ h2 {
     list-style-type: circle;
 }
 
-.nome-ONG{
+.ong-nome{
     margin-right: 50px;
 }
 
@@ -92,7 +92,7 @@ h2 {
 }
 
 #forms-bg {
-    background-image: url('/assets/img/forms_bg.svg');
+    background-image: url('/assets/img/forms-bg.svg');
     background-blend-mode:overlay;
 }
 

@@ -28,7 +28,7 @@ body {
 
 /*****background das sections*******/
 .motivar, .conecta-todos, .ranking-contribuicao {    
-    background-image: url('/assets/img/forms_bg.svg');
+    background-image: url('/assets/img/forms-bg.svg');
     background-blend-mode:multiply;
     background-position: center;
     background-size: 30rem;   
@@ -246,7 +246,7 @@ body {
 
 #sobre-projeto {
     background-color: var(--amarelo);
-    background-image: url('/assets/img/forms_bg.svg');
+    background-image: url('/assets/img/forms-bg.svg');
     background-blend-mode:overlay;
     background-position:right; 
     margin-top: 20px; 
@@ -417,7 +417,7 @@ th {
         margin-top:  25px;
         display: flex;
         flex-direction: column;
-        background-image: url('/assets/img/forms_bg.svg');
+        background-image: url('/assets/img/forms-bg.svg');
         background-blend-mode:overlay;
     }
     
