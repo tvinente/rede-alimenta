@@ -351,8 +351,8 @@ function submitForm() {
             window.location = "empresa-formulario-contribuicao.html";
         }, 1000);
     } else {
-        warningMenssage.classList.remove("hidden");
-        warningMenssage.classList.add("warning");
+        warningMenssage.classList.remove("forms-hidden");
+        warningMenssage.classList.add("forms-warning");
     }
 }
 
