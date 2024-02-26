@@ -1,15 +1,15 @@
 <!--Nome do projeto: RedeAlimenta
     Integrantes: Breno Chrispim (@DChrispim), Ciane Pereira (@ciane-pereira), Carlos Giorgio (@calgio), Pedro Amaral (@pedroamaralrs29), Talyta Vinente (@tvinente)-->
  <!DOCTYPE html>
- <html lang="pt-BR" id="bg">
+    <html lang="pt-BR" >
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/logo_pequena.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo-pequena.png" type="image/x-icon">
     <title>RedeAlimenta | Ligando quem faz com quem pode</title>
 
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/index_landing.css">
+    <link rel="stylesheet" href="./assets/css/index-landing.css">
     <script src="./assets/js/index.js" defer></script>
  </head>
  <body>
@@ -27,110 +27,67 @@
         <div class="info-banner leftRightPadding info-banner-bg">
             Ligando quem faz com quem pode
         </div>
+    
     </header>
     <main>
         <section class="motivar">
             <div class="motivar-texto">         
                 <h2>Vamos Colaborar</h2>
-                <p>Cadastre seu estabelecimento e doe, seja uma colaborador para reduzir a fome e ajude voluntários distribuir refeições, fazendo parte dessa conexão.
-                As doações geraram pontos para a sua  empresa, e gera um selo de empresa que colabora coma erradicação da fome na sociedade.
+                <p>Cadastre seu estabelecimento e doe, seja um colaborador para reduzir a fome e ajude voluntários a distribuir refeições, fazendo parte dessa conexão.
+                As doações geraram pontos para a sua  empresa, e gera um selo de empresa que colabora com a erradicação da fome na sociedade.
                 </p>                               
             </div>
-            <div >
-                <img src="./assets/img/lata_doacao1.png" alt="imagem de uma mão entregando uma lata" id="lata-img"> 
+            <div>
+                <img src="./assets/img/caixa-doação-legumes.jpg" alt="imagem de mãos recebendo caixa de legumes" id="caixa-img"> 
             </div>            
-        </section>      
-        
-        <!--fazer carrosel com slides com dados estatísticos sobre fome--
-     <section class="container-slide">
-            <div class="slider">              
-                     <!-radio buttons--
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2"> 
-                <input type="radio" name="radio-btn" id="radio3"> 
-                <input type="radio" name="radio-btn" id="radio4">             
-      
-              <!-slides imagens----
-             <div class="slide-box first">
-              <h2>No Brasil 21 milhões de pessoas não tem o que comer todos os dias</h2>
-              <img src="assets/img/prato-vazio.jpg" alt="imagem de prato vazio" class="img-slide" style="width:100%">       
-             </div>
-             <div class="slide-box">
-              <h2>No Norte 25% das famílias convivem com a fome e no Nordeste são 20% das famílias</h2>          
-              <img src="assets/img/pedinte.jpg" alt="imagem pedinte" class="img-slide" style="width:100%">
-             </div>
-             <div class="slide-box">
-              <h2>Desperdiça-se cerca de 55 milhões de toneladas de alimentos</h2>
-              <img src="assets/img/despedicio_comida.jpg" alt="imagem jogando comida no lixo" class="img-slide" style="width:100%">
-             </div>
-             <div class="slide-box">
-              <h2>Entre 10 famílias <strong class="dado-fome"> 6 famílias <strong>não tem acesso</strong> a alimentação plena</h2>
-              <img src="assets/img/crianças-juntas.jpg" alt="imagem pessoa pedido ajuda na rua" class="img-slide" style="width:100%">
-             </div>
-             <!- final slide imagens-->      
-              <!--navigation auto----
-              <div class="navigation-auto">
-                  <div class="auto-btn1"></div>
-                  <div class="auto-btn2"></div>
-                  <div class="auto-btn3"></div>
-                  <div class="auto-btn4"></div>
+        </section>       
+
+         <!--carrossel slides -->
+        <section class="carrosel">
+            <div>
+                <!-- slides passagem -->
+                <div class="mySlides fade">  
+                  <img src="./assets/img/pedinte.jpg" class="img-slides" width="100%">
+                  <div class="text-slide"> <h2>No Brasil 21 milhões de pessoas não tem o que comer todos os dias</h2></div>
+                </div>
+              
+                <div class="mySlides fade">     
+                  <img src="./assets/img/homem-tampa-panela.jpg" width="100%">
+                  <div class="text-slide"><h2>No Norte 25% das famílias convivem com a fome e no Nordeste são 20% das famílias</h2></div>
+                </div>
+              
+                <div class="mySlides fade">   
+                  <img src="./assets/img/desperdicio-comida.jpg" width="100%">
+                  <div class="text-slide"><h2>Desperdiça-se cerca de 55 milhões de toneladas de alimentos no Brasil</h2></div>
+                </div>
+            
+                <div class="mySlides fade">    
+                    <img src="./assets/img/crianças-juntas.jpg" width="100%">
+                    <div class="text-slide"> <h2>Entre 10 famílias 6 famílias não tem acesso a alimentação plena</h2></div>
+                  </div>
+              
+                <!-- mudança botões -->
+                <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
               </div>
-                       
-                </div
-                 <!-criando botões(label) para(referente) o input radio ----
-             <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>                 
-              </div> 
-        </section>
-
-
-         <!-carrossel slides -->
-<div class="slideshow-container">
-
-    <!-- slides passagem -->
-    <div class="mySlides fade">  
-      <img src="./assets/img/pedinte.jpg" style="width:100%">
-      <div class="text"> <h2>No Brasil 21 milhões de pessoas não tem o que comer todos os dias</h2></div>
-    </div>
-  
-    <div class="mySlides fade">     
-      <img src="./assets/img/prato-vazio.jpg" style="width:100%"; >
-      <div class="text"><h2>No Norte 25% das famílias convivem com a fome e no Nordeste são 20% das famílias</h2></div>
-    </div>
-  
-    <div class="mySlides fade">   
-      <img src="./assets/img/desperdicio_comida.jpg" style="width:100%">
-      <div class="text"><h2>Desperdiça-se cerca de 55 milhões de toneladas de alimentos</h2></div>
-    </div>
-
-    <div class="mySlides fade">    
-        <img src="./assets/img/crianças-juntas.jpg" style="width:100%">
-        <div class="text"> <h2>Entre 10 famílias6 famílias não tem acesso a alimentação plena</h2></div>
-      </div>
-  
-    <!-- mudança botões -->
-    <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!---- botões -->
-  <div style="text-align:center">
-    <span class="botao" onclick="currentSlide(1)"></span>
-    <span class="botao" onclick="currentSlide(2)"></span>
-    <span class="botao" onclick="currentSlide(3)"></span>
-    <span class="botao" onclick="currentSlide(4)"></span>
-  </div>
+              <br>
+              
+              <!---- botões -->
+              <div class="btn-botao">
+                <span class="botao" onclick="currentSlide(1)"></span>
+                <span class="botao" onclick="currentSlide(2)"></span>
+                <span class="botao" onclick="currentSlide(3)"></span>
+                <span class="botao" onclick="currentSlide(4)"></span>
+              </div>
+         </section>
+         <!--Final slide-->
 
 
     <!--conexão com todos os envolvidos na doação-->
-    <section class="conecta-todos">
-        <h2 id="que-fazer">O que podemos fazer?</h2>
-        <div class="conectar-parceiros">          
-            <div class="colaborar-empresa">
+        <section class="conecta-todos">
+            <h2 id="que-fazer">O que podemos fazer?</h2>
+            <div class="conectar-parceiros">          
+                <div class="colaborar-empresa">
                 <h2>Empresa</h2>
                 <h4>quem pode doar</h4>
             </div>
@@ -139,29 +96,32 @@
                 <h4>é a conexão</h4>
                 <hr class="hr">               
                 <img src="assets/img/Logo.png" alt="logo RedeAlimenta" id= "logo-redeAlimenta" >
-            </div>
-            <div class="colaborar-ong">
+                </div>
+                <div class="colaborar-ong">
                 <h2>ONG</h2>
                 <h4>quem ajuda</h4>
             </div>
-        </div>    
-    </section>   
+            </div>    
+        </section>   
 
+        <!--conheça quem somos-->
         <section>
             <div class="quem-somos">              
                 <p>Somos um grupo de pessoas voluntárias que colaboram para oferecer alimentação às pessoas em situação de vulnerabilidade, pois acreditamos que todos têm direito à alimentação digna. Para contribuirmos, criamos a plataforma <strong>RedeAlimenta</strong> para conectar empresas que descartariam seus produtos, por não ter mais valor comercial, mas que continuam aptos ao consumo, com as instituições que preparam e distribuem as refeições prontas.
                 Trabalhamos de forma independente e voluntária, sem nenhum vínculo com partido político, governamental ou empresarial.                  
                 </p>
-                <a href="./index-entrar-logar.html" id="botton-login">Inscreva-se e comece a ajudar!</a>                
+                <div id="botton-login">
+                    <a href="./index-entrar-logar.html">Inscreva-se e comece a ajudar!</a> 
+                </div>                              
             </div> 
         </section>
 
-        <section class="quer-conhecer-projeto">
-            <h2 id="sobre-projeto">Quer conhecer mais sobre o projeto?</h2>
-            <div class="conhecer-projeto">
+        <section>
+            <h2 id="sobre-projeto">Quer conhecer mais sobre o projeto?</h2>       
                 <div class="img-fundo-legumes">
-                    <img src="assets/img/banca_legumes.jpeg" alt="imagem banca com legumes">
-                </div>                
+                    <img src="./assets/img/abobrinha.jpg" alt="">
+                </div>
+                <div class="container-resultado">
                     <div class="resultado-projeto">
                         <table class="tabela-sobre-ajuda" summary="sobre-ajuda" border="0" cellspacing="3" cellpadding="10" >                    
                             <thead>
@@ -182,12 +142,12 @@
                             </tbody>
                             <tfoot>                        
                             </tfoot>      
-                        </table>
-                    </div>         
-                        <div class="botton-project">
-                            <a  href="./projeto-informacoes.html">Conheça mais como o projeto funciona</a>  
-                        </div>                             
-            </div>
+                        </table>                          
+                    </div>
+                    <div class="botton-project">
+                       <a  href="./projeto-informacoes.html">Conheça mais como o projeto funciona</a>  
+                    </div>  
+                </div>                
         </section>
         
         <!--tabela do ranking de empresas e ongs-->
@@ -219,7 +179,7 @@
                 </table>
             </div>
             <div class="img-fundo-sacola">
-                <img src="assets/img/doacao_alimento.jpg" alt="imagem sacola com legumes">
+                <img src="assets/img/doacao-alimento.jpg" alt="imagem sacola com legumes">
             </div> 
             <div class="ranking-ong">
                 <table class="tabela-ranking-ong" summary="ranking das ongs" border="1" cellspacing="3" cellpadding="10" >                    
@@ -240,9 +200,7 @@
                             <td id="b-ong">90</td>
                             <td>ONG C</td>
                         </tr>                                             
-                    </tbody>
-                    <tfoot>                        
-                    </tfoot>      
+                    </tbody>     
                 </table>
             </div>                     
         </div>             
@@ -252,7 +210,7 @@
      <!--footer da página-->
      <footer>
         <div class="redes-sociais"><br>
-            <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/icon_instagram_figma.svg" height="60" alt="logo instagram"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/icon-instagram-figma.svg" height="60" alt="logo instagram"></a>
         </div>
         <div class="texto">
             <p>RedeAlimenta CNPJ: 54.358.132/0001-00 - Endereço: Rua João de Barro, 1225 - Belo Horizonte - MG</p>

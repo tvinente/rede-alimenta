@@ -1,0 +1,503 @@
+/* 
+Aquivo css com os estilos da página "Página principal" (index.html)
+Usar prefixo ind-landing-
+*/
+/****** configuração padrão do projeto*******/
+:root {
+    /* Cores */
+    --amarelo: rgba(231, 182, 117, 1);
+    --amareloForte: rgb(230, 144, 33);
+    --preto: rgba(0, 0, 0, 1);
+    --azul: rgba(82, 129, 228, 0.94);
+    --azulLight: rgba(82, 129, 228, 0.5);
+    --branco: white;
+    --brancoLight: rgba(238, 238, 238, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+    }
+/****** página index*******/
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*****background das sections*******/
+.motivar, .conecta-todos, .ranking-contribuicao {    
+    background-image: url('/assets/img/forms-bg.svg');
+    background-blend-mode:multiply;
+    background-position: center;
+    background-size: 30rem;   
+}
+
+/***section motivar***/
+.motivar {
+    background-color: var(--amarelo);   
+    display: flex;
+    flex-direction: row;  
+    align-items:center;
+    justify-content:space-between;    
+    width: 100%;
+    margin-bottom: 15px;     
+}
+
+.motivar-texto {          
+    font-size: 1rem;
+    font-weight: 700; 
+    padding: 0vw 20vw;
+    text-align: left;   
+}
+
+#caixa-img { 
+    width: 40vw;    
+    display: flex;
+    object-fit:cover;
+    opacity: 0.77;
+ } 
+ 
+/** section carrosel*******/
+
+.carrosel {
+    margin: 0 auto;
+    width:100%;
+    height: 60vh;
+    position: relative;    
+}
+
+.mySlides img {
+    width:100%;
+    height: 60vh;
+    object-fit: cover;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-slide h2 {   
+    width:100%;
+    display: flex; 
+    justify-content:center;     
+    text-align:center;
+    align-content: center;    
+    color: rgba(11, 69, 155, 0.788);
+    font-style: italic;
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 6.5rem;    
+    font-weight: 700; 
+    padding: 40px 80px ;
+}
+ 
+  /***seta***/
+.anterior, .proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /** posição do próximo botão para a direita **/
+.proximo {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.anterior:hover, .proximo:hover {
+    background-color: rgba(238, 231, 231, 0.8);
+}
+  
+  /* botões */
+.btn-botao{   
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;    
+}
+
+.botao {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* animação*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    
+  }
+  
+  @keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+  }
+
+/*****section conecta todos os envolvidos na doação******/
+.conecta-todos {
+    /* margin-top: 20px; */
+    text-align: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* height: 108px; */
+    /* margin-bottom: 45px; */
+    /* color: var(--branco);  */
+    /* h2 style from main.css */
+    font-size: 2.5rem; /*40px;*/
+    /* font-family: Kadwa-bold; */
+    /* font-weight: 700; */
+    letter-spacing: 1.2px;
+}
+
+#que-fazer {   
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    background-color: var(--amarelo);  
+}
+
+.conectar-parceiros {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;   
+    background-color: var(--branco);
+    margin-top: 10px; 
+}
+
+.hr {
+    border-top: 2px solid var(--amarelo);
+    border-bottom: 2px solid var(--amarelo);   
+    width: 20rem;    
+  }
+
+.colaborar-empresa {   
+    border-bottom-right-radius: 75%;
+    border-top-right-radius:75%;
+    background-image: linear-gradient(to right,rgba(82, 129, 228, 0.74), rgba(236, 137, 207, 0.5));
+    width: 1500px;
+    height: 200px;    
+  }
+
+.colaborar-rede {
+    background-color: var(--branco);  
+  }
+
+.colaborar-ong {
+    border-bottom-left-radius: 75%;
+    border-top-left-radius:75%;
+    background-image: linear-gradient(to right, rgba(231, 182, 117, 1), rgba(236, 196, 137, 0.5));
+    width: 1500px;
+    height: 200px;
+  }
+
+ .quem-somos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 80px ;
+    background-color: var(--branco);   
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 750;
+    letter-spacing: 1px;
+ }
+
+ #logo-redeAlimenta {
+    margin-top: 10px;      
+ }
+ 
+ #botton-login a {       
+    text-decoration: none;   
+    padding: 3px 5px;
+    border-radius: 8px;
+    background: var(--amarelo);
+    color: var(--branco);
+    margin-top: 10px;   
+    margin-right: 25px;   
+ }
+
+ #botton-login a:hover {
+    color: var(--amareloForte);
+ }
+
+/****conhecer resultado do projeto*****/
+
+#sobre-projeto {
+    background-color: var(--amarelo);
+    background-image: url('/assets/img/forms-bg.svg');
+    background-blend-mode:overlay;
+    background-position:right; 
+    margin-top: 20px; 
+    text-align: center;   
+}
+
+.container-resultado {     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 ; 
+    padding: 0; 
+}
+
+.img-fundo-legumes > img {
+    width:100%;
+    height: 65vh;
+    display: flex;
+    position: relative;
+    margin: 0 ; 
+    padding: 0;  
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.resultado-projeto {
+    position: absolute; 
+    margin-top: -38rem;    
+}
+
+.botton-project {
+    display: flex;    
+    position: absolute; 
+    margin-top: -18rem; 
+    text-align: center;   
+}
+
+.tabela-sobre-ajuda {
+    border-radius: 10px;
+    color: var(--amareloForte);
+    background-color:var(--branco);
+    text-align: center;
+    border: 0 none var(--branco);
+}
+
+tbody .dados-ajuda {
+    border-spacing: 0.7rem;
+    width: 50%;
+}
+
+th, td {
+    padding: 0 1.2rem;
+}   
+
+ .botton-project a {
+    text-decoration: none;
+    padding: 3px 5px;
+    border-radius: 8px;
+    background: var(--amarelo);
+    color: var(--branco);       
+}
+
+.botton-project a:hover {
+    color: var(--amareloForte);
+}
+
+/*******ranking de empresas e ongs*********/
+
+.ranking {
+    display: flex;
+    flex-direction:row;
+    align-items:stretch;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+/****tabela empresa****/
+
+.ranking-empresa {
+    width: 100%; 
+    background-image: linear-gradient(to right, rgb(15, 83, 209), rgba(137, 157, 187, 0.5)); 
+    color: var(--branco);
+    text-align: center; 
+}
+
+.tabela-ranking-empresa {
+    display: inline-block;
+    border-color: transparent;
+    line-height: 60px;
+    margin-top: 30px;   
+
+    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#a-empr, #b-empr, #c-empr, #a-ong, #b-ong, #c-ong {
+    border: 2px solid var(--amarelo);
+    border-radius: 30%;
+    background-color: var(--brancoLight);
+    color: var(--azul);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1rem;  
+    
+}
+
+/***tabela ong***/
+
+.ranking-ong {
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(15, 83, 209), rgba(137, 157, 187, 0.5));
+    color: var(--branco);
+    text-align: center;      
+}
+
+.tabela-ranking-ong {
+    display: inline-block;
+    border-color: transparent;
+    margin-left: 30px;
+    margin-top: 30px; 
+    line-height: 60px;    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-fundo-sacola > img {
+    width:15vw;
+    height:100%;
+    position: relative;  
+    object-fit: cover;    
+    margin: 0;
+    padding: 0;   
+}
+
+tbody .dados-ajuda {
+    border-spacing: 0.7rem;
+    width: 100%;
+}
+
+th, td {
+    padding: 0 1.2rem;
+}
+
+th {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1200px) {
+    .leftRightPadding {
+        padding: 0vw 1vw;
+        text-align: center;       
+    }
+    #header-RedeAlimenta {
+        font-size: 3rem;      
+    }
+
+    .header-text {
+        color: var(--preto);
+        font-family: Kadwa-bold ;
+        font-size: 4rem;
+        letter-spacing: 3px;
+        line-height:60px;
+        margin-top:  25px;
+        display: flex;
+        flex-direction: column;
+        background-image: url('/assets/img/forms-bg.svg');
+        background-blend-mode:overlay;
+    }
+    
+    .info-banner {
+        background-color: var(--azul);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        height: 108px;
+        margin-bottom: 25px;
+        color: var(--branco); 
+        font-size: 2.5rem;
+        font-family: Kadwa-bold;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+    }
+
+    .motivar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 2.5rem;
+    }
+    
+    .motivar-texto {          
+        font-weight: 700; 
+        padding: 1.5rem;
+        text-align: left;   
+    }
+    .conecta-todos{
+        display: none;
+ }
+ .text-slide h2 {
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 3.5rem;    
+    font-weight: 700; 
+    padding: 20px 40px ;
+}
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+ }  
+ 
+ @media screen and (max-width: 600px){
+
+  /* botões */
+ .btn-botao{
+    display: none;   
+}
+
+.text-slide h2 { 
+    font-size: 1.5rem;
+    bottom: 2.5rem;   
+}
+
+}
+
+/*@media screen and (max-width: 300px) {
+    .text-slide h2 {
+        font-size: 2.5rem;
+        position: absolute;
+        bottom: 3.5rem;    
+        font-weight: 700; 
+        padding: 20px 40px ;
+    }
+    .btn-botao{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        width: 100%;    
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+}*/
