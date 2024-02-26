@@ -66,7 +66,7 @@
                 <div class="informar-credencial">
                     <p>Informe as suas credenciais e se você representa  uma Empresa<br> (quem pode doar) ou uma ONG(quem sabe ajudar)</p>
                 </div>            
-            <form action="">
+            <!--<form action="">
                 <div class="login-dados-novo">
                     <div class="dado-novo">
                         <input type="email" name="email" id="email-novo" placeholder="E-mail" autocomplete="off" required>
@@ -78,6 +78,18 @@
                     <a href="./ONG-formulario.html"><button type="button" id="btn-ong-new" class="texto-botao primario">ONG</button></a> 
                     </div> 
                 </div>                                    
+            </form>-->
+            <form class="cadastro-na-rede" id="cadastroForm">
+                <div class="login-dados-novo">
+                    <div class="dado-novo">
+                        <input type="email" name="email" id="email-novo" placeholder="E-mail" autocomplete="off" required>
+                        <input type="password" name="password" id="password-new" placeholder="Senha" required>
+                    </div>
+                    <div class="cadastro-empr-ong">
+                        <button type="submit" id="btn-login-new" class="texto-botao primario" value="empresa">Empresa</button>
+                        <button type="submit" id="btn-ong-new" class="texto-botao primario" value="ong">ONG</button>
+                    </div>
+                </div>
             </form>     
            
             <div class="img-cadastro">
