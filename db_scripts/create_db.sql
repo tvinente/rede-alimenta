@@ -16,7 +16,7 @@ CREATE TABLE Pessoa_juridica
 -- Cria a tabela de ONG
 CREATE TABLE ONG 
 ( 
- melhor_data_coleta DATE,  
+ melhor_data_coleta TIMESTAMP WITH TIME ZONE,  
  data_fundacao DATE CHECK (data_fundacao <= CURRENT_DATE),  
  numero_assistidos INT CHECK (numero_assistidos > 0),  
  historia_ong TEXT,  
@@ -30,7 +30,7 @@ CREATE TABLE ONG
 -- Cria tabela de empresa
 CREATE TABLE Empresa 
 ( 
- melhor_dia_entrega DATE,  
+ melhor_dia_entrega TIMESTAMP WITH TIME ZONE,  
  id_empresa INT,  
  -- Definição chave estrangeira
  FOREIGN KEY (id_empresa) REFERENCES Pessoa_juridica(id),
@@ -57,6 +57,9 @@ CREATE TABLE Postagens
  id_ong INT,  
  id_empresa INT,  
  itens TEXT[] NOT NULL,
+ data_postagem TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+ data_coleta TIMESTAMP NOT NULL,
+ coletado BOOLEAN DEFAULT NULL CHECK (coletado IN ('yes', 'no', NULL)),
  -- Definição chave estrangeira
  FOREIGN KEY (id_ong) REFERENCES ong(id_ong),
  FOREIGN KEY (id_empresa) REFERENCES empresa(id_empresa)
